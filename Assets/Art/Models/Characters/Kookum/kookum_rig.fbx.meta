@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: 6e83f1c48e7094c088849d7cd5637c92
+timeCreated: 1496590352
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bind_JNT_Kookum_Head
+    100002: bind_JNT_Kookum_Hips1
+    100004: bind_JNT_Kookum_LeftArm
+    100006: bind_JNT_Kookum_LeftFoot
+    100008: bind_JNT_Kookum_LeftForeArm
+    100010: bind_JNT_Kookum_LeftHand
+    100012: bind_JNT_Kookum_LeftHandIndex1
+    100014: bind_JNT_Kookum_LeftHandIndex2
+    100016: bind_JNT_Kookum_LeftHandIndex3
+    100018: bind_JNT_Kookum_LeftHandMiddle1
+    100020: bind_JNT_Kookum_LeftHandMiddle2
+    100022: bind_JNT_Kookum_LeftHandMiddle3
+    100024: bind_JNT_Kookum_LeftHandPinky1
+    100026: bind_JNT_Kookum_LeftHandPinky2
+    100028: bind_JNT_Kookum_LeftHandPinky3
+    100030: bind_JNT_Kookum_LeftHandRing1
+    100032: bind_JNT_Kookum_LeftHandRing2
+    100034: bind_JNT_Kookum_LeftHandRing3
+    100036: bind_JNT_Kookum_LeftHandThumb1
+    100038: bind_JNT_Kookum_LeftHandThumb2
+    100040: bind_JNT_Kookum_LeftHandThumb3
+    100042: bind_JNT_Kookum_LeftLeg
+    100044: bind_JNT_Kookum_LeftShoulder
+    100046: bind_JNT_Kookum_LeftToeBase
+    100048: bind_JNT_Kookum_LeftUpLeg
+    100050: bind_JNT_Kookum_Neck
+    100052: bind_JNT_Kookum_RightArm
+    100054: bind_JNT_Kookum_RightFoot
+    100056: bind_JNT_Kookum_RightForeArm
+    100058: bind_JNT_Kookum_RightHand
+    100060: bind_JNT_Kookum_RightHandIndex1
+    100062: bind_JNT_Kookum_RightHandIndex2
+    100064: bind_JNT_Kookum_RightHandIndex3
+    100066: bind_JNT_Kookum_RightHandMiddle1
+    100068: bind_JNT_Kookum_RightHandMiddle2
+    100070: bind_JNT_Kookum_RightHandMiddle3
+    100072: bind_JNT_Kookum_RightHandPinky1
+    100074: bind_JNT_Kookum_RightHandPinky2
+    100076: bind_JNT_Kookum_RightHandPinky3
+    100078: bind_JNT_Kookum_RightHandRing1
+    100080: bind_JNT_Kookum_RightHandRing2
+    100082: bind_JNT_Kookum_RightHandRing3
+    100084: bind_JNT_Kookum_RightHandThumb1
+    100086: bind_JNT_Kookum_RightHandThumb2
+    100088: bind_JNT_Kookum_RightHandThumb3
+    100090: bind_JNT_Kookum_RightLeg
+    100092: bind_JNT_Kookum_RightShoulder
+    100094: bind_JNT_Kookum_RightToeBase
+    100096: bind_JNT_Kookum_RightUpLeg
+    100098: bind_JNT_Kookum_Spine
+    100100: bind_JNT_Kookum_Spine1
+    100102: bind_JNT_Kookum_Spine2
+    100104: dress_JNT1
+    100106: dress_JNT2
+    100108: dress_JNT3
+    100110: dress_JNT4
+    100112: dress_JNT5
+    100114: dress_JNT6
+    100116: dress_JNT6 1
+    100118: dress_JNT9
+    100120: hair_JNT1
+    100122: hair_JNT2
+    100124: hair_JNT3
+    100126: hair_JNT4
+    100128: hair_JNT5
+    100130: Kookum_bind
+    100132: kookum_body001
+    100134: Kookum_GEO
+    100136: kookum_outfit001
+    100138: //RootNode
+    100140: bind_JNT_Kookum_Head_end
+    100142: bind_JNT_Kookum_LeftFoot_end
+    100144: bind_JNT_Kookum_LeftHandIndex2_end
+    100146: bind_JNT_Kookum_LeftHandMiddle2_end
+    100148: bind_JNT_Kookum_LeftHandPinky2_end
+    100150: bind_JNT_Kookum_LeftHandRing2_end
+    100152: bind_JNT_Kookum_LeftHandThumb2_end
+    100154: bind_JNT_Kookum_RightFoot_end
+    100156: bind_JNT_Kookum_RightHandIndex2_end
+    100158: bind_JNT_Kookum_RightHandMiddle2_end
+    100160: bind_JNT_Kookum_RightHandPinky2_end
+    100162: bind_JNT_Kookum_RightHandRing2_end
+    100164: bind_JNT_Kookum_RightHandThumb2_end
+    100166: bind_JNT_Kookum_Spine2.001
+    100168: bind_JNT_Kookum_Spine2.001_end
+    100170: dress_JNT1_end
+    100172: dress_JNT3_end
+    100174: dress_JNT5_end
+    100176: dress_JNT9_end
+    100178: hair_JNT4_end
+    100180: kookum
+    100182: kookum_body001.001
+    100184: kookum_outfit001.001
+    400000: bind_JNT_Kookum_Head
+    400002: bind_JNT_Kookum_Hips1
+    400004: bind_JNT_Kookum_LeftArm
+    400006: bind_JNT_Kookum_LeftFoot
+    400008: bind_JNT_Kookum_LeftForeArm
+    400010: bind_JNT_Kookum_LeftHand
+    400012: bind_JNT_Kookum_LeftHandIndex1
+    400014: bind_JNT_Kookum_LeftHandIndex2
+    400016: bind_JNT_Kookum_LeftHandIndex3
+    400018: bind_JNT_Kookum_LeftHandMiddle1
+    400020: bind_JNT_Kookum_LeftHandMiddle2
+    400022: bind_JNT_Kookum_LeftHandMiddle3
+    400024: bind_JNT_Kookum_LeftHandPinky1
+    400026: bind_JNT_Kookum_LeftHandPinky2
+    400028: bind_JNT_Kookum_LeftHandPinky3
+    400030: bind_JNT_Kookum_LeftHandRing1
+    400032: bind_JNT_Kookum_LeftHandRing2
+    400034: bind_JNT_Kookum_LeftHandRing3
+    400036: bind_JNT_Kookum_LeftHandThumb1
+    400038: bind_JNT_Kookum_LeftHandThumb2
+    400040: bind_JNT_Kookum_LeftHandThumb3
+    400042: bind_JNT_Kookum_LeftLeg
+    400044: bind_JNT_Kookum_LeftShoulder
+    400046: bind_JNT_Kookum_LeftToeBase
+    400048: bind_JNT_Kookum_LeftUpLeg
+    400050: bind_JNT_Kookum_Neck
+    400052: bind_JNT_Kookum_RightArm
+    400054: bind_JNT_Kookum_RightFoot
+    400056: bind_JNT_Kookum_RightForeArm
+    400058: bind_JNT_Kookum_RightHand
+    400060: bind_JNT_Kookum_RightHandIndex1
+    400062: bind_JNT_Kookum_RightHandIndex2
+    400064: bind_JNT_Kookum_RightHandIndex3
+    400066: bind_JNT_Kookum_RightHandMiddle1
+    400068: bind_JNT_Kookum_RightHandMiddle2
+    400070: bind_JNT_Kookum_RightHandMiddle3
+    400072: bind_JNT_Kookum_RightHandPinky1
+    400074: bind_JNT_Kookum_RightHandPinky2
+    400076: bind_JNT_Kookum_RightHandPinky3
+    400078: bind_JNT_Kookum_RightHandRing1
+    400080: bind_JNT_Kookum_RightHandRing2
+    400082: bind_JNT_Kookum_RightHandRing3
+    400084: bind_JNT_Kookum_RightHandThumb1
+    400086: bind_JNT_Kookum_RightHandThumb2
+    400088: bind_JNT_Kookum_RightHandThumb3
+    400090: bind_JNT_Kookum_RightLeg
+    400092: bind_JNT_Kookum_RightShoulder
+    400094: bind_JNT_Kookum_RightToeBase
+    400096: bind_JNT_Kookum_RightUpLeg
+    400098: bind_JNT_Kookum_Spine
+    400100: bind_JNT_Kookum_Spine1
+    400102: bind_JNT_Kookum_Spine2
+    400104: dress_JNT1
+    400106: dress_JNT2
+    400108: dress_JNT3
+    400110: dress_JNT4
+    400112: dress_JNT5
+    400114: dress_JNT6
+    400116: dress_JNT6 1
+    400118: dress_JNT9
+    400120: hair_JNT1
+    400122: hair_JNT2
+    400124: hair_JNT3
+    400126: hair_JNT4
+    400128: hair_JNT5
+    400130: Kookum_bind
+    400132: kookum_body001
+    400134: Kookum_GEO
+    400136: kookum_outfit001
+    400138: //RootNode
+    400140: bind_JNT_Kookum_Head_end
+    400142: bind_JNT_Kookum_LeftFoot_end
+    400144: bind_JNT_Kookum_LeftHandIndex2_end
+    400146: bind_JNT_Kookum_LeftHandMiddle2_end
+    400148: bind_JNT_Kookum_LeftHandPinky2_end
+    400150: bind_JNT_Kookum_LeftHandRing2_end
+    400152: bind_JNT_Kookum_LeftHandThumb2_end
+    400154: bind_JNT_Kookum_RightFoot_end
+    400156: bind_JNT_Kookum_RightHandIndex2_end
+    400158: bind_JNT_Kookum_RightHandMiddle2_end
+    400160: bind_JNT_Kookum_RightHandPinky2_end
+    400162: bind_JNT_Kookum_RightHandRing2_end
+    400164: bind_JNT_Kookum_RightHandThumb2_end
+    400166: bind_JNT_Kookum_Spine2.001
+    400168: bind_JNT_Kookum_Spine2.001_end
+    400170: dress_JNT1_end
+    400172: dress_JNT3_end
+    400174: dress_JNT5_end
+    400176: dress_JNT9_end
+    400178: hair_JNT4_end
+    400180: kookum
+    400182: kookum_body001.001
+    400184: kookum_outfit001.001
+    4300000: kookum_outfit001
+    4300002: kookum_body001
+    4300004: kookum_outfit001.001
+    4300006: kookum_body001.001
+    9500000: //RootNode
+    13700000: kookum_body001
+    13700002: kookum_outfit001
+    13700004: kookum_body001.001
+    13700006: kookum_outfit001.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: bind_JNT_Kookum_Hips1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kookum_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: kookum_rig(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kookum
+      parentName: kookum_rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kookum_bind
+      parentName: kookum
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -5.9578887e-15, y: 0, z: -0, w: 1}
+      scale: {x: 4.770433, y: 4.770433, z: 4.770433}
+    - name: bind_JNT_Kookum_Hips1
+      parentName: Kookum_bind
+      position: {x: -0, y: 0.06301318, z: -0.0034369251}
+      rotation: {x: 3.5582465e-15, y: 0.020526016, z: -0.0000000033441128, w: 0.9997893}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: bind_JNT_Kookum_LeftUpLeg
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: -0.010291502, y: -0.014094414, z: 0.000227912}
+      rotation: {x: 0.70623124, y: 0.03525914, z: 0.70622313, w: 0.035259075}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999881}
+    - name: bind_JNT_Kookum_LeftLeg
+      parentName: bind_JNT_Kookum_LeftUpLeg
+      position: {x: 3.72529e-10, y: 0.023143858, z: 4.2987153e-10}
+      rotation: {x: -0.09717668, y: 0.99526715, z: -0.000000023085137, w: -0.00000031315525}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: bind_JNT_Kookum_LeftFoot
+      parentName: bind_JNT_Kookum_LeftLeg
+      position: {x: 3.5390257e-10, y: 0.02432953, z: -7.245242e-10}
+      rotation: {x: -0.66680473, y: 0.7452325, z: -0.00000031743843, w: -0.00000045712662}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: bind_JNT_Kookum_LeftFoot_end
+      parentName: bind_JNT_Kookum_LeftFoot
+      position: {x: -0, y: 0.007478263, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightUpLeg
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: 0.010291497, y: -0.014094357, z: 0.00022790818}
+      rotation: {x: 0.7062402, y: -0.035259053, z: -0.70621413, w: 0.035260253}
+      scale: {x: 0.9999998, y: 0.99999964, z: 0.9999631}
+    - name: bind_JNT_Kookum_RightLeg
+      parentName: bind_JNT_Kookum_RightUpLeg
+      position: {x: 0.000000011585652, y: 0.023144023, z: 1.8641486e-10}
+      rotation: {x: 0.09717667, y: 0.99526715, z: 0.000000028011831, w: -0.00000031267422}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightFoot
+      parentName: bind_JNT_Kookum_RightLeg
+      position: {x: -0.000000013057142, y: 0.024329437, z: -8.533185e-10}
+      rotation: {x: 0.6668048, y: 0.7452325, z: -0.00000072733565, w: 0.000001849955}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1}
+    - name: bind_JNT_Kookum_RightFoot_end
+      parentName: bind_JNT_Kookum_RightFoot
+      position: {x: -0, y: 0.007478267, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_Spine
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: 7.5090157e-13, y: 0.009821085, z: 0.00033839874}
+      rotation: {x: 0.07465385, y: 0.7031549, z: 0.07465376, w: 0.70315486}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Kookum_Spine1
+      parentName: bind_JNT_Kookum_Spine
+      position: {x: -0.0000000019391881, y: 0.008382275, z: 3.2035246e-11}
+      rotation: {x: 0.000000011187243, y: 0.00000011608915, z: -0.07035292, w: 0.9975222}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_Spine2
+      parentName: bind_JNT_Kookum_Spine1
+      position: {x: -0.000064643296, y: 0.005731818, z: -6.4254807e-10}
+      rotation: {x: -0.012737243, y: -0.7926989, z: -0.013454132, w: 0.6093317}
+      scale: {x: 1, y: 1.0000002, z: 0.9999999}
+    - name: bind_JNT_Kookum_LeftShoulder
+      parentName: bind_JNT_Kookum_Spine2
+      position: {x: -0.011081917, y: 0.007845487, z: 0.0009271492}
+      rotation: {x: 0.08066757, y: 0.102725044, z: 0.70970607, w: 0.69228435}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: bind_JNT_Kookum_LeftArm
+      parentName: bind_JNT_Kookum_LeftShoulder
+      position: {x: 6.003392e-10, y: 0.007622059, z: -1.0070323e-10}
+      rotation: {x: 0.000000022351744, y: 0.000000029802326, z: 0.03342087, w: 0.9994414}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_LeftForeArm
+      parentName: bind_JNT_Kookum_LeftArm
+      position: {x: -0.00000001546694, y: 0.019168874, z: 2.142633e-10}
+      rotation: {x: 0.0000000066104033, y: -0.000000015816282, z: -0.05832547, w: 0.99829763}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+    - name: bind_JNT_Kookum_LeftHand
+      parentName: bind_JNT_Kookum_LeftForeArm
+      position: {x: 0.0000000053372853, y: 0.016822718, z: 1.6762004e-10}
+      rotation: {x: -0.16627789, y: 0.5100958, z: -0.10123759, w: 0.83779764}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999964}
+    - name: bind_JNT_Kookum_LeftHandIndex1
+      parentName: bind_JNT_Kookum_LeftHand
+      position: {x: -0.0057197544, y: 0.0059824316, z: 0.0026451075}
+      rotation: {x: 0.13875963, y: -0.52056736, z: 0.17028317, w: 0.8250812}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: bind_JNT_Kookum_LeftHandIndex2
+      parentName: bind_JNT_Kookum_LeftHandIndex1
+      position: {x: -0.000000005881302, y: 0.0037742886, z: -3.8832923e-10}
+      rotation: {x: -0.006606018, y: 0.0009765972, z: -0.0031901503, w: 0.99997264}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_LeftHandIndex2_end
+      parentName: bind_JNT_Kookum_LeftHandIndex2
+      position: {x: -0, y: 0.00448518, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandMiddle1
+      parentName: bind_JNT_Kookum_LeftHand
+      position: {x: -0.0037260714, y: 0.009394903, z: 0.0018885429}
+      rotation: {x: 0.12727663, y: -0.5211788, z: 0.17214388, w: 0.82615966}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandMiddle2
+      parentName: bind_JNT_Kookum_LeftHandMiddle1
+      position: {x: -4.4237822e-10, y: 0.0031562767, z: 2.2969515e-10}
+      rotation: {x: -0.00001201034, y: 0.0000030100355, z: -0.040739197, w: 0.9991698}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: bind_JNT_Kookum_LeftHandMiddle2_end
+      parentName: bind_JNT_Kookum_LeftHandMiddle2
+      position: {x: -0, y: 0.003986329, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandPinky1
+      parentName: bind_JNT_Kookum_LeftHand
+      position: {x: 0.00070055336, y: 0.010781417, z: -0.0012959423}
+      rotation: {x: 0.100263655, y: -0.51029855, z: 0.13218924, w: 0.84384155}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandPinky2
+      parentName: bind_JNT_Kookum_LeftHandPinky1
+      position: {x: -5.401671e-10, y: 0.0020286574, z: -7.162328e-11}
+      rotation: {x: 0.014654639, y: -0.007637949, z: 0.037665248, w: 0.9991538}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: bind_JNT_Kookum_LeftHandPinky2_end
+      parentName: bind_JNT_Kookum_LeftHandPinky2
+      position: {x: -0, y: 0.0018763479, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandRing1
+      parentName: bind_JNT_Kookum_LeftHand
+      position: {x: -0.0014547778, y: 0.009955303, z: 0.00014955825}
+      rotation: {x: 0.107807055, y: -0.52188337, z: 0.15220074, w: 0.8323763}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: bind_JNT_Kookum_LeftHandRing2
+      parentName: bind_JNT_Kookum_LeftHandRing1
+      position: {x: -0.000000009167124, y: 0.0028951205, z: 4.59886e-11}
+      rotation: {x: -0.04102915, y: 0.006308646, z: -0.0057443273, w: 0.99912155}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: bind_JNT_Kookum_LeftHandRing2_end
+      parentName: bind_JNT_Kookum_LeftHandRing2
+      position: {x: -0, y: 0.0038848296, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_LeftHandThumb1
+      parentName: bind_JNT_Kookum_LeftHand
+      position: {x: -0.0069431043, y: 0.000000011505563, z: -0.0000000166893}
+      rotation: {x: 0.49596053, y: -0.45957696, z: 0.3451469, w: 0.6509115}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: bind_JNT_Kookum_LeftHandThumb2
+      parentName: bind_JNT_Kookum_LeftHandThumb1
+      position: {x: 0.000000008195639, y: 0.0023654278, z: -0.000000007992912}
+      rotation: {x: -0.019036114, y: 0.01077345, z: -0.03479393, w: 0.9991551}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999976}
+    - name: bind_JNT_Kookum_LeftHandThumb2_end
+      parentName: bind_JNT_Kookum_LeftHandThumb2
+      position: {x: -0, y: 0.0023669521, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_Neck
+      parentName: bind_JNT_Kookum_Spine2
+      position: {x: -0.00008240945, y: 0.013967434, z: 0.000005757364}
+      rotation: {x: -0.058304496, y: 0.6531707, z: -0.031410422, w: 0.754309}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: bind_JNT_Kookum_Head
+      parentName: bind_JNT_Kookum_Neck
+      position: {x: -0.0004393372, y: 0.0063105132, z: -0.000024715964}
+      rotation: {x: 0.017335653, y: -0.5519493, z: -0.005866069, w: 0.8336769}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: bind_JNT_Kookum_Head_end
+      parentName: bind_JNT_Kookum_Head
+      position: {x: -0, y: 0.023431228, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair_JNT1
+      parentName: bind_JNT_Kookum_Neck
+      position: {x: 0.013056097, y: -0.0014033323, z: -0.005587216}
+      rotation: {x: 0.79193497, y: 0.25079423, z: -0.55506325, w: 0.04296602}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: hair_JNT2
+      parentName: hair_JNT1
+      position: {x: 0.00007028103, y: 0.010575464, z: 0.000008096285}
+      rotation: {x: 0.044150483, y: -0.078614235, z: 0.030971557, w: 0.9954453}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: hair_JNT3
+      parentName: hair_JNT2
+      position: {x: -0.00026821866, y: 0.009999554, z: 0.0004064637}
+      rotation: {x: 0.021702562, y: 0.012575355, z: 0.0147159835, w: 0.9995771}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: hair_JNT4
+      parentName: hair_JNT3
+      position: {x: 0.00006738737, y: 0.018842496, z: -0.00009674321}
+      rotation: {x: -0.13311197, y: 0.11395848, z: -0.11781316, w: 0.9774532}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+    - name: hair_JNT4_end
+      parentName: hair_JNT4
+      position: {x: -0, y: 0.016301002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightShoulder
+      parentName: bind_JNT_Kookum_Spine2
+      position: {x: 0.009989088, y: 0.007972188, z: -0.0046779853}
+      rotation: {x: 0.70256716, y: 0.69952816, z: -0.10389153, w: -0.07915981}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1}
+    - name: bind_JNT_Kookum_RightArm
+      parentName: bind_JNT_Kookum_RightShoulder
+      position: {x: -0.000000002464949, y: 0.007622074, z: 1.3651628e-10}
+      rotation: {x: -0.000000029802319, y: 0.00000003352761, z: 0.03340971, w: 0.99944174}
+      scale: {x: 0.9999998, y: 1, z: 1.0000002}
+    - name: bind_JNT_Kookum_RightForeArm
+      parentName: bind_JNT_Kookum_RightArm
+      position: {x: 9.2433766e-10, y: 0.01916887, z: 7.9265505e-10}
+      rotation: {x: -6.7223416e-10, y: -0.0000000036766528, z: -0.058320507, w: 0.9982979}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_RightHand
+      parentName: bind_JNT_Kookum_RightForeArm
+      position: {x: 0.000000004638994, y: 0.016822783, z: -2.191787e-10}
+      rotation: {x: 0.16627601, y: -0.51008815, z: -0.101235904, w: 0.83780295}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: bind_JNT_Kookum_RightHandIndex1
+      parentName: bind_JNT_Kookum_RightHand
+      position: {x: -0.0057196426, y: 0.0059824106, z: -0.0026452215}
+      rotation: {x: -0.13874783, y: 0.5205623, z: 0.1702979, w: 0.8250834}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: bind_JNT_Kookum_RightHandIndex2
+      parentName: bind_JNT_Kookum_RightHandIndex1
+      position: {x: -0.000000011041993, y: 0.0037743931, z: 8.125653e-11}
+      rotation: {x: 0.0066055404, y: -0.0009765219, z: -0.0032295743, w: 0.9999725}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_RightHandIndex2_end
+      parentName: bind_JNT_Kookum_RightHandIndex2
+      position: {x: -0, y: 0.004485112, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightHandMiddle1
+      parentName: bind_JNT_Kookum_RightHand
+      position: {x: -0.0037259914, y: 0.009394949, z: -0.0018886003}
+      rotation: {x: -0.12727886, y: 0.52117026, z: 0.17214291, w: 0.8261649}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: bind_JNT_Kookum_RightHandMiddle2
+      parentName: bind_JNT_Kookum_RightHandMiddle1
+      position: {x: 0.000000006267801, y: 0.003156102, z: -5.5527494e-10}
+      rotation: {x: 0.000014238062, y: -0.000003904105, z: -0.04073763, w: 0.9991699}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: bind_JNT_Kookum_RightHandMiddle2_end
+      parentName: bind_JNT_Kookum_RightHandMiddle2
+      position: {x: -0, y: 0.0039865226, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightHandPinky1
+      parentName: bind_JNT_Kookum_RightHand
+      position: {x: 0.0007005548, y: 0.010781411, z: 0.0012960094}
+      rotation: {x: -0.10026436, y: 0.5102865, z: 0.1321904, w: 0.8438486}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightHandPinky2
+      parentName: bind_JNT_Kookum_RightHandPinky1
+      position: {x: 0.0000000067055224, y: 0.0020285451, z: 6.6121625e-10}
+      rotation: {x: -0.014681735, y: 0.0076415543, z: 0.037655998, w: 0.9991537}
+      scale: {x: 1, y: 1.0000001, z: 0.9999998}
+    - name: bind_JNT_Kookum_RightHandPinky2_end
+      parentName: bind_JNT_Kookum_RightHandPinky2
+      position: {x: -0, y: 0.0018763964, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightHandRing1
+      parentName: bind_JNT_Kookum_RightHand
+      position: {x: -0.001454792, y: 0.009955287, z: -0.00014943868}
+      rotation: {x: -0.10780754, y: 0.521875, z: 0.15219438, w: 0.83238274}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Kookum_RightHandRing2
+      parentName: bind_JNT_Kookum_RightHandRing1
+      position: {x: 0.000000005904585, y: 0.0028950085, z: -5.2760923e-10}
+      rotation: {x: 0.04102711, y: -0.0063085244, z: -0.0057515823, w: 0.9991216}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Kookum_RightHandRing2_end
+      parentName: bind_JNT_Kookum_RightHandRing2
+      position: {x: -0, y: 0.0038848128, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_RightHandThumb1
+      parentName: bind_JNT_Kookum_RightHand
+      position: {x: -0.0069431495, y: 0.0000000015887962, z: -0.000000010877847}
+      rotation: {x: -0.49596307, y: 0.4595687, z: 0.3451365, w: 0.6509209}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999998}
+    - name: bind_JNT_Kookum_RightHandThumb2
+      parentName: bind_JNT_Kookum_RightHandThumb1
+      position: {x: -0.0000000070780515, y: 0.0023653924, z: -0.000000012536718}
+      rotation: {x: 0.019026665, y: -0.010773628, z: -0.034792643, w: 0.9991554}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999998}
+    - name: bind_JNT_Kookum_RightHandThumb2_end
+      parentName: bind_JNT_Kookum_RightHandThumb2
+      position: {x: -0, y: 0.0023669158, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kookum_Spine2.001
+      parentName: bind_JNT_Kookum_Spine2
+      position: {x: -6.519258e-11, y: 0.005930179, z: 2.188608e-10}
+      rotation: {x: -0.046941925, y: -0.49120718, z: 0.07178495, w: 0.86680967}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: bind_JNT_Kookum_Spine2.001_end
+      parentName: bind_JNT_Kookum_Spine2.001
+      position: {x: -0, y: 0.008098877, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: dress_JNT1
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: -4.9482442e-11, y: -0.0040805293, z: -0.020011751}
+      rotation: {x: 0.7036825, y: -0.0694965, z: 0.7036843, w: -0.06949661}
+      scale: {x: 1, y: 1.0000001, z: 1.0000021}
+    - name: dress_JNT1_end
+      parentName: dress_JNT1
+      position: {x: -0, y: 0.034962956, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: dress_JNT3
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: 3.1730812e-11, y: -0.005083618, z: 0.018196931}
+      rotation: {x: -0.70618504, y: 0.035887003, z: 0.7062062, w: -0.03588391}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000302}
+    - name: dress_JNT3_end
+      parentName: dress_JNT3
+      position: {x: -0, y: 0.038681515, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: dress_JNT5
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: -0.026584856, y: -0.000872636, z: 0.0034369247}
+      rotation: {x: 0.9985847, y: -0.053185355, z: 0.00000000253551, w: -0.000000043638305}
+      scale: {x: 0.9999921, y: 1.0000001, z: 1}
+    - name: dress_JNT5_end
+      parentName: dress_JNT5
+      position: {x: -0, y: 0.037007306, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: dress_JNT9
+      parentName: bind_JNT_Kookum_Hips1
+      position: {x: 0.026584797, y: -0.0008726977, z: 0.0034369247}
+      rotation: {x: 0.9985847, y: 0.053185258, z: -0.00000004544559, w: -0.000000041352884}
+      scale: {x: 0.99998975, y: 1, z: 1}
+    - name: dress_JNT9_end
+      parentName: dress_JNT9
+      position: {x: -0, y: 0.0370073, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kookum_GEO
+      parentName: kookum
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kookum_body001.001
+      parentName: kookum_rig(Clone)
+      position: {x: -0.0006481434, y: 0.30901948, z: -0.07087327}
+      rotation: {x: 0.00000010667311, y: 0.000000002296717, z: -5.561044e-10, w: 1}
+      scale: {x: 2.0274744, y: 2.0274575, z: 2.0274575}
+    - name: kookum_outfit001.001
+      parentName: kookum_rig(Clone)
+      position: {x: -0.0009579527, y: 0.29121038, z: -0.025248548}
+      rotation: {x: 0.00000011055755, y: -3.8361485e-24, z: 8.076106e-25, w: 1}
+      scale: {x: 2.0484655, y: 2.0484655, z: 2.0484655}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

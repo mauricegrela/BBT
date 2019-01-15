@@ -1,0 +1,1127 @@
+fileFormatVersion: 2
+guid: f19e5aa82e6014cae818e151c00d4dcd
+timeCreated: 1496592531
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: backpack_body
+    100002: backpack_button
+    100004: backpack_end_JNT
+    100006: backpack_handle
+    100008: backpack_JNT
+    100010: backpack_JNT1
+    100012: bind_JNT_Thomas_Head
+    100014: bind_JNT_Thomas_Hips1
+    100016: bind_JNT_Thomas_LeftArm
+    100018: bind_JNT_Thomas_LeftFoot
+    100020: bind_JNT_Thomas_LeftForeArm
+    100022: bind_JNT_Thomas_LeftHand
+    100024: bind_JNT_Thomas_LeftHandIndex1
+    100026: bind_JNT_Thomas_LeftHandIndex2
+    100028: bind_JNT_Thomas_LeftHandIndex3
+    100030: bind_JNT_Thomas_LeftHandMiddle1
+    100032: bind_JNT_Thomas_LeftHandMiddle2
+    100034: bind_JNT_Thomas_LeftHandMiddle3
+    100036: bind_JNT_Thomas_LeftHandPinky1
+    100038: bind_JNT_Thomas_LeftHandPinky2
+    100040: bind_JNT_Thomas_LeftHandPinky3
+    100042: bind_JNT_Thomas_LeftHandRing1
+    100044: bind_JNT_Thomas_LeftHandRing2
+    100046: bind_JNT_Thomas_LeftHandRing3
+    100048: bind_JNT_Thomas_LeftHandThumb1
+    100050: bind_JNT_Thomas_LeftHandThumb2
+    100052: bind_JNT_Thomas_LeftHandThumb3
+    100054: bind_JNT_Thomas_LeftLeg
+    100056: bind_JNT_Thomas_LeftShoulder
+    100058: bind_JNT_Thomas_LeftToeBase
+    100060: bind_JNT_Thomas_LeftUpLeg
+    100062: bind_JNT_Thomas_Neck
+    100064: bind_JNT_Thomas_RightArm
+    100066: bind_JNT_Thomas_RightFoot
+    100068: bind_JNT_Thomas_RightForeArm
+    100070: bind_JNT_Thomas_RightHand
+    100072: bind_JNT_Thomas_RightHandIndex1
+    100074: bind_JNT_Thomas_RightHandIndex2
+    100076: bind_JNT_Thomas_RightHandIndex3
+    100078: bind_JNT_Thomas_RightHandMiddle1
+    100080: bind_JNT_Thomas_RightHandMiddle2
+    100082: bind_JNT_Thomas_RightHandMiddle3
+    100084: bind_JNT_Thomas_RightHandPinky1
+    100086: bind_JNT_Thomas_RightHandPinky2
+    100088: bind_JNT_Thomas_RightHandPinky3
+    100090: bind_JNT_Thomas_RightHandRing1
+    100092: bind_JNT_Thomas_RightHandRing2
+    100094: bind_JNT_Thomas_RightHandRing3
+    100096: bind_JNT_Thomas_RightHandThumb1
+    100098: bind_JNT_Thomas_RightHandThumb2
+    100100: bind_JNT_Thomas_RightHandThumb3
+    100102: bind_JNT_Thomas_RightLeg
+    100104: bind_JNT_Thomas_RightShoulder
+    100106: bind_JNT_Thomas_RightToeBase
+    100108: bind_JNT_Thomas_RightUpLeg
+    100110: bind_JNT_Thomas_Spine
+    100112: bind_JNT_Thomas_Spine1
+    100114: bind_JNT_Thomas_Spine2
+    100116: template_bind
+    100118: thomas_body
+    100120: thomas_GEO
+    100122: thomas_outfit01
+    100124: //RootNode
+    400000: backpack_body
+    400002: backpack_button
+    400004: backpack_end_JNT
+    400006: backpack_handle
+    400008: backpack_JNT
+    400010: backpack_JNT1
+    400012: bind_JNT_Thomas_Head
+    400014: bind_JNT_Thomas_Hips1
+    400016: bind_JNT_Thomas_LeftArm
+    400018: bind_JNT_Thomas_LeftFoot
+    400020: bind_JNT_Thomas_LeftForeArm
+    400022: bind_JNT_Thomas_LeftHand
+    400024: bind_JNT_Thomas_LeftHandIndex1
+    400026: bind_JNT_Thomas_LeftHandIndex2
+    400028: bind_JNT_Thomas_LeftHandIndex3
+    400030: bind_JNT_Thomas_LeftHandMiddle1
+    400032: bind_JNT_Thomas_LeftHandMiddle2
+    400034: bind_JNT_Thomas_LeftHandMiddle3
+    400036: bind_JNT_Thomas_LeftHandPinky1
+    400038: bind_JNT_Thomas_LeftHandPinky2
+    400040: bind_JNT_Thomas_LeftHandPinky3
+    400042: bind_JNT_Thomas_LeftHandRing1
+    400044: bind_JNT_Thomas_LeftHandRing2
+    400046: bind_JNT_Thomas_LeftHandRing3
+    400048: bind_JNT_Thomas_LeftHandThumb1
+    400050: bind_JNT_Thomas_LeftHandThumb2
+    400052: bind_JNT_Thomas_LeftHandThumb3
+    400054: bind_JNT_Thomas_LeftLeg
+    400056: bind_JNT_Thomas_LeftShoulder
+    400058: bind_JNT_Thomas_LeftToeBase
+    400060: bind_JNT_Thomas_LeftUpLeg
+    400062: bind_JNT_Thomas_Neck
+    400064: bind_JNT_Thomas_RightArm
+    400066: bind_JNT_Thomas_RightFoot
+    400068: bind_JNT_Thomas_RightForeArm
+    400070: bind_JNT_Thomas_RightHand
+    400072: bind_JNT_Thomas_RightHandIndex1
+    400074: bind_JNT_Thomas_RightHandIndex2
+    400076: bind_JNT_Thomas_RightHandIndex3
+    400078: bind_JNT_Thomas_RightHandMiddle1
+    400080: bind_JNT_Thomas_RightHandMiddle2
+    400082: bind_JNT_Thomas_RightHandMiddle3
+    400084: bind_JNT_Thomas_RightHandPinky1
+    400086: bind_JNT_Thomas_RightHandPinky2
+    400088: bind_JNT_Thomas_RightHandPinky3
+    400090: bind_JNT_Thomas_RightHandRing1
+    400092: bind_JNT_Thomas_RightHandRing2
+    400094: bind_JNT_Thomas_RightHandRing3
+    400096: bind_JNT_Thomas_RightHandThumb1
+    400098: bind_JNT_Thomas_RightHandThumb2
+    400100: bind_JNT_Thomas_RightHandThumb3
+    400102: bind_JNT_Thomas_RightLeg
+    400104: bind_JNT_Thomas_RightShoulder
+    400106: bind_JNT_Thomas_RightToeBase
+    400108: bind_JNT_Thomas_RightUpLeg
+    400110: bind_JNT_Thomas_Spine
+    400112: bind_JNT_Thomas_Spine1
+    400114: bind_JNT_Thomas_Spine2
+    400116: template_bind
+    400118: thomas_body
+    400120: thomas_GEO
+    400122: thomas_outfit01
+    400124: //RootNode
+    4300000: backpack_handle
+    4300002: backpack_button
+    4300004: backpack_body
+    4300006: thomas_outfit01
+    4300008: thomas_body
+    7400000: still
+    7400002: dance
+    9500000: //RootNode
+    13700000: backpack_body
+    13700002: backpack_button
+    13700004: backpack_handle
+    13700006: thomas_body
+    13700008: thomas_outfit01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: still
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: template_bind
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg/bind_JNT_Thomas_LeftFoot
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg/bind_JNT_Thomas_LeftFoot/bind_JNT_Thomas_LeftToeBase
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg/bind_JNT_Thomas_RightFoot
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg/bind_JNT_Thomas_RightFoot/bind_JNT_Thomas_RightToeBase
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT/backpack_JNT1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT/backpack_JNT1/backpack_end_JNT
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1/bind_JNT_Thomas_LeftHandIndex2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1/bind_JNT_Thomas_LeftHandIndex2/bind_JNT_Thomas_LeftHandIndex3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1/bind_JNT_Thomas_LeftHandMiddle2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1/bind_JNT_Thomas_LeftHandMiddle2/bind_JNT_Thomas_LeftHandMiddle3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1/bind_JNT_Thomas_LeftHandPinky2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1/bind_JNT_Thomas_LeftHandPinky2/bind_JNT_Thomas_LeftHandPinky3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1/bind_JNT_Thomas_LeftHandRing2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1/bind_JNT_Thomas_LeftHandRing2/bind_JNT_Thomas_LeftHandRing3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1/bind_JNT_Thomas_LeftHandThumb2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1/bind_JNT_Thomas_LeftHandThumb2/bind_JNT_Thomas_LeftHandThumb3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_Neck
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_Neck/bind_JNT_Thomas_Head
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1/bind_JNT_Thomas_RightHandIndex2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1/bind_JNT_Thomas_RightHandIndex2/bind_JNT_Thomas_RightHandIndex3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1/bind_JNT_Thomas_RightHandMiddle2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1/bind_JNT_Thomas_RightHandMiddle2/bind_JNT_Thomas_RightHandMiddle3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1/bind_JNT_Thomas_RightHandPinky2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1/bind_JNT_Thomas_RightHandPinky2/bind_JNT_Thomas_RightHandPinky3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1/bind_JNT_Thomas_RightHandRing2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1/bind_JNT_Thomas_RightHandRing2/bind_JNT_Thomas_RightHandRing3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1/bind_JNT_Thomas_RightHandThumb2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1/bind_JNT_Thomas_RightHandThumb2/bind_JNT_Thomas_RightHandThumb3
+        weight: 1
+      - path: thomas_GEO
+        weight: 1
+      - path: thomas_GEO/backpack_body
+        weight: 1
+      - path: thomas_GEO/backpack_button
+        weight: 1
+      - path: thomas_GEO/backpack_handle
+        weight: 1
+      - path: thomas_GEO/thomas_body
+        weight: 1
+      - path: thomas_GEO/thomas_outfit01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: dance
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 445
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: template_bind
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg/bind_JNT_Thomas_LeftFoot
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_LeftUpLeg/bind_JNT_Thomas_LeftLeg/bind_JNT_Thomas_LeftFoot/bind_JNT_Thomas_LeftToeBase
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg/bind_JNT_Thomas_RightFoot
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_RightUpLeg/bind_JNT_Thomas_RightLeg/bind_JNT_Thomas_RightFoot/bind_JNT_Thomas_RightToeBase
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT/backpack_JNT1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/backpack_JNT/backpack_JNT1/backpack_end_JNT
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1/bind_JNT_Thomas_LeftHandIndex2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandIndex1/bind_JNT_Thomas_LeftHandIndex2/bind_JNT_Thomas_LeftHandIndex3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1/bind_JNT_Thomas_LeftHandMiddle2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandMiddle1/bind_JNT_Thomas_LeftHandMiddle2/bind_JNT_Thomas_LeftHandMiddle3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1/bind_JNT_Thomas_LeftHandPinky2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandPinky1/bind_JNT_Thomas_LeftHandPinky2/bind_JNT_Thomas_LeftHandPinky3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1/bind_JNT_Thomas_LeftHandRing2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandRing1/bind_JNT_Thomas_LeftHandRing2/bind_JNT_Thomas_LeftHandRing3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1/bind_JNT_Thomas_LeftHandThumb2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_LeftShoulder/bind_JNT_Thomas_LeftArm/bind_JNT_Thomas_LeftForeArm/bind_JNT_Thomas_LeftHand/bind_JNT_Thomas_LeftHandThumb1/bind_JNT_Thomas_LeftHandThumb2/bind_JNT_Thomas_LeftHandThumb3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_Neck
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_Neck/bind_JNT_Thomas_Head
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1/bind_JNT_Thomas_RightHandIndex2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandIndex1/bind_JNT_Thomas_RightHandIndex2/bind_JNT_Thomas_RightHandIndex3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1/bind_JNT_Thomas_RightHandMiddle2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandMiddle1/bind_JNT_Thomas_RightHandMiddle2/bind_JNT_Thomas_RightHandMiddle3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1/bind_JNT_Thomas_RightHandPinky2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandPinky1/bind_JNT_Thomas_RightHandPinky2/bind_JNT_Thomas_RightHandPinky3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1/bind_JNT_Thomas_RightHandRing2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandRing1/bind_JNT_Thomas_RightHandRing2/bind_JNT_Thomas_RightHandRing3
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1/bind_JNT_Thomas_RightHandThumb2
+        weight: 1
+      - path: template_bind/bind_JNT_Thomas_Hips1/bind_JNT_Thomas_Spine/bind_JNT_Thomas_Spine1/bind_JNT_Thomas_Spine2/bind_JNT_Thomas_RightShoulder/bind_JNT_Thomas_RightArm/bind_JNT_Thomas_RightForeArm/bind_JNT_Thomas_RightHand/bind_JNT_Thomas_RightHandThumb1/bind_JNT_Thomas_RightHandThumb2/bind_JNT_Thomas_RightHandThumb3
+        weight: 1
+      - path: thomas_GEO
+        weight: 1
+      - path: thomas_GEO/backpack_body
+        weight: 1
+      - path: thomas_GEO/backpack_button
+        weight: 1
+      - path: thomas_GEO/backpack_handle
+        weight: 1
+      - path: thomas_GEO/thomas_body
+        weight: 1
+      - path: thomas_GEO/thomas_outfit01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: bind_JNT_Thomas_Hips1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Thomas_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: thomasanim(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: template_bind
+      parentName: thomasanim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.8497412, y: 2.8497412, z: 2.8497412}
+    - name: bind_JNT_Thomas_Hips1
+      parentName: template_bind
+      position: {x: -0.0003661998, y: 0.059227377, z: -0.00078499626}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+    - name: bind_JNT_Thomas_LeftUpLeg
+      parentName: bind_JNT_Thomas_Hips1
+      position: {x: -0.011544573, y: -0.008810496, z: 3.1996159e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: bind_JNT_Thomas_LeftLeg
+      parentName: bind_JNT_Thomas_LeftUpLeg
+      position: {x: 0.000000014545372, y: -0.020396637, z: 0.0023049659}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: bind_JNT_Thomas_LeftFoot
+      parentName: bind_JNT_Thomas_LeftLeg
+      position: {x: -6.5820566e-10, y: -0.024220085, z: -0.002305206}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Thomas_LeftToeBase
+      parentName: bind_JNT_Thomas_LeftFoot
+      position: {x: -0.000000005960464, y: -0.001528641, z: 0.005307936}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Thomas_RightUpLeg
+      parentName: bind_JNT_Thomas_Hips1
+      position: {x: 0.011544604, y: -0.008810473, z: -2.3756806e-11}
+      rotation: {x: 1, y: -0, z: 0, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Thomas_RightLeg
+      parentName: bind_JNT_Thomas_RightUpLeg
+      position: {x: 0.00000009828081, y: 0.020396542, z: -0.0023057023}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: bind_JNT_Thomas_RightFoot
+      parentName: bind_JNT_Thomas_RightLeg
+      position: {x: -0.0000000019083266, y: 0.024220116, z: 0.0023052015}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: bind_JNT_Thomas_RightToeBase
+      parentName: bind_JNT_Thomas_RightFoot
+      position: {x: -0, y: 0.0015286373, z: -0.0053079366}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Thomas_Spine
+      parentName: bind_JNT_Thomas_Hips1
+      position: {x: 1.9315313e-10, y: 0.012327032, z: -2.7770428e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
+    - name: bind_JNT_Thomas_Spine1
+      parentName: bind_JNT_Thomas_Spine
+      position: {x: -2.2848834e-10, y: 0.010593799, z: 0.0000000011423509}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_JNT
+      parentName: bind_JNT_Thomas_Spine1
+      position: {x: -0, y: 0.010981263, z: -0.0057848576}
+      rotation: {x: -0.009220766, y: -0.7070467, z: 0.009220766, w: 0.7070467}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_JNT1
+      parentName: backpack_JNT
+      position: {x: -0.011947757, y: 1.7763568e-17, z: -6.632338e-18}
+      rotation: {x: 0, y: 0, z: 0.5787246, w: 0.815523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_end_JNT
+      parentName: backpack_JNT1
+      position: {x: -0.017342145, y: 8.881784e-18, z: -3.0931594e-18}
+      rotation: {x: 0, y: -0, z: -0.65983886, w: 0.75140715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Thomas_Spine2
+      parentName: bind_JNT_Thomas_Spine1
+      position: {x: 1.2641968e-11, y: 0.010593814, z: 5.825269e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftShoulder
+      parentName: bind_JNT_Thomas_Spine2
+      position: {x: -0.013608765, y: 0.0037583828, z: -2.6712257e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: bind_JNT_Thomas_LeftArm
+      parentName: bind_JNT_Thomas_LeftShoulder
+      position: {x: -0.0067469776, y: 0.00000008726115, z: 8.1932816e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: bind_JNT_Thomas_LeftForeArm
+      parentName: bind_JNT_Thomas_LeftArm
+      position: {x: -0.017206058, y: 3.6800699e-10, z: 0.000000047259725}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: bind_JNT_Thomas_LeftHand
+      parentName: bind_JNT_Thomas_LeftForeArm
+      position: {x: -0.016822712, y: -0.0000000012174025, z: -0.000000001600999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftHandIndex1
+      parentName: bind_JNT_Thomas_LeftHand
+      position: {x: -0.007933301, y: -0.00027610268, z: 0.0030265239}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: bind_JNT_Thomas_LeftHandIndex2
+      parentName: bind_JNT_Thomas_LeftHandIndex1
+      position: {x: -0.003730602, y: -0.00056393066, z: 0.000098938}
+      rotation: {x: 0, y: -0.000005316577, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftHandIndex3
+      parentName: bind_JNT_Thomas_LeftHandIndex2
+      position: {x: -0.0031583202, y: -0.0006418426, z: 0.00005829245}
+      rotation: {x: 0, y: 0.00006379892, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: bind_JNT_Thomas_LeftHandMiddle1
+      parentName: bind_JNT_Thomas_LeftHand
+      position: {x: -0.010577944, y: -0.000032908945, z: 0.0002811036}
+      rotation: {x: -0.0010361447, y: 0.004192599, z: -0.038499508, w: 0.99924934}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftHandMiddle2
+      parentName: bind_JNT_Thomas_LeftHandMiddle1
+      position: {x: -0.0030644918, y: -0.00075560395, z: 0.00000018978115}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: bind_JNT_Thomas_LeftHandMiddle3
+      parentName: bind_JNT_Thomas_LeftHandMiddle2
+      position: {x: -0.002110482, y: -0.0005021586, z: 0.0000001070313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: bind_JNT_Thomas_LeftHandPinky1
+      parentName: bind_JNT_Thomas_LeftHand
+      position: {x: -0.010031693, y: -0.0008296597, z: -0.0042614248}
+      rotation: {x: -0.0020541337, y: 0.06358668, z: -0.069854975, w: 0.9955264}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: bind_JNT_Thomas_LeftHandPinky2
+      parentName: bind_JNT_Thomas_LeftHandPinky1
+      position: {x: -0.0019181846, y: -0.00051539065, z: -0.00041274237}
+      rotation: {x: 0.006778482, y: -0.0081794, z: -0.021288734, w: 0.99971694}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftHandPinky3
+      parentName: bind_JNT_Thomas_LeftHandPinky2
+      position: {x: -0.0017217371, y: -0.0006900358, z: -0.00028309165}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: bind_JNT_Thomas_LeftHandRing1
+      parentName: bind_JNT_Thomas_LeftHand
+      position: {x: -0.010809023, y: -0.0005350283, z: -0.0017935933}
+      rotation: {x: -0.0006124915, y: 0.023784244, z: -0.02026438, w: 0.99951154}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_LeftHandRing2
+      parentName: bind_JNT_Thomas_LeftHandRing1
+      position: {x: -0.002859382, y: -0.00043334241, z: -0.00042217743}
+      rotation: {x: 0.00787902, y: 0.0071930885, z: -0.06074752, w: 0.99809617}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: bind_JNT_Thomas_LeftHandRing3
+      parentName: bind_JNT_Thomas_LeftHandRing2
+      position: {x: -0.0014521596, y: -0.00053465477, z: -0.00025165323}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Thomas_LeftHandThumb1
+      parentName: bind_JNT_Thomas_LeftHand
+      position: {x: -0.0049066166, y: -0.0031876161, z: 0.004737436}
+      rotation: {x: 0.89822143, y: 0.034326535, z: -0.43299785, w: -0.067326695}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: bind_JNT_Thomas_LeftHandThumb2
+      parentName: bind_JNT_Thomas_LeftHandThumb1
+      position: {x: -0.0016791598, y: 0.000000004132113, z: 7.547891e-10}
+      rotation: {x: -0.060600378, y: 0.029173756, z: 0.01944046, w: 0.99754626}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_LeftHandThumb3
+      parentName: bind_JNT_Thomas_LeftHandThumb2
+      position: {x: -0.0016025136, y: 0.0000000018587464, z: 5.0128524e-10}
+      rotation: {x: 0.89375097, y: 0.13824883, z: -0.42171234, w: 0.06523208}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: bind_JNT_Thomas_Neck
+      parentName: bind_JNT_Thomas_Spine2
+      position: {x: -8.945004e-11, y: 0.0105938, z: -4.6513193e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Thomas_Head
+      parentName: bind_JNT_Thomas_Neck
+      position: {x: 0.00000001632623, y: 0.058903217, z: 0.0000000046192605}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightShoulder
+      parentName: bind_JNT_Thomas_Spine2
+      position: {x: 0.013608737, y: 0.0037586265, z: 1.2099918e-10}
+      rotation: {x: 1, y: -0, z: 0, w: 6.123234e-17}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_RightArm
+      parentName: bind_JNT_Thomas_RightShoulder
+      position: {x: 0.0067469766, y: 0.0000000035528176, z: -6.0480343e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightForeArm
+      parentName: bind_JNT_Thomas_RightArm
+      position: {x: 0.017206093, y: 0.0000000032250849, z: -0.000000010207706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHand
+      parentName: bind_JNT_Thomas_RightForeArm
+      position: {x: 0.016822724, y: 3.0396932e-10, z: 0.0000000019027213}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightHandIndex1
+      parentName: bind_JNT_Thomas_RightHand
+      position: {x: 0.007933281, y: 0.00027588775, z: -0.0030265215}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: bind_JNT_Thomas_RightHandIndex2
+      parentName: bind_JNT_Thomas_RightHandIndex1
+      position: {x: 0.0037306163, y: 0.0005642392, z: -0.00009893811}
+      rotation: {x: 0, y: -0.000005316578, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Thomas_RightHandIndex3
+      parentName: bind_JNT_Thomas_RightHandIndex2
+      position: {x: 0.003158349, y: 0.0006421762, z: -0.000058289133}
+      rotation: {x: 0, y: 0.00006379892, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHandMiddle1
+      parentName: bind_JNT_Thomas_RightHand
+      position: {x: 0.010577968, y: 0.000032731437, z: -0.00028110293}
+      rotation: {x: -0.0010378817, y: 0.004197501, z: -0.038567077, w: 0.99924666}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHandMiddle2
+      parentName: bind_JNT_Thomas_RightHandMiddle1
+      position: {x: 0.003064436, y: 0.00075596286, z: -0.00000019139155}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightHandMiddle3
+      parentName: bind_JNT_Thomas_RightHandMiddle2
+      position: {x: 0.0021105292, y: 0.0005018916, z: -0.000000107930695}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000004}
+    - name: bind_JNT_Thomas_RightHandPinky1
+      parentName: bind_JNT_Thomas_RightHand
+      position: {x: 0.010031651, y: 0.00082999386, z: 0.0042614257}
+      rotation: {x: -0.002051881, y: 0.063574485, z: -0.06981212, w: 0.9955302}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHandPinky2
+      parentName: bind_JNT_Thomas_RightHandPinky1
+      position: {x: 0.0019181839, y: 0.00051514787, z: 0.0004127388}
+      rotation: {x: 0.0068208585, y: -0.00821583, z: -0.02144533, w: 0.99971306}
+      scale: {x: 1, y: 1.0000001, z: 1.0000005}
+    - name: bind_JNT_Thomas_RightHandPinky3
+      parentName: bind_JNT_Thomas_RightHandPinky2
+      position: {x: 0.001721794, y: 0.00069049903, z: 0.0002830941}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightHandRing1
+      parentName: bind_JNT_Thomas_RightHand
+      position: {x: 0.010809041, y: 0.0005354044, z: 0.0017935942}
+      rotation: {x: -0.000612251, y: 0.023788475, z: -0.020269953, w: 0.99951136}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightHandRing2
+      parentName: bind_JNT_Thomas_RightHandRing1
+      position: {x: 0.002859313, y: 0.0004333179, z: 0.00042217565}
+      rotation: {x: 0.007877254, y: 0.0071896063, z: -0.060730677, w: 0.9980972}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHandRing3
+      parentName: bind_JNT_Thomas_RightHandRing2
+      position: {x: 0.0014522194, y: 0.0005346203, z: 0.00025165553}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: bind_JNT_Thomas_RightHandThumb1
+      parentName: bind_JNT_Thomas_RightHand
+      position: {x: 0.0049065636, y: 0.0031874971, z: -0.004737437}
+      rotation: {x: 0.89821804, y: 0.03432295, z: -0.43300512, w: -0.06732634}
+      scale: {x: 1, y: 1.0000004, z: 1.0000001}
+    - name: bind_JNT_Thomas_RightHandThumb2
+      parentName: bind_JNT_Thomas_RightHandThumb1
+      position: {x: 0.0016791689, y: 0.0000000023576598, z: -0.000000037184165}
+      rotation: {x: -0.06061893, y: 0.029210312, z: 0.019587807, w: 0.99754125}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: bind_JNT_Thomas_RightHandThumb3
+      parentName: bind_JNT_Thomas_RightHandThumb2
+      position: {x: 0.0016026981, y: -0.00000053014264, z: -0.000000012030593}
+      rotation: {x: 0.89375097, y: 0.13824883, z: -0.42171234, w: 0.06523208}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: thomas_GEO
+      parentName: thomasanim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_body
+      parentName: thomas_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_button
+      parentName: thomas_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: backpack_handle
+      parentName: thomas_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thomas_body
+      parentName: thomas_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thomas_outfit01
+      parentName: thomas_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: template_bind
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

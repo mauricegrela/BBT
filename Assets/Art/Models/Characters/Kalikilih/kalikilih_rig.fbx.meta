@@ -1,0 +1,863 @@
+fileFormatVersion: 2
+guid: b59505e6024c640f5a1bf399ba727ee6
+timeCreated: 1496554388
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: basket_JNT
+    100002: basket_JNT2
+    100004: bind_JNT_Kalikilih_Head
+    100006: bind_JNT_Kalikilih_Hips1
+    100008: bind_JNT_Kalikilih_LeftArm
+    100010: bind_JNT_Kalikilih_LeftFoot
+    100012: bind_JNT_Kalikilih_LeftForeArm
+    100014: bind_JNT_Kalikilih_LeftHand
+    100016: bind_JNT_Kalikilih_LeftHandIndex1
+    100018: bind_JNT_Kalikilih_LeftHandIndex2
+    100020: bind_JNT_Kalikilih_LeftHandIndex3
+    100022: bind_JNT_Kalikilih_LeftHandMiddle1
+    100024: bind_JNT_Kalikilih_LeftHandMiddle2
+    100026: bind_JNT_Kalikilih_LeftHandMiddle3
+    100028: bind_JNT_Kalikilih_LeftHandPinky1
+    100030: bind_JNT_Kalikilih_LeftHandPinky2
+    100032: bind_JNT_Kalikilih_LeftHandPinky3
+    100034: bind_JNT_Kalikilih_LeftHandRing1
+    100036: bind_JNT_Kalikilih_LeftHandRing2
+    100038: bind_JNT_Kalikilih_LeftHandRing3
+    100040: bind_JNT_Kalikilih_LeftHandThumb1
+    100042: bind_JNT_Kalikilih_LeftHandThumb2
+    100044: bind_JNT_Kalikilih_LeftHandThumb3
+    100046: bind_JNT_Kalikilih_LeftLeg
+    100048: bind_JNT_Kalikilih_LeftShoulder
+    100050: bind_JNT_Kalikilih_LeftToeBase
+    100052: bind_JNT_Kalikilih_LeftUpLeg
+    100054: bind_JNT_Kalikilih_Neck
+    100056: bind_JNT_Kalikilih_RightArm
+    100058: bind_JNT_Kalikilih_RightFoot
+    100060: bind_JNT_Kalikilih_RightForeArm
+    100062: bind_JNT_Kalikilih_RightHand
+    100064: bind_JNT_Kalikilih_RightHandIndex1
+    100066: bind_JNT_Kalikilih_RightHandIndex2
+    100068: bind_JNT_Kalikilih_RightHandIndex3
+    100070: bind_JNT_Kalikilih_RightHandMiddle1
+    100072: bind_JNT_Kalikilih_RightHandMiddle2
+    100074: bind_JNT_Kalikilih_RightHandMiddle3
+    100076: bind_JNT_Kalikilih_RightHandPinky1
+    100078: bind_JNT_Kalikilih_RightHandPinky2
+    100080: bind_JNT_Kalikilih_RightHandPinky3
+    100082: bind_JNT_Kalikilih_RightHandRing1
+    100084: bind_JNT_Kalikilih_RightHandRing2
+    100086: bind_JNT_Kalikilih_RightHandRing3
+    100088: bind_JNT_Kalikilih_RightHandThumb1
+    100090: bind_JNT_Kalikilih_RightHandThumb2
+    100092: bind_JNT_Kalikilih_RightHandThumb3
+    100094: bind_JNT_Kalikilih_RightLeg
+    100096: bind_JNT_Kalikilih_RightShoulder
+    100098: bind_JNT_Kalikilih_RightToeBase
+    100100: bind_JNT_Kalikilih_RightUpLeg
+    100102: bind_JNT_Kalikilih_Spine
+    100104: bind_JNT_Kalikilih_Spine1
+    100106: bind_JNT_Kalikilih_Spine2
+    100108: Kalikilih_bind
+    100110: kalikilih_GEO
+    100112: //RootNode
+    100114: Kalkilihi_basket
+    100116: Kalkilihi_body
+    100118: Kalkilihi_eye_l
+    100120: Kalkilihi_eye_r
+    100122: Kalkilihi_outfit001
+    100124: Kalkilihi_teeth
+    100126: Left_Hair_JNT
+    100128: Right_Hair_JNT
+    100130: weightBalance_JNT
+    100132: weightBalance_JNT2
+    400000: basket_JNT
+    400002: basket_JNT2
+    400004: bind_JNT_Kalikilih_Head
+    400006: bind_JNT_Kalikilih_Hips1
+    400008: bind_JNT_Kalikilih_LeftArm
+    400010: bind_JNT_Kalikilih_LeftFoot
+    400012: bind_JNT_Kalikilih_LeftForeArm
+    400014: bind_JNT_Kalikilih_LeftHand
+    400016: bind_JNT_Kalikilih_LeftHandIndex1
+    400018: bind_JNT_Kalikilih_LeftHandIndex2
+    400020: bind_JNT_Kalikilih_LeftHandIndex3
+    400022: bind_JNT_Kalikilih_LeftHandMiddle1
+    400024: bind_JNT_Kalikilih_LeftHandMiddle2
+    400026: bind_JNT_Kalikilih_LeftHandMiddle3
+    400028: bind_JNT_Kalikilih_LeftHandPinky1
+    400030: bind_JNT_Kalikilih_LeftHandPinky2
+    400032: bind_JNT_Kalikilih_LeftHandPinky3
+    400034: bind_JNT_Kalikilih_LeftHandRing1
+    400036: bind_JNT_Kalikilih_LeftHandRing2
+    400038: bind_JNT_Kalikilih_LeftHandRing3
+    400040: bind_JNT_Kalikilih_LeftHandThumb1
+    400042: bind_JNT_Kalikilih_LeftHandThumb2
+    400044: bind_JNT_Kalikilih_LeftHandThumb3
+    400046: bind_JNT_Kalikilih_LeftLeg
+    400048: bind_JNT_Kalikilih_LeftShoulder
+    400050: bind_JNT_Kalikilih_LeftToeBase
+    400052: bind_JNT_Kalikilih_LeftUpLeg
+    400054: bind_JNT_Kalikilih_Neck
+    400056: bind_JNT_Kalikilih_RightArm
+    400058: bind_JNT_Kalikilih_RightFoot
+    400060: bind_JNT_Kalikilih_RightForeArm
+    400062: bind_JNT_Kalikilih_RightHand
+    400064: bind_JNT_Kalikilih_RightHandIndex1
+    400066: bind_JNT_Kalikilih_RightHandIndex2
+    400068: bind_JNT_Kalikilih_RightHandIndex3
+    400070: bind_JNT_Kalikilih_RightHandMiddle1
+    400072: bind_JNT_Kalikilih_RightHandMiddle2
+    400074: bind_JNT_Kalikilih_RightHandMiddle3
+    400076: bind_JNT_Kalikilih_RightHandPinky1
+    400078: bind_JNT_Kalikilih_RightHandPinky2
+    400080: bind_JNT_Kalikilih_RightHandPinky3
+    400082: bind_JNT_Kalikilih_RightHandRing1
+    400084: bind_JNT_Kalikilih_RightHandRing2
+    400086: bind_JNT_Kalikilih_RightHandRing3
+    400088: bind_JNT_Kalikilih_RightHandThumb1
+    400090: bind_JNT_Kalikilih_RightHandThumb2
+    400092: bind_JNT_Kalikilih_RightHandThumb3
+    400094: bind_JNT_Kalikilih_RightLeg
+    400096: bind_JNT_Kalikilih_RightShoulder
+    400098: bind_JNT_Kalikilih_RightToeBase
+    400100: bind_JNT_Kalikilih_RightUpLeg
+    400102: bind_JNT_Kalikilih_Spine
+    400104: bind_JNT_Kalikilih_Spine1
+    400106: bind_JNT_Kalikilih_Spine2
+    400108: Kalikilih_bind
+    400110: kalikilih_GEO
+    400112: //RootNode
+    400114: Kalkilihi_basket
+    400116: Kalkilihi_body
+    400118: Kalkilihi_eye_l
+    400120: Kalkilihi_eye_r
+    400122: Kalkilihi_outfit001
+    400124: Kalkilihi_teeth
+    400126: Left_Hair_JNT
+    400128: Right_Hair_JNT
+    400130: weightBalance_JNT
+    400132: weightBalance_JNT2
+    4300000: Kalkilihi_basket
+    4300002: Kalkilihi_body
+    4300004: Kalkilihi_eye_l
+    4300006: Kalkilihi_eye_r
+    4300008: Kalkilihi_outfit001
+    4300010: Kalkilihi_teeth
+    9500000: //RootNode
+    13700000: Kalkilihi_basket
+    13700002: Kalkilihi_body
+    13700004: Kalkilihi_eye_l
+    13700006: Kalkilihi_eye_r
+    13700008: Kalkilihi_outfit001
+    13700010: Kalkilihi_teeth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: bind_JNT_Kalikilih_Hips1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_Neck
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Hair_JNT
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Right_Hair_JNT
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_JNT_Kalikilih_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: kalikilih_rig(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kalikilih_bind
+      parentName: kalikilih_rig(Clone)
+      position: {x: -0, y: 0, z: 0.011151101}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3.2687976, y: 3.2687976, z: 3.2687976}
+    - name: bind_JNT_Kalikilih_Hips1
+      parentName: Kalikilih_bind
+      position: {x: -0, y: 0.048487473, z: 0.0065773735}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_Spine
+      parentName: bind_JNT_Kalikilih_Hips1
+      position: {x: -0, y: 0.022511467, z: 0.011373818}
+      rotation: {x: -0.17535755, y: -0, z: -0, w: 0.9845048}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_Spine1
+      parentName: bind_JNT_Kalikilih_Spine
+      position: {x: -0, y: 0.01596244, z: 0.017609378}
+      rotation: {x: -0.30146486, y: -0, z: -0, w: 0.9534773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: weightBalance_JNT
+      parentName: bind_JNT_Kalikilih_Spine1
+      position: {x: -0, y: 0.005712819, z: -0.008812754}
+      rotation: {x: 0.42858654, y: -0.5624176, z: -0.42858654, w: 0.5624176}
+      scale: {x: 1, y: 1, z: 1}
+    - name: weightBalance_JNT2
+      parentName: weightBalance_JNT
+      position: {x: -0.047464848, y: 8.881784e-18, z: -5.2696567e-18}
+      rotation: {x: 2.2293443e-32, y: 2.2403571e-16, z: 0.8332504, w: 0.55289584}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_Spine2
+      parentName: bind_JNT_Kalikilih_Spine1
+      position: {x: -0, y: 0.0032902067, z: 0.023989622}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftShoulder
+      parentName: bind_JNT_Kalikilih_Spine2
+      position: {x: -0.01636785, y: 0.0050162342, z: -0.0040765684}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftArm
+      parentName: bind_JNT_Kalikilih_LeftShoulder
+      position: {x: -0.013578287, y: 0.000000085830685, z: 1.11022296e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftForeArm
+      parentName: bind_JNT_Kalikilih_LeftArm
+      position: {x: -0.042828966, y: -2.1737129e-17, z: -2.1737129e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHand
+      parentName: bind_JNT_Kalikilih_LeftForeArm
+      position: {x: -0.03474812, y: -1.7763568e-17, z: 1.0868564e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandThumb1
+      parentName: bind_JNT_Kalikilih_LeftHand
+      position: {x: -0.0026657996, y: -0.0051836316, z: 0.015270342}
+      rotation: {x: 0.04524902, y: -0.06705314, z: 0.19997363, w: 0.9764563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandThumb2
+      parentName: bind_JNT_Kalikilih_LeftHandThumb1
+      position: {x: -0.005915715, y: -0.0008003807, z: 0.004942879}
+      rotation: {x: 0.00028747693, y: 0.12511143, z: 0.020602765, w: 0.99192876}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandThumb3
+      parentName: bind_JNT_Kalikilih_LeftHandThumb2
+      position: {x: -0.007790803, y: -0.00048418043, z: 0.0030489494}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandIndex1
+      parentName: bind_JNT_Kalikilih_LeftHand
+      position: {x: -0.014198838, y: -0.00027609823, z: 0.007555013}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandIndex2
+      parentName: bind_JNT_Kalikilih_LeftHandIndex1
+      position: {x: -0.010639948, y: -0.00056393625, z: 0.001578768}
+      rotation: {x: 0, y: -0.000005316577, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandIndex3
+      parentName: bind_JNT_Kalikilih_LeftHandIndex2
+      position: {x: -0.013825582, y: -0.00064184185, z: 0.0021367662}
+      rotation: {x: 0, y: 0.00006379892, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandMiddle1
+      parentName: bind_JNT_Kalikilih_LeftHand
+      position: {x: -0.015898513, y: -0.0000329113, z: 0.0017516208}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandMiddle2
+      parentName: bind_JNT_Kalikilih_LeftHandMiddle1
+      position: {x: -0.010206986, y: -0.0007556057, z: 0.00000019058585}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandMiddle3
+      parentName: bind_JNT_Kalikilih_LeftHandMiddle2
+      position: {x: -0.014172436, y: -0.0005021572, z: 0.0005926885}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandRing1
+      parentName: bind_JNT_Kalikilih_LeftHand
+      position: {x: -0.016106155, y: -0.0005350303, z: -0.0040333597}
+      rotation: {x: -0.0013586581, y: 0.08666675, z: -0.0107037015, w: 0.996179}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandRing2
+      parentName: bind_JNT_Kalikilih_LeftHandRing1
+      position: {x: -0.009988259, y: -0.00043334006, z: -0.0022408834}
+      rotation: {x: 0.0014356903, y: -0.03409004, z: 0.00019305739, w: 0.9994178}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandRing3
+      parentName: bind_JNT_Kalikilih_LeftHandRing2
+      position: {x: -0.0125725875, y: -0.00053465844, z: -0.0009124389}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandPinky1
+      parentName: bind_JNT_Kalikilih_LeftHand
+      position: {x: -0.015042498, y: -0.0008296585, z: -0.0112808915}
+      rotation: {x: -0.0023318827, y: 0.14673251, z: -0.018408507, w: 0.9890022}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandPinky2
+      parentName: bind_JNT_Kalikilih_LeftHandPinky1
+      position: {x: -0.008633285, y: -0.0005153942, z: -0.0030145391}
+      rotation: {x: 0.0057970234, y: -0.07775333, z: -0.0033086056, w: 0.99695027}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftHandPinky3
+      parentName: bind_JNT_Kalikilih_LeftHandPinky2
+      position: {x: -0.009841384, y: -0.00069003104, z: -0.0010271162}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightShoulder
+      parentName: bind_JNT_Kalikilih_Spine2
+      position: {x: 0.016367853, y: 0.005016164, z: -0.0040766145}
+      rotation: {x: 1, y: -0, z: 0, w: 0.000000007450581}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightArm
+      parentName: bind_JNT_Kalikilih_RightShoulder
+      position: {x: 0.013578296, y: -0.00000030592287, z: -4.565237e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightForeArm
+      parentName: bind_JNT_Kalikilih_RightArm
+      position: {x: 0.042828925, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHand
+      parentName: bind_JNT_Kalikilih_RightForeArm
+      position: {x: 0.034748252, y: 1.7763568e-17, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandThumb1
+      parentName: bind_JNT_Kalikilih_RightHand
+      position: {x: 0.002665812, y: 0.0051838625, z: -0.015270447}
+      rotation: {x: 0.16753131, y: 0.058368802, z: 0.13542363, w: 0.97477525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandThumb2
+      parentName: bind_JNT_Kalikilih_RightHandThumb1
+      position: {x: 0.0059156287, y: 0.0008001939, z: -0.0049429056}
+      rotation: {x: 0.00028356907, y: 0.1251185, z: 0.020594602, w: 0.991928}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandThumb3
+      parentName: bind_JNT_Kalikilih_RightHandThumb2
+      position: {x: 0.007790741, y: 0.0004841975, z: -0.0030488872}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandIndex1
+      parentName: bind_JNT_Kalikilih_RightHand
+      position: {x: 0.014198799, y: 0.00027624783, z: -0.0075550717}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandIndex2
+      parentName: bind_JNT_Kalikilih_RightHandIndex1
+      position: {x: 0.010639997, y: 0.00056381564, z: -0.001578868}
+      rotation: {x: 0.000000074877406, y: -0.0000053165777, z: 1.1754745e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandIndex3
+      parentName: bind_JNT_Kalikilih_RightHandIndex2
+      position: {x: 0.01382555, y: 0.00064182555, z: -0.0021367127}
+      rotation: {x: 0.00000014807736, y: 0.00006379892, z: -2.7552585e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandMiddle1
+      parentName: bind_JNT_Kalikilih_RightHand
+      position: {x: 0.015898507, y: 0.00003303954, z: -0.0017517145}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandMiddle2
+      parentName: bind_JNT_Kalikilih_RightHandMiddle1
+      position: {x: 0.010206811, y: 0.0007556295, z: -1.10487175e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandMiddle3
+      parentName: bind_JNT_Kalikilih_RightHandMiddle2
+      position: {x: 0.01417249, y: 0.0005020193, z: -0.00059287867}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandRing1
+      parentName: bind_JNT_Kalikilih_RightHand
+      position: {x: 0.016105922, y: 0.00053505943, z: 0.004033287}
+      rotation: {x: -0.0013596937, y: 0.08666815, z: -0.010705392, w: 0.99617887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandRing2
+      parentName: bind_JNT_Kalikilih_RightHandRing1
+      position: {x: 0.009988382, y: 0.00043349306, z: 0.002240885}
+      rotation: {x: 0.0014355358, y: -0.034082733, z: 0.00019459055, w: 0.999418}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandRing3
+      parentName: bind_JNT_Kalikilih_RightHandRing2
+      position: {x: 0.012572512, y: 0.00053475343, z: 0.0009125678}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandPinky1
+      parentName: bind_JNT_Kalikilih_RightHand
+      position: {x: 0.015042533, y: 0.0008296637, z: 0.011280906}
+      rotation: {x: -0.002333425, y: 0.14674026, z: -0.01841014, w: 0.98900104}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandPinky2
+      parentName: bind_JNT_Kalikilih_RightHandPinky1
+      position: {x: 0.008633143, y: 0.00051548047, z: 0.0030145638}
+      rotation: {x: 0.005798835, y: -0.07776341, z: -0.0033093595, w: 0.9969495}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightHandPinky3
+      parentName: bind_JNT_Kalikilih_RightHandPinky2
+      position: {x: 0.0098412335, y: 0.0006901623, z: 0.0010269829}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_Neck
+      parentName: bind_JNT_Kalikilih_Spine2
+      position: {x: -0, y: 0.0021044118, z: 0.006325386}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_Head
+      parentName: bind_JNT_Kalikilih_Neck
+      position: {x: -0, y: 0.018395666, z: 0.037192352}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Hair_JNT
+      parentName: bind_JNT_Kalikilih_Neck
+      position: {x: 0.020333046, y: 0.0091241915, z: 0.01438197}
+      rotation: {x: 0.6257274, y: 0.7800418, z: 8.607854e-17, w: -9.449033e-18}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Hair_JNT
+      parentName: bind_JNT_Kalikilih_Neck
+      position: {x: -0.020894881, y: -0.0013636148, z: 0.01438197}
+      rotation: {x: 0, y: 0, z: 0.6092362, w: 0.7929889}
+      scale: {x: 1, y: 1, z: 1}
+    - name: basket_JNT
+      parentName: bind_JNT_Kalikilih_Spine
+      position: {x: -0, y: 0.01607959, z: -0.06894321}
+      rotation: {x: -0.44622105, y: 0.5485315, z: -0.44622105, w: 0.5485315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: basket_JNT2
+      parentName: basket_JNT
+      position: {x: -0.102688976, y: -3.5527136e-17, z: 2.054322e-17}
+      rotation: {x: 0.44622105, y: -0.5485315, z: 0.44622105, w: 0.5485315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftUpLeg
+      parentName: bind_JNT_Kalikilih_Hips1
+      position: {x: -0.028526241, y: -0.0100573255, z: -0.0065773735}
+      rotation: {x: -0.5554544, y: -0.43757334, z: 0.5554544, w: 0.43757334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftLeg
+      parentName: bind_JNT_Kalikilih_LeftUpLeg
+      position: {x: -0.009846338, y: 1.110223e-18, z: -1.0616293e-18}
+      rotation: {x: 0.9871556, y: -0.15976167, z: 9.782581e-18, w: -6.0445846e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftFoot
+      parentName: bind_JNT_Kalikilih_LeftLeg
+      position: {x: -0.027285086, y: 5.2735593e-18, z: 4.858484e-17}
+      rotation: {x: -0.66991574, y: 0.7424371, z: -0.00000010241335, w: -0.00000010958063}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_LeftToeBase
+      parentName: bind_JNT_Kalikilih_LeftFoot
+      position: {x: -0.019872844, y: 5.2735593e-18, z: 9.11833e-19}
+      rotation: {x: 0.7070782, y: -0.006370571, z: -0.707078, w: -0.006370573}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightUpLeg
+      parentName: bind_JNT_Kalikilih_Hips1
+      position: {x: 0.02852624, y: -0.01005744, z: -0.0065773735}
+      rotation: {x: 0.43757334, y: -0.5554544, z: -0.43757334, w: 0.5554544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightLeg
+      parentName: bind_JNT_Kalikilih_RightUpLeg
+      position: {x: 0.009846226, y: 0.000000039831946, z: -8.881784e-18}
+      rotation: {x: 0.9871556, y: -0.15976167, z: -6.799718e-17, w: -7.3033755e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightFoot
+      parentName: bind_JNT_Kalikilih_RightLeg
+      position: {x: 0.027285092, y: 0.000000011944529, z: -4.440892e-18}
+      rotation: {x: -0.66991574, y: 0.7424371, z: -0.00000010304488, w: -0.000000109010784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_JNT_Kalikilih_RightToeBase
+      parentName: bind_JNT_Kalikilih_RightFoot
+      position: {x: 0.019872855, y: 0.0000000020186792, z: 0.0000000059604677}
+      rotation: {x: 0.7070782, y: -0.006370571, z: -0.707078, w: -0.006370573}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kalikilih_GEO
+      parentName: kalikilih_rig(Clone)
+      position: {x: -0, y: 0, z: 0.15425497}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kalkilihi_basket
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Kalkilihi_body
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Kalkilihi_eye_l
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Kalkilihi_eye_r
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Kalkilihi_outfit001
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Kalkilihi_teeth
+      parentName: kalikilih_GEO
+      position: {x: -9.6862816e-11, y: 0.0022159629, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
