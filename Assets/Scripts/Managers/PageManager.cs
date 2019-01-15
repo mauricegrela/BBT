@@ -16,6 +16,7 @@ public class PageManager : Singleton<PageManager>
         get
         {
             return DataManager.currentStory;
+            Debug.Log(currentStory);
         }
     }
 
@@ -28,7 +29,7 @@ public class PageManager : Singleton<PageManager>
     }
 
     //PageKeepers
-    private int pageIndex=0;
+    private int pageIndex;
     public int audioIndex;
     public int sceneindex;
     /// <summary>/// /////TURN THIS PRIVATE/// </summary>
@@ -41,7 +42,7 @@ public class PageManager : Singleton<PageManager>
     [SerializeField]
     public SentenceRowContainer[] sentenceContainer;
     public int sentenceContainerCounter;
-    public int sentenceContainerCurrent=0;
+    public int sentenceContainerCurrent = 0;
     private bool isForward = true;
     [SerializeField]
     private GameObject[] Characters;
@@ -58,12 +59,17 @@ public class PageManager : Singleton<PageManager>
     public GameObject TextBody;
     private Vector3 OG_PostitionTextBody;
     public float IsReadingAlong = 1.0f;
+
     //Camera Variables
     private Vector3 cameraPreviousPosition;
     public Transform cameraTransformTracker;
+    private bool isCamMoving = false;
+
     //Menu Variables
     public bool isMenuDeployed = false;
-    //Mouse Tracking Variabels 
+
+    //Mouse Tracking Variabels
+    private bool CanSwipe = true;
     private Vector2 mouseStartPosition;
     private float mouseDistance;
     private float mouseoffset;
@@ -72,6 +78,8 @@ public class PageManager : Singleton<PageManager>
     private GameObject MountainTest;
     private GameObject CharacterCoin;
     private string Speaker;
+    private int narrativeCounter = 1;
+
     //UI Assets
     public GameObject UIDots;
     public GameObject ScentenceContainer;
@@ -87,12 +95,13 @@ public class PageManager : Singleton<PageManager>
     public bool isIniAudioLoaded = false;
     //Audio Vars
     [SerializeField]
-    private AudioClip[] OST; 
-	[SerializeField]
-	private AudioClip PageDone;
+    private AudioClip[] OST;
+    [SerializeField]
+    private AudioClip PageDone;
     //Debuging Vars
     public GameObject Scenetext;
 
+    private GameObject TextPositionref;
 
     [SerializeField]
     public GameObject ScenetextContainer;
@@ -131,10 +140,10 @@ public class PageManager : Singleton<PageManager>
             SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
             StoryManager.GetComponent<StoryManager>().InitialSetUp();
             PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
-                if(DataManager.currentLanguage == "French")
-                {
+            if (DataManager.currentLanguage == "French")
+            {
                 FrenchCorrection.GetComponent<MenuChapterManager>().FrenchStructure();
-                }
+            }
             //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().LastScene, LoadSceneMode.Additive);
             //.SetActiveScene(SceneManager.GetSceneByName(CurrentLevel));
         }
@@ -152,7 +161,7 @@ public class PageManager : Singleton<PageManager>
         {
             //sceneindex = lastPage;
             //Debug.Log(sceneindex);
-  
+
         }
 
 
@@ -175,8 +184,8 @@ public class PageManager : Singleton<PageManager>
         LoadingScreen.GetComponent<LoadingScript>().VisualToggle(true);
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
-            if(Child != null)
-            Child.Clear();
+            if (Child != null)
+                Child.Clear();
         }
         isLoading = true;
         StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
@@ -186,20 +195,20 @@ public class PageManager : Singleton<PageManager>
 
         if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
         {
-            SceneManager.UnloadSceneAsync(StoryManager.GetComponent<StoryManager>().NextScene);
+            SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().NextScene);
         }
 
         if (StoryManager.GetComponent<StoryManager>().LastScene != "None")
         {
-            SceneManager.UnloadSceneAsync(StoryManager.GetComponent<StoryManager>().LastScene);
+            SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().LastScene);
         }
 
         if (PreviousLevelTracker != EnvironmentTracker)
-        { 
-        SceneManager.UnloadSceneAsync(EnvironmentTracker);     
-        } 
+        {
+            SceneManager.UnloadScene(EnvironmentTracker);
+        }
 
-        SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);  
+        SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
 
         //PreviousLevelTracker = EnvironmentTracker;
 
@@ -218,11 +227,12 @@ public class PageManager : Singleton<PageManager>
     {
 
         Resources.UnloadUnusedAssets();
-        //SceneManager.UnloadSceneAsyncAsync(EnvironmentTracker);
+        //SceneManager.UnloadSceneAsync(EnvironmentTracker);
         //SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
         //Resetting logic for finding the 
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
+        //GameObject TextPositionref;
         foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
         {
             // do whatever you want with child transform object here
@@ -230,6 +240,7 @@ public class PageManager : Singleton<PageManager>
             {
                 sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
                 sentenceContainerCounter++;
+                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
                 Debug.Log("Working");
             }
 
@@ -243,6 +254,8 @@ public class PageManager : Singleton<PageManager>
                     {
                         sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
                         sentenceContainerCounter++;
+                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                                                           //Debug.Log("Working");
                     }
                 }
             }
@@ -257,8 +270,12 @@ public class PageManager : Singleton<PageManager>
 
 
     public void GotoNext()
-    {   sceneindex++;
+    {
+        sceneindex++;
         //bool isloadingScene;
+
+        string NextScene;
+        NextScene = StoryManager.GetComponent<StoryManager>().NextScene;
 
         StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
         StoryManager.GetComponent<StoryManager>().isPanningLeft = false;
@@ -270,25 +287,25 @@ public class PageManager : Singleton<PageManager>
             audioSource.Stop();
 
             Resources.UnloadUnusedAssets();
-            SceneManager.UnloadSceneAsync(EnvironmentTracker);
+            SceneManager.UnloadScene(EnvironmentTracker);
 
-            if(PreviousLevelTracker != EnvironmentTracker &&PreviousLevelTracker != "None" )
+            if (PreviousLevelTracker != EnvironmentTracker && PreviousLevelTracker != "None")
             {
-            //Debug.Log(PreviousLevelTracker.ToString());
-            SceneManager.UnloadSceneAsync(PreviousLevelTracker);   
+                //Debug.Log(PreviousLevelTracker.ToString());
+                SceneManager.UnloadScene(PreviousLevelTracker);
             }
-                
+
             isGoingBack = false;
             sceneindex = 0;
 
 
             PreviousLevelTracker = EnvironmentTracker;
             StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
-            if(StoryManager.GetComponent<StoryManager>().NextScene != "None")
+            if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
             {
-              SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);   
+                SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
             }
-           
+
             SceneManager.LoadScene(EnvironmentTracker, LoadSceneMode.Additive);
             StoryManager.GetComponent<StoryManager>().InitialSetUp();
 
@@ -322,19 +339,19 @@ public class PageManager : Singleton<PageManager>
         }
 
         GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
-   
-            foreach(GameObject child in AnimRef)
-            {
-                if (child.gameObject.GetComponent<SpriteRenderer>())
-                {
-                    child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                }
 
-                if (child.gameObject.GetComponent<Animator>())
-                {
-                    child.gameObject.GetComponent<Animator>().enabled = true;
-                }
+        foreach (GameObject child in AnimRef)
+        {
+            if (child.gameObject.GetComponent<SpriteRenderer>())
+            {
+                child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
+
+            if (child.gameObject.GetComponent<Animator>())
+            {
+                child.gameObject.GetComponent<Animator>().enabled = true;
+            }
+        }
 
 
 
@@ -344,23 +361,25 @@ public class PageManager : Singleton<PageManager>
             sentenceContainer[i] = null;
         }
 
-        
+
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
         foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
         {
             // do whatever you want with child transform object here
-            if(child.gameObject.tag == "TextPlacement" )
+            if (child.gameObject.tag == "TextPlacement")
             {
-                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>();;
+                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
                 sentenceContainerCounter++;
+                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                //Debug.Log("Working");
             }
 
 
             if (child.gameObject.tag == "SpeechBubble")
             {
-            
+
                 foreach (Transform Kiddo in child)
                 {
                     // do whatever you want with child transform object here
@@ -368,8 +387,10 @@ public class PageManager : Singleton<PageManager>
                     {
                         sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
                         sentenceContainerCounter++;
+                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                                                           //Debug.Log("Working");
                     }
-                }   
+                }
             }
 
         }
@@ -381,7 +402,13 @@ public class PageManager : Singleton<PageManager>
     {
         sceneindex--;
 
-        if (sceneindex <0)
+        //Debug.Log(sceneindex);
+        //bool isloadingScene;
+
+        string LastScene;
+        LastScene = StoryManager.GetComponent<StoryManager>().LastScene;
+
+        if (sceneindex < 0)
         {//If the player is at the last page of the scene
             //isloadingScene = true;
             sceneindex = 0;
@@ -396,9 +423,9 @@ public class PageManager : Singleton<PageManager>
             //Debug.Log(StoryManager.GetComponent<StoryManager>().NextScene);
             if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
             {
-                SceneManager.UnloadSceneAsync(StoryManager.GetComponent<StoryManager>().NextScene);
+                SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().NextScene);
             }
-            SceneManager.UnloadSceneAsync(EnvironmentTracker);
+            SceneManager.UnloadScene(EnvironmentTracker);
 
 
             StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
@@ -418,7 +445,7 @@ public class PageManager : Singleton<PageManager>
         }
         else
         {
-        StoryManager.GetComponent<StoryManager>().PanLeft();  
+            StoryManager.GetComponent<StoryManager>().PanLeft();
         }
         SetAudioTrack();
     }
@@ -433,15 +460,15 @@ public class PageManager : Singleton<PageManager>
         UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
 
         GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
-     
-            foreach (GameObject child in AnimRef)
+
+        foreach (GameObject child in AnimRef)
+        {
+            if (child.gameObject.GetComponent<SpriteRenderer>())
             {
-                if (child.gameObject.GetComponent<SpriteRenderer>())
-                {
-                    child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                }
-                child.gameObject.GetComponent<Animator>().enabled = true;
+                child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
+            child.gameObject.GetComponent<Animator>().enabled = true;
+        }
 
 
         for (int i = 0; i < sentenceContainer.Length; i++)
@@ -460,6 +487,8 @@ public class PageManager : Singleton<PageManager>
             {
                 sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
                 sentenceContainerCounter++;
+                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                //Debug.Log("Working");
             }
 
             if (child.gameObject.tag == "SpeechBubble")
@@ -472,6 +501,8 @@ public class PageManager : Singleton<PageManager>
                     {
                         sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
                         sentenceContainerCounter++;
+                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                                                           //Debug.Log("Working");
                     }
                 }
             }
@@ -488,7 +519,7 @@ public class PageManager : Singleton<PageManager>
         GameObject Cam = GameObject.FindGameObjectWithTag("MainCamera");
 
         GameObject Sound = GameObject.FindGameObjectWithTag("16_ThrusterSound");
-        if(Sound != null && sceneindex <1)
+        if (Sound != null && sceneindex < 1)
         {
             Sound.GetComponent<AudioSource>().Play();
         }
@@ -509,24 +540,24 @@ public class PageManager : Singleton<PageManager>
         //Debug.Log(StoryManager.GetComponent<StoryManager>().PageSong.ToString());
         //Debug.Log(Cam.GetComponent<AudioSource>().clip.ToString());
 
-        if(StoryManager.GetComponent<StoryManager>().PageSong == Cam.GetComponent<AudioSource>().clip)
+        if (StoryManager.GetComponent<StoryManager>().PageSong == Cam.GetComponent<AudioSource>().clip)
         {//if current track is the same as the previous  dont change it
-            
+
         }
-            else
+        else
+        {
+            if (StoryManager.GetComponent<StoryManager>().PageSong != null)
             {
-                if (StoryManager.GetComponent<StoryManager>().PageSong != null)
-                {
                 Cam.GetComponent<AudioSource>().clip = StoryManager.GetComponent<StoryManager>().PageSong;
                 Cam.GetComponent<AudioSource>().volume = StoryManager.GetComponent<StoryManager>().Volume;
                 Cam.GetComponent<AudioSource>().Play();
-                }
-                    else
-                    {
-                    Cam.GetComponent<AudioSource>().clip = null;
-                    Cam.GetComponent<AudioSource>().Stop();
-                    }    
             }
+            else
+            {
+                Cam.GetComponent<AudioSource>().clip = null;
+                Cam.GetComponent<AudioSource>().Stop();
+            }
+        }
         if (sceneindex == 1 && StoryManager.GetComponent<StoryManager>().PanningPageSong2 != null)
         {
             StoryManager.GetComponent<StoryManager>().PageSong = StoryManager.GetComponent<StoryManager>().PanningPageSong2;
@@ -571,6 +602,7 @@ public class PageManager : Singleton<PageManager>
     private void OnUIButtonClick_Menu(Button button)
     {//when the player clicks a button
         Debug.Log("OnUIButtonClick_Menu: " + button.gameObject.GetComponentInChildren<Text>().text);
+        int Page = int.Parse(button.gameObject.GetComponentInChildren<Text>().text);
     }
 
     void TaskOnClick()
@@ -589,7 +621,7 @@ public class PageManager : Singleton<PageManager>
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
-            Child.Clear();
+                Child.Clear();
         }
         //Debug.Log(newLanguage);
 
@@ -612,17 +644,18 @@ public class PageManager : Singleton<PageManager>
                     sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
                 }*/
             }
-                else
-                {
-                   // PreviousWordTime = wordGroup.time;
-                    sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-                }
+            else
+            {
+                // PreviousWordTime = wordGroup.time;
+                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
+            }
         }
 
         StartCoroutine(RunSequence(currentAudio));
         Debug.Log(audioIndex + "/" + pageIndex);
         //Scenetext.GetComponent<Text> ().text =currentAudio.name;
     }
+
 
     public void KillCurrentCoroutines()
     {
@@ -631,7 +664,7 @@ public class PageManager : Singleton<PageManager>
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
-            Child.Clear();
+                Child.Clear();
         }
     }
 
@@ -642,7 +675,7 @@ public class PageManager : Singleton<PageManager>
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
-            Child.Clear();
+                Child.Clear();
         }
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
@@ -677,7 +710,7 @@ public class PageManager : Singleton<PageManager>
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
-            Child.Clear();
+                Child.Clear();
         }
         audioIndex = i;
         //Debug.Log("Holla");
@@ -762,11 +795,11 @@ public class PageManager : Singleton<PageManager>
     {//Move the narrative forward
      //Debug.Log("working");
         StopAllCoroutines();
-            foreach (SentenceRowContainer Child in sentenceContainer)
-            {
+        foreach (SentenceRowContainer Child in sentenceContainer)
+        {
             if (Child != null)
                 Child.Clear();
-            }
+        }
         if (pageIndex >= currentStory.pageObjects.Count)
         {//when the player reaches the end of the narrative
             Debug.Log("Story ended! Back to menu...");
@@ -817,24 +850,24 @@ public class PageManager : Singleton<PageManager>
         //.Log(obj.clip);
 
         //if(audioIndex == 0)\
-        if (audioIndex == 0 )
+        if (audioIndex == 0)
         {
             BackButton.GetComponent<Image>().enabled = false;
         }
-            else 
-            {
-                BackButton.GetComponent<Image>().enabled = true;   
-            }
+        else
+        {
+            BackButton.GetComponent<Image>().enabled = true;
+        }
 
         //if (audioIndex == 38)
         if (audioIndex == 38)
         {
             NextButton.GetComponent<Image>().enabled = false;
         }
-            else
-            {
+        else
+        {
             NextButton.GetComponent<Image>().enabled = true;
-            }
+        }
 
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
         Scenetext.GetComponent<Text>().text = currentAudio.name;
@@ -892,73 +925,74 @@ public class PageManager : Singleton<PageManager>
         while (i < obj.sentence.wordGroups.Count)
         {
             WordGroupObject wordGroup = obj.sentence.wordGroups[i];
-                foreach (SentenceRowContainer Child in sentenceContainer)
+            foreach (SentenceRowContainer Child in sentenceContainer)
+            {
+                if (Child != null)
                 {
-                    if (Child != null)
-                    {
                     Child.HighlightWordGroup(wordGroup);
-                    }     
                 }
+            }
 
             float waitTime = wordGroup.time;
 
-            if (audioIndex == 13 && i ==0)
+            if (audioIndex == 13 && i == 0)
             {
 
-                WordGroupObject wordGroupnext = obj.sentence.wordGroups[i+1];
-                waitTime =    wordGroupnext.time - wordGroup.time;
-               
+                WordGroupObject wordGroupnext = obj.sentence.wordGroups[i + 1];
+                waitTime = wordGroupnext.time - wordGroup.time;
+
             }
 
             //We calculate it like this because the times given are actually absolute times, not times per word
-               
-                if (prevWordGroup != null && i > 1)
+
+            if (prevWordGroup != null && i > 1)
+            {
+                if (i == obj.sentence.wordGroups.Count - 1)
                 {
-                    if (i == obj.sentence.wordGroups.Count - 1)
-                    {
-                        waitTime = obj.clip.length - wordGroup.time;
-                    }
-                        else
-                        {
-                        waitTime -= prevWordGroup.time;
-                        }
-                    
+                    waitTime = obj.clip.length - wordGroup.time;
+                }
+                else
+                {
+                    waitTime -= prevWordGroup.time;
                 }
 
-                if (audioIndex == 37 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 1)
-                {
-                    waitTime = 4.0f;
-                }
+            }
+
+            if (audioIndex == 37 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 1)
+            {
+                waitTime = 4.0f;
+            }
             i++;
             yield return new WaitForSeconds(waitTime);
-                if (audioIndex == 36 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 2)
-                {
+            if (audioIndex == 36 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 2)
+            {
 
-                    Debug.Log(audioIndex + "///" + StoryManager.GetComponent<StoryManager>().pagesPerScene);
-                    NextButton.SetActive(true);
-                    BackButton.SetActive(true);
-                    isAutoChapterSkip = 0;
-                }
+                Debug.Log(audioIndex + "///" + StoryManager.GetComponent<StoryManager>().pagesPerScene);
+                NextButton.SetActive(true);
+                BackButton.SetActive(true);
+                isAutoChapterSkip = 0;
+            }
             prevWordGroup = wordGroup;
         }
         //EffectedRow.HighlightWordGroup(null);
-    
-		
+
+
         //Debug.Log("PointReached");
         //sentenceContainer.HighlightWordGroup(null);
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
-            Child.HighlightWordGroup(null);
+                Child.HighlightWordGroup(null);
         }
 
-		if (isAutoChapterSkip == 0) {
-			
-			//audioSource.clip = PageDone;
-			//audioSource.Play ();
-		}
+        if (isAutoChapterSkip == 0)
+        {
 
-        if(isAutoChapterSkip ==1 && audioIndex != 38)
+            //audioSource.clip = PageDone;
+            //audioSource.Play ();
+        }
+
+        if (isAutoChapterSkip == 1 && audioIndex != 38)
         {
 
             GotoNext();
@@ -994,34 +1028,35 @@ public class PageManager : Singleton<PageManager>
     {
         Debug.Log("newNarrativeVolume" + newNarrativeVolume.value);
         audioSource.volume = newNarrativeVolume.value;
-        IsReadingAlong = newNarrativeVolume.value; 
-            if (newNarrativeVolume.value == 0.0f)
-            {
-                NextButton.SetActive(true);
-                BackButton.SetActive(true);
-            }
+        IsReadingAlong = newNarrativeVolume.value;
+        if (newNarrativeVolume.value == 0.0f)
+        {
+            NextButton.SetActive(true);
+            BackButton.SetActive(true);
+        }
     }
 
     public void ChangeTextStyle(Slider newTextStyle)
     {
         Debug.Log("newTextStyle" + newTextStyle.value);
-        isAutoChapterSkip = newTextStyle.value; 
-        if(newTextStyle.value == 1.0f)
+        isAutoChapterSkip = newTextStyle.value;
+        if (newTextStyle.value == 1.0f)
         {
-        NextButton.SetActive(false);
-        BackButton.SetActive(false);
+            NextButton.SetActive(false);
+            BackButton.SetActive(false);
         }
-            else
-            {
+        else
+        {
             NextButton.SetActive(true);
             BackButton.SetActive(true);
-            }
+        }
 
 
     }
 
     public void changeClickDragFunctionality(bool state)
     {
+        CanSwipe = state;
     }
 
     public void chapter3MenuFix()
