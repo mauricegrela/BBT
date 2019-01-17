@@ -635,7 +635,13 @@ public class PageManager : Singleton<PageManager>
 
 
 
-            if (wordGroup.text.Contains("///"))
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
                 sentenceContainerCurrent += 1;
                 /*
@@ -685,7 +691,13 @@ public class PageManager : Singleton<PageManager>
 
 
 
-            if (wordGroup.text.Contains("///"))
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
                 sentenceContainerCurrent += 1;
                 /*
@@ -713,13 +725,19 @@ public class PageManager : Singleton<PageManager>
                 Child.Clear();
         }
         audioIndex = i;
-        //Debug.Log("Holla");
+        Debug.Log(currentPage.audioObjects[0]);
         foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
         {
 
 
 
-            if (wordGroup.text.Contains("///"))
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
                 sentenceContainerCurrent += 1;
                 /*
@@ -771,7 +789,13 @@ public class PageManager : Singleton<PageManager>
 
 
 
-            if (wordGroup.text.Contains("///"))
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
                 sentenceContainerCurrent += 1;
                 /*
@@ -827,7 +851,13 @@ public class PageManager : Singleton<PageManager>
 
 
 
-            if (wordGroup.text.Contains("///"))
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
                 sentenceContainerCurrent += 1;
                 /*
