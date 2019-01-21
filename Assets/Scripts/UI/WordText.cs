@@ -19,10 +19,12 @@ public class WordText : MonoBehaviour
 
     }
 
-    private static DeployDefenitionPage()
+    public void  DeployDefenitionPage()
     {
-
-
+        Debug.Log("Wokring");
+        GameObject DefenitionPage;
+        DefenitionPage = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        DefenitionPage.SetActive(false);
     }
 
 }

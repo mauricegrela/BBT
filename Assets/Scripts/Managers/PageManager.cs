@@ -518,28 +518,6 @@ public class PageManager : Singleton<PageManager>
         //StoryManager.GetComponent<StoryManager>().
         GameObject Cam = GameObject.FindGameObjectWithTag("MainCamera");
 
-        GameObject Sound = GameObject.FindGameObjectWithTag("16_ThrusterSound");
-        if (Sound != null && sceneindex < 1)
-        {
-            Sound.GetComponent<AudioSource>().Play();
-        }
-        GameObject Fade = GameObject.FindGameObjectWithTag("16_PageFadeIn");
-        if (Fade != null && sceneindex < 1)
-        {
-            Fade.GetComponent<ImageFadeOut>().StartCo();
-        }
-        /*if (OST[audioIndex] != null && OST[audioIndex] != OST[audioIndex-1])
-        {
-            Cam.GetComponent<AudioSource>().clip = OST[audioIndex];
-            Cam.GetComponent<AudioSource>().Play();
-        }
-            else
-            {
-            Cam.GetComponent<AudioSource>().Stop(); 
-            }*/
-        //Debug.Log(StoryManager.GetComponent<StoryManager>().PageSong.ToString());
-        //Debug.Log(Cam.GetComponent<AudioSource>().clip.ToString());
-
         if (StoryManager.GetComponent<StoryManager>().PageSong == Cam.GetComponent<AudioSource>().clip)
         {//if current track is the same as the previous  dont change it
 

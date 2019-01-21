@@ -23,7 +23,7 @@ public class SentenceRow : MonoBehaviour
 		WordText wordClone;
         if (word.Substring(0, 1) == "#")
         {
-            Debug.Log("Working");
+            //Debug.Log("Working");
             wordClone = Instantiate(wordPrefabDef, wordPrefab.transform.parent);
             wordClone.gameObject.SetActive(true);
         }
