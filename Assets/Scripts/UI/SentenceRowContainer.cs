@@ -77,7 +77,7 @@ public class SentenceRowContainer : MonoBehaviour
 
 				SentenceRow currentRow = rows [rowIndex];
 				WordText newText = currentRow.AddText (word);
-                newText.text.color = NormalColor;
+                //newText.text.color = NormalColor;
 				//wordClone.GetComponent<Button> ().color.normalColor = Color.cyan;
 
 				//To enforce the layout to rebuild, which makes the horizontal layoutgroup resize

@@ -57,7 +57,7 @@ public class DataManager
 		foreach (string file in files)
         {
             AddFileToStory(story, file); 
-            Debug.Log (story+"//"+ file);
+            //Debug.Log (story+"//"+ file);
         }
         UnloadAssetBundle();
         currentStory = story;

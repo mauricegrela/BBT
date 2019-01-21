@@ -18,6 +18,11 @@ public class WordText : MonoBehaviour
         text = GetComponent<Text>();
 
     }
-	
+
+    private static DeployDefenitionPage()
+    {
+
+
+    }
 
 }
