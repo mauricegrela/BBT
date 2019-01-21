@@ -91,7 +91,7 @@ public class PageManager : Singleton<PageManager>
     [SerializeField]
     private GameObject FrenchCorrection;
     public bool isChapter3LoadedFromMenu = false;
-
+    public GameObject DefenitionPage;
     public bool isIniAudioLoaded = false;
     //Audio Vars
     [SerializeField]

@@ -22,7 +22,7 @@ public class StoryManager : MonoBehaviour {
     public Vector3 OGCameraRefPosition;
     public GameObject[] TextPositions;
     public GameObject InitialTextPosition;
-
+    public GameObject DefenitionPage;
     //CoRoutine Loading
     private IEnumerator coroutine =null;
     private int Counter = 0;
@@ -45,6 +45,9 @@ public class StoryManager : MonoBehaviour {
 
     private void Awake()
     {
+        DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
+        //DefenitionPage.SetActive(true);
+
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
         if(PageManager.GetComponent<PageManager>().isLoading==true)
         {

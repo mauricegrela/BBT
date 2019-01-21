@@ -3505,7 +3505,16 @@ Prefab:
         type: 3}
     - target: {fileID: 1458327865721364, guid: c9b58cc206d82904b8f40062674858d9, type: 2}
       propertyPath: m_TagString
-      value: DefenitionPage
+      value: DefinitionPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458327865721364, guid: c9b58cc206d82904b8f40062674858d9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSas.Array.data[6]
+      value: footprint.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9b58cc206d82904b8f40062674858d9, type: 2}
@@ -7300,7 +7309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155.59998, y: -54.099976}
+  m_AnchoredPosition: {x: 155.59961, y: -54.099976}
   m_SizeDelta: {x: 630, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1633497833
@@ -8675,6 +8684,7 @@ MonoBehaviour:
   NextButton: {fileID: 23125222}
   FrenchCorrection: {fileID: 919223766}
   isChapter3LoadedFromMenu: 0
+  DefenitionPage: {fileID: 0}
   isIniAudioLoaded: 0
   OST:
   - {fileID: 0}

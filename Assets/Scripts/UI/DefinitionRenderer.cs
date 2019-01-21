@@ -36,36 +36,22 @@ public class DefinitionRenderer : MonoBehaviour {
 
 	public void SetUpText (Text Definition) 
 	{
-
-		Debug.Log (DataManager.currentStoryName);
 		if (DataManager.currentStoryName == "sasquatch") {
 			for (int i = 0; i < def_wordSas.Length; i++) {
+
+                Debug.Log(Definition.text.ToLower()+"\\\\"+def_wordSas[i].ToLower());
+
 				if (Definition.text.ToLower ().Equals (def_wordSas [i].ToLower ())) {
 					title.text = def_wordSas [i];
 					TextTranslation.text = def_wordSasTranslation [i];
 					RenderPlacement.sprite = def_wordSasPhotos [i];
 					TextBody.text = def_BodySasEnglish [i];
 					audioEmitter.clip = def_WordSas_Audio [i];
+                    Debug.Log(Definition.text.ToLower());
 					//audioEmitter.Play ();
 				} 
 			}
-		} else {
-
-			for (int i = 0; i < def_wordLilPpl.Length; i++) {
-				//Debug.Log (Definition.text.ToLower()+"///"+def_wordSas[i].ToLower());
-
-				if (Definition.text.ToLower ().Equals (def_wordLilPpl [i].ToLower ())) {
-
-					title.text = def_wordLilPpl [i];
-					TextTranslation.text = def_wordLilPplTranslation [i];
-					RenderPlacement.sprite = def_wordLilPplPhotos [i];
-					TextBody.text = def_BodyLilPplEnglish [i];
-					//Debug.Log (Definition.text.ToLower()+"///"+def_wordSas [i]);
-				} 
-			}
-
-		}
-
+		} 
 	}
 
 }

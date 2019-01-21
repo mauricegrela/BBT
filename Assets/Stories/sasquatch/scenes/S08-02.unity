@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 776056711}
   m_Layer: 5
   m_Name: Defined Word
-  m_TagString: Untagged
+  m_TagString: Definition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,6 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &776056707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1434,6 +1435,7 @@ MonoBehaviour:
   OGCameraRefPosition: {x: 0, y: 0, z: 0}
   TextPositions: []
   InitialTextPosition: {fileID: 0}
+  DefenitionPage: {fileID: 0}
   isPanningLeft: 0
   isPanningRight: 0
   Page37Panning: {fileID: 0}
@@ -1545,6 +1547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &2111230731
 MonoBehaviour:
   m_ObjectHideFlags: 0
