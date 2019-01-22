@@ -870,11 +870,11 @@ public class PageManager : Singleton<PageManager>
         //if (audioIndex == 38)
         if (audioIndex == 38)
         {
-            NextButton.GetComponent<Image>().enabled = false;
+            //NextButton.GetComponent<Image>().enabled = false;
         }
         else
         {
-            NextButton.GetComponent<Image>().enabled = true;
+           // NextButton.GetComponent<Image>().enabled = true;
         }
 
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];

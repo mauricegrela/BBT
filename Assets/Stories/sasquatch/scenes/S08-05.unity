@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.195
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19727483, g: 0.22222486, b: 0.2625012, a: 0.195}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.195}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -821,6 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &811945249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &1322768992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,7 +1261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.6, y: 5.45}
+  m_AnchoredPosition: {x: 0.81, y: 1.89}
   m_SizeDelta: {x: 1171.145, y: 143.918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568522204
@@ -1483,6 +1485,7 @@ MonoBehaviour:
   OGCameraRefPosition: {x: 0, y: 0, z: 0}
   TextPositions: []
   InitialTextPosition: {fileID: 0}
+  DefenitionPage: {fileID: 0}
   isPanningLeft: 0
   isPanningRight: 0
   Page37Panning: {fileID: 0}

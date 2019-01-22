@@ -349,8 +349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.797, y: -0.17000002}
-  m_SizeDelta: {x: 617.723, y: 103.85}
+  m_AnchoredPosition: {x: 4.421, y: -3.013}
+  m_SizeDelta: {x: 703.859, y: 496.528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817028306
 MonoBehaviour:
@@ -519,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &1619782565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5770133c87440a99e9aafcccf58801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefenitionPage: {fileID: 0}
 --- !u!114 &1669927484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,8 +1117,8 @@ MonoBehaviour:
   AudioIndexPosition: 36
   LevelName: S10-02
   pagesPerScene: 1
-  NextScene: S10-01
-  LastScene: S10-03
+  NextScene: S10-03
+  LastScene: S10-031
   isLastscene: 0
   isFirstscene: 0
   isLoadingLevel: 0
@@ -1126,6 +1128,7 @@ MonoBehaviour:
   OGCameraRefPosition: {x: 0, y: 0, z: 0}
   TextPositions: []
   InitialTextPosition: {fileID: 0}
+  DefenitionPage: {fileID: 0}
   isPanningLeft: 0
   isPanningRight: 0
   Page37Panning: {fileID: 0}
