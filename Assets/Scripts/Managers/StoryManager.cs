@@ -8,6 +8,7 @@ public class StoryManager : MonoBehaviour {
 
 	public int AudioIndexPosition; 
 	public string LevelName;
+    public string SceneEnvironment;
 	public int pagesPerScene;
 	public string NextScene;
 	public string LastScene;
@@ -46,9 +47,9 @@ public class StoryManager : MonoBehaviour {
     private bool IsScriptLoadingScene = false;
     private void Awake()
     {
-
+        SceneEnvironment = "Exterior";
         Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log(currentScene.name);
+        //Debug.Log(currentScene.name);
 
         /*if(currentScene.name != "MainStory")
         {
@@ -57,9 +58,9 @@ public class StoryManager : MonoBehaviour {
         }*/
 
  
-            for (int i = 0; i < UnityEditor.SceneManagement.EditorSceneManager.sceneCount; ++i)
+        for (int i = 0; i < SceneManager.sceneCount; ++i)
             {
-                var scene = UnityEditor.SceneManagement.EditorSceneManager.GetSceneAt(i);
+            var scene = SceneManager.GetSceneAt(i);
 
                 if (scene.name == "MainStory")
                 {
@@ -72,7 +73,7 @@ public class StoryManager : MonoBehaviour {
             SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
             SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
             SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
-
+            SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);
             //PageManager = GameObject.FindGameObjectWithTag("PageManager");
             //PageManager.GetComponent<PageManager>().LevelJugler();
             IsMainStoryLoaded = true;
@@ -84,6 +85,7 @@ public class StoryManager : MonoBehaviour {
     public void InitialSetUp()///Awake()
     {
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
+        //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
         if (PageManager.GetComponent<PageManager>().isLoading == true)
         {
             InitialSetUp();
@@ -101,7 +103,7 @@ public class StoryManager : MonoBehaviour {
 
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
         CameraRef = GameObject.FindGameObjectWithTag("MainCamera");
-        OGCameraRefPosition = CameraRef.transform.position;
+        //OGCameraRefPosition = CameraRef.transform.position;
         TextPositions = new GameObject[transform.childCount];
         pagesPerScene = transform.childCount;
         for (int i = 0; i < transform.childCount; i++)

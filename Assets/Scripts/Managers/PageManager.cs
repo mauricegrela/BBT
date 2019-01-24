@@ -49,6 +49,9 @@ public class PageManager : Singleton<PageManager>
     [SerializeField]
     private GameObject[] DynamicProps;
     public bool isLoading = false;
+    private string CurrentLevel;
+    private string PreviousLevel;
+
 
     //Narrative Manager vars
     public GameObject StoryManager;
@@ -123,9 +126,6 @@ public class PageManager : Singleton<PageManager>
     // Use this for initialization
     IEnumerator Start()
     {//Initiage the story
-     //AssetAssigner (DataManager.currentStoryName + "_start", 11);
-     //DataManager.LoadStory(DataManager.currentStoryName, "0");
-     //OG_PostitionTextBody = TextBody.gameObject.transform.position;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainStory"));
         LevelJugler();
         yield return null;
@@ -134,18 +134,13 @@ public class PageManager : Singleton<PageManager>
     public void LevelJugler()
     {
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        CurrentLevel = StoryManager.GetComponent<StoryManager>().SceneEnvironment;
         if (LevelsLoaded == false)
         {
             LevelsLoaded = true;
             //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
             StoryManager.GetComponent<StoryManager>().InitialSetUp();
             PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
-            if (DataManager.currentLanguage == "French")
-            {
-                FrenchCorrection.GetComponent<MenuChapterManager>().FrenchStructure();
-            }
-            //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().LastScene, LoadSceneMode.Additive);
-            //.SetActiveScene(SceneManager.GetSceneByName(CurrentLevel));
         }
     }
 
@@ -277,7 +272,7 @@ public class PageManager : Singleton<PageManager>
         string NextScene;
         NextScene = StoryManager.GetComponent<StoryManager>().NextScene;
 
-        StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
+        //StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
         StoryManager.GetComponent<StoryManager>().isPanningLeft = false;
         StoryManager.GetComponent<StoryManager>().isPanningRight = false;
         if (sceneindex >= StoryManager.GetComponent<StoryManager>().pagesPerScene)
