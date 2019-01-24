@@ -67,7 +67,7 @@ public class MenuUI : MonoBehaviour
     public void StartGame(string LeveltoLoad)
     {
         //Debug.Log("Working");
-        SceneManager.LoadScene("MainStory");
+        SceneManager.LoadScene("S08-01");
     }
 
     public void LoadNewLanguage(string LeveltoLoad)

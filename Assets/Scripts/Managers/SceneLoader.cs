@@ -16,7 +16,7 @@ public class SceneLoader : MonoBehaviour
 
     void Awake()
     {
-        LoadScenes();
+        //LoadScenes();
     }
 
     void LoadScenes()

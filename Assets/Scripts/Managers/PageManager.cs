@@ -126,7 +126,7 @@ public class PageManager : Singleton<PageManager>
      //AssetAssigner (DataManager.currentStoryName + "_start", 11);
      //DataManager.LoadStory(DataManager.currentStoryName, "0");
      //OG_PostitionTextBody = TextBody.gameObject.transform.position;
-
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainStory"));
         LevelJugler();
         yield return null;
     }
@@ -137,7 +137,7 @@ public class PageManager : Singleton<PageManager>
         if (LevelsLoaded == false)
         {
             LevelsLoaded = true;
-            SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
+            //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
             StoryManager.GetComponent<StoryManager>().InitialSetUp();
             PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
             if (DataManager.currentLanguage == "French")
@@ -703,7 +703,7 @@ public class PageManager : Singleton<PageManager>
                 Child.Clear();
         }
         audioIndex = i;
-        Debug.Log(currentPage.audioObjects[0]);
+        //Debug.Log(currentPage.audioObjects[0]);
         foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
         {
 

@@ -42,45 +42,63 @@ public class StoryManager : MonoBehaviour {
     public float Volume = 0.2f;
     //
     private Vector3 DistanceCounter;
-
+    private bool IsMainStoryLoaded = false;
+    private bool IsScriptLoadingScene = false;
     private void Awake()
     {
-        DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
-        //DefenitionPage.SetActive(true);
 
+        Scene currentScene = SceneManager.GetActiveScene();
+        Debug.Log(currentScene.name);
+
+        /*if(currentScene.name != "MainStory")
+        {
+            SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainStory"));
+        }*/
+
+ 
+            for (int i = 0; i < UnityEditor.SceneManagement.EditorSceneManager.sceneCount; ++i)
+            {
+                var scene = UnityEditor.SceneManagement.EditorSceneManager.GetSceneAt(i);
+
+                if (scene.name == "MainStory")
+                {
+                IsMainStoryLoaded = true;//the scene is already loaded
+
+                }
+            }
+       if(IsMainStoryLoaded == false)
+        {
+            SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
+            SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
+            SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
+
+            //PageManager = GameObject.FindGameObjectWithTag("PageManager");
+            //PageManager.GetComponent<PageManager>().LevelJugler();
+            IsMainStoryLoaded = true;
+            IsScriptLoadingScene = true;
+        }
+    DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
+    }
+
+    public void InitialSetUp()///Awake()
+    {
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
-        if(PageManager.GetComponent<PageManager>().isLoading==true)
+        if (PageManager.GetComponent<PageManager>().isLoading == true)
         {
             InitialSetUp();
             PageManager.GetComponent<PageManager>().isLoading = false;
             PageManager.GetComponent<PageManager>().StoryManager = gameObject;
             SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
-                if(LastScene != "None")
-                {
-                    SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);       
-                }
+            if (LastScene != "None")
+            {
+                SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
+            }
             PageManager.GetComponent<PageManager>().PreviousLevelTracker = LastScene;
 
         }
 
-        if(PageManager.GetComponent<PageManager>().isChapter3LoadedFromMenu == true)
-        {
-            GameObject Sound = GameObject.FindGameObjectWithTag("16_ThrusterSound");
-            if (Sound != null)
-            {
-                Sound.GetComponent<AudioSource>().Play();
-            }
-            GameObject Fade = GameObject.FindGameObjectWithTag("16_PageFadeIn");
-            if (Fade != null)
-            {
-                Fade.GetComponent<ImageFadeOut>().StartCo();
-            }
-            PageManager.GetComponent<PageManager>().isChapter3LoadedFromMenu = false;
-        }
-    }
 
-    public void InitialSetUp()///Awake()
-    {
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
         CameraRef = GameObject.FindGameObjectWithTag("MainCamera");
         OGCameraRefPosition = CameraRef.transform.position;
@@ -125,9 +143,6 @@ public class StoryManager : MonoBehaviour {
                 = child.gameObject.GetComponent<SentenceRowContainer>();
                 
                 PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
-
-                //InitialTextPosition = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                //Debug.Log("Working");
             }
 
 
@@ -146,12 +161,16 @@ public class StoryManager : MonoBehaviour {
             PageManager.GetComponent<PageManager>().isIniAudioLoaded = true;
             DataManager.LoadStory(DataManager.currentStoryName, StreamingAssetsCounter.ToString());
         }
-        else if (StreamingAssetsCounter.ToString() != DataManager.CurrentAssetPackage.ToString())
-        {//this condition will trigger when the player loads a level from the menu that requires a streaming asset that is not currently loaded.
-            //DataManager.LoadStory(DataManager.currentStoryName, StreamingAssetsCounter.ToString());
+
+
+        if(IsScriptLoadingScene == true)
+        {
+            PageManager.GetComponent<PageManager>().audioIndex = 0;
+            PageManager.GetComponent<PageManager>().isIniAudioLoaded = true;
+            DataManager.LoadStory(DataManager.currentStoryName, StreamingAssetsCounter.ToString());
         }
 
-        CoroutineLoad();
+    CoroutineLoad();
         //SceneManager.SetActiveScene(NextScene)
     }
 
@@ -279,8 +298,6 @@ public class StoryManager : MonoBehaviour {
     public void PanRight()
     {
 
-//        Debug.Log("Working");
-
         isPanningRight = true;
         CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
         CameraRef.transform.position = OGCameraRefPosition;
@@ -310,12 +327,10 @@ public class StoryManager : MonoBehaviour {
                 isPanningRight = false;
                 PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
 
-                 //Debug.Log("Working?" + PageManager.GetComponent<PageManager>().audioIndex);
             if (PageManager.GetComponent<PageManager>().audioIndex == 37)
                 {
                     
                     Page37Panning.GetComponent<Accelerometer_PageMoveDown>().StartPushDown();
-                    //Debug.Log("Working");
                     //CameraRef.GetComponent<Camera_MouseMovement>().enabled = true;
                     //CameraRef.GetComponent<Accelerometer_SkyBox>().enabled = true;
 
@@ -327,7 +342,6 @@ public class StoryManager : MonoBehaviour {
                 {
 
                 CameraRef.GetComponent<Accelerometer_SkyBox>().StoryBook.GetComponent<Accelerometer_PageMoveDown>().Reset();
-                    Debug.Log("Working?" + PageManager.GetComponent<PageManager>().audioIndex);
                     //CameraRef.GetComponent<CameraRef_MouseMovement>().enabled = false;
                     //CameraRef.GetComponent<Accelerometer_SkyBox>().enabled = false;
                     CameraRef.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
