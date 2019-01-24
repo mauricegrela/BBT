@@ -103,6 +103,7 @@ public class StoryManager : MonoBehaviour {
 
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
         CameraRef = GameObject.FindGameObjectWithTag("MainCamera");
+        CameraRef.GetComponent<Camera>().enabled = true;
         //OGCameraRefPosition = CameraRef.transform.position;
         TextPositions = new GameObject[transform.childCount];
         pagesPerScene = transform.childCount;
@@ -302,7 +303,7 @@ public class StoryManager : MonoBehaviour {
 
         isPanningRight = true;
         CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
-        CameraRef.transform.position = OGCameraRefPosition;
+        //CameraRef.transform.position = OGCameraRefPosition;
         if (TextPositions[CurrentPage].tag == "panning")
         {
             //Debug.Log("This is a specific panning script.");
@@ -329,32 +330,14 @@ public class StoryManager : MonoBehaviour {
                 isPanningRight = false;
                 PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
 
-            if (PageManager.GetComponent<PageManager>().audioIndex == 37)
-                {
-                    
-                    Page37Panning.GetComponent<Accelerometer_PageMoveDown>().StartPushDown();
-                    //CameraRef.GetComponent<Camera_MouseMovement>().enabled = true;
-                    //CameraRef.GetComponent<Accelerometer_SkyBox>().enabled = true;
-
-                }
-                   
-
-
-            if (PageManager.GetComponent<PageManager>().audioIndex == 38)
-                {
-
-                CameraRef.GetComponent<Accelerometer_SkyBox>().StoryBook.GetComponent<Accelerometer_PageMoveDown>().Reset();
-                    //CameraRef.GetComponent<CameraRef_MouseMovement>().enabled = false;
-                    //CameraRef.GetComponent<Accelerometer_SkyBox>().enabled = false;
-                    CameraRef.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
-                }
+           
             }
     }
 
     public void PanLeft()
     {
         isPanningLeft = true;
-        CameraRef.transform.position = OGCameraRefPosition;
+        //CameraRef.transform.position = OGCameraRefPosition;
     }
 
 	// Update is called once per frame
@@ -369,7 +352,7 @@ public class StoryManager : MonoBehaviour {
                 float step = 6 * Time.deltaTime;
 
                 // Move our position a step closer to the target.
-                CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
+                //CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
             }
                 else
                 {
