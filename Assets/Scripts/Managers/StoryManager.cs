@@ -47,6 +47,7 @@ public class StoryManager : MonoBehaviour {
     private bool IsScriptLoadingScene = false;
     private void Awake()
     {
+        StreamingAssetsCounter = 0;
         SceneEnvironment = "Exterior";
         Scene currentScene = SceneManager.GetActiveScene();
         //Debug.Log(currentScene.name);
@@ -70,8 +71,15 @@ public class StoryManager : MonoBehaviour {
             }
        if(IsMainStoryLoaded == false)
         {
-            SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
-            SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
+            if (NextScene != "None")
+            {
+                SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
+            }
+
+            if (LastScene != "None")
+            {
+                SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
+            }
             SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
             SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);
             //PageManager = GameObject.FindGameObjectWithTag("PageManager");
@@ -91,10 +99,14 @@ public class StoryManager : MonoBehaviour {
             InitialSetUp();
             PageManager.GetComponent<PageManager>().isLoading = false;
             PageManager.GetComponent<PageManager>().StoryManager = gameObject;
+            if (NextScene != "None")
+            {
             SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
+            }
+
             if (LastScene != "None")
             {
-                SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
+            SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
             }
             PageManager.GetComponent<PageManager>().PreviousLevelTracker = LastScene;
 
