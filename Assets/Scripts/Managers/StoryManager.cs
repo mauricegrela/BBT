@@ -44,6 +44,7 @@ public class StoryManager : MonoBehaviour {
     //
     private Vector3 DistanceCounter;
     private bool IsMainStoryLoaded = false;
+    private bool IsEnviroLoaded = false;
     private bool IsScriptLoadingScene = false;
     private void Awake()
     {
@@ -68,6 +69,11 @@ public class StoryManager : MonoBehaviour {
                 IsMainStoryLoaded = true;//the scene is already loaded
 
                 }
+
+                if(scene.name == "Exterior")
+                {
+                IsEnviroLoaded = true;
+                }
             }
        if(IsMainStoryLoaded == false)
         {
@@ -80,10 +86,14 @@ public class StoryManager : MonoBehaviour {
             {
                 SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
             }
+
             SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
+                
+            if (IsMainStoryLoaded == false)
+            {
             SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);
-            //PageManager = GameObject.FindGameObjectWithTag("PageManager");
-            //PageManager.GetComponent<PageManager>().LevelJugler();
+            }
+
             IsMainStoryLoaded = true;
             IsScriptLoadingScene = true;
         }
