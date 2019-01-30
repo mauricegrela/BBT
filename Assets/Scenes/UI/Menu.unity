@@ -339,7 +339,6 @@ GameObject:
   - component: {fileID: 389069179}
   - component: {fileID: 389069182}
   - component: {fileID: 389069181}
-  - component: {fileID: 389069183}
   - component: {fileID: 389069180}
   m_Layer: 5
   m_Name: LoadingScreen
@@ -380,21 +379,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingscreens:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 6aa61fd9aa7ae421eb8605c8dbe43a2b, type: 3}
+  - {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
+  - {fileID: 21300000, guid: 038876db5283848ea83d3f7fc1397614, type: 3}
+  - {fileID: 21300000, guid: 4bc07a2a6fb7b4cda97aefc785e0be10, type: 3}
+  - {fileID: 21300000, guid: b972012cfc3ba4ca9a284196d837906e, type: 3}
+  - {fileID: 21300000, guid: c2403d4d1093b4c2f8c66313e0f7cd7d, type: 3}
   loadingscreens_FR:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 6aa61fd9aa7ae421eb8605c8dbe43a2b, type: 3}
+  - {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
+  - {fileID: 21300000, guid: 038876db5283848ea83d3f7fc1397614, type: 3}
+  - {fileID: 21300000, guid: 4bc07a2a6fb7b4cda97aefc785e0be10, type: 3}
+  - {fileID: 21300000, guid: b972012cfc3ba4ca9a284196d837906e, type: 3}
+  - {fileID: 21300000, guid: c2403d4d1093b4c2f8c66313e0f7cd7d, type: 3}
   Off: {r: 0, g: 0, b: 0, a: 0}
   On: {r: 0, g: 0, b: 0, a: 0}
   OnSides: {r: 0, g: 0, b: 0, a: 0}
-  Children: []
+  Children:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &389069181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +417,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4d0671f4a0d814357b9d3d7797306169, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -428,19 +431,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389069178}
---- !u!114 &389069183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 389069178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d5fb42199f7d47e49756a833799436f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fr_asset: {fileID: 21300000, guid: cf50438372b5d4601b2d314c217a36c6, type: 3}
-  en_asset: {fileID: 21300000, guid: 4d0671f4a0d814357b9d3d7797306169, type: 3}
 --- !u!1 &788452080
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +817,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
