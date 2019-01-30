@@ -228,33 +228,7 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
         //GameObject TextPositionref;
-        foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
-        {
-            // do whatever you want with child transform object here
-            if (child.gameObject.tag == "TextPlacement")
-            {
-                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
-                sentenceContainerCounter++;
-                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                Debug.Log("Working");
-            }
-
-            if (child.gameObject.tag == "SpeechBubble")
-            {
-
-                foreach (Transform Kiddo in child)
-                {
-                    // do whatever you want with child transform object here
-                    if (Kiddo.gameObject.tag == "TextPlacement")
-                    {
-                        sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
-                        sentenceContainerCounter++;
-                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                                                           //Debug.Log("Working");
-                    }
-                }
-            }
-        }
+        SpeechBubbleStorage();
     }
 
 
@@ -325,12 +299,12 @@ public class PageManager : Singleton<PageManager>
         isForward = true;
         transform.hasChanged = false;
         //UI Dots
-        UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
+        //UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
 
         foreach (SentenceRowContainer Child in sentenceContainer)
         {//Disable all the Text Containers
-            //if (Child != null)
-            //Child.gameObject.SetActive(false);
+            if (Child != null)
+            Child.gameObject.SetActive(false);
         }
 
         GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
@@ -360,35 +334,7 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
-        foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
-        {
-            // do whatever you want with child transform object here
-            if (child.gameObject.tag == "TextPlacement")
-            {
-                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
-                sentenceContainerCounter++;
-                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                //Debug.Log("Working");
-            }
-
-
-            if (child.gameObject.tag == "SpeechBubble")
-            {
-
-                foreach (Transform Kiddo in child)
-                {
-                    // do whatever you want with child transform object here
-                    if (Kiddo.gameObject.tag == "TextPlacement")
-                    {
-                        sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
-                        sentenceContainerCounter++;
-                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                                                           //Debug.Log("Working");
-                    }
-                }
-            }
-
-        }
+        SpeechBubbleStorage();
 
         NextSentence(isForward);
     }
@@ -408,8 +354,6 @@ public class PageManager : Singleton<PageManager>
             //isloadingScene = true;
             sceneindex = 0;
             Debug.Log(EnvironmentTracker);
-            //Debug.Log(sceneindex+"///"+StoryManager.GetComponent<StoryManager>().pagesPerScene);
-
 
             audioSource.Stop();
 
@@ -475,34 +419,7 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
-        foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
-        {
-            // do whatever you want with child transform object here
-            if (child.gameObject.tag == "TextPlacement")
-            {
-                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
-                sentenceContainerCounter++;
-                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                //Debug.Log("Working");
-            }
-
-            if (child.gameObject.tag == "SpeechBubble")
-            {
-
-                foreach (Transform Kiddo in child)
-                {
-                    // do whatever you want with child transform object here
-                    if (Kiddo.gameObject.tag == "TextPlacement")
-                    {
-                        sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
-                        sentenceContainerCounter++;
-                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                                                           //Debug.Log("Working");
-                    }
-                }
-            }
-
-        }
+        SpeechBubbleStorage();
 
         PreviousSentence(isGoingBack);
 
@@ -603,32 +520,7 @@ public class PageManager : Singleton<PageManager>
         //PreviousSentence (true);
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
 
-        foreach (WordGroupObject wordGroup in currentAudio.sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("speaker"))
-            {//Get The Narrator
-                Speaker = wordGroup.text;
-                Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
-            }
-            else if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-                sentenceContainerCurrent += 1;
-                /*
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
-            }
-            else
-            {
-                // PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-            }
-        }
+        WordGroupParser();
 
         StartCoroutine(RunSequence(currentAudio));
         Debug.Log(audioIndex + "/" + pageIndex);
@@ -659,32 +551,7 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
-        foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("speaker"))
-            {//Get The Narrator
-                Speaker = wordGroup.text;
-                Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
-            }
-            else if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-                sentenceContainerCurrent += 1;
-                /*
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
-            }
-            else
-            {
-                // PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-            }
-        }
+        WordGroupParser();
 
         StartCoroutine(RunSequence(currentPage.audioObjects[audioIndex]));
     }
@@ -698,33 +565,7 @@ public class PageManager : Singleton<PageManager>
                 Child.Clear();
         }
         audioIndex = i;
-        //Debug.Log(currentPage.audioObjects[0]);
-        foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("speaker"))
-            {//Get The Narrator
-                Speaker = wordGroup.text;
-                Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
-            }
-            else if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-                sentenceContainerCurrent += 1;
-                /*
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
-            }
-            else
-            {
-                // PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-            }
-        }
+        WordGroupParser();
         StartCoroutine(RunSequence(currentPage.audioObjects[audioIndex]));
     }
 
@@ -757,32 +598,7 @@ public class PageManager : Singleton<PageManager>
             audioIndex--;
         }
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
-        foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("speaker"))
-            {//Get The Narrator
-                Speaker = wordGroup.text;
-                Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
-            }
-            else if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-                sentenceContainerCurrent += 1;
-                /*
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
-            }
-            else
-            {
-                // PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-            }
-        }
+        WordGroupParser();
         StartCoroutine(RunSequence(currentAudio));
 
     }
@@ -819,32 +635,7 @@ public class PageManager : Singleton<PageManager>
     {
         audioIndex++;
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
-        foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("speaker"))
-            {//Get The Narrator
-                Speaker = wordGroup.text;
-                Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
-            }
-            else if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-                sentenceContainerCurrent += 1;
-                /*
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
-            }
-            else
-            {
-                // PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-            }
-        }
+        WordGroupParser();
         StartCoroutine(RunSequence(currentAudio));
     }
 
@@ -875,46 +666,6 @@ public class PageManager : Singleton<PageManager>
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
         Scenetext.GetComponent<Text>().text = currentAudio.name;
 
-        //Scenetext.GetComponent<Text>().text = obj.clip.name;
-
-        /*else
-        {
-        Debug.LogErrorFormat("Unable to read the audio from folder {0}. " +
-        "Please ensure an audio file is in the folder, and it's set to the assetbundle {1}.", obj.name, DataManager.currentStoryName);
-        }
-
-    if (obj.sentence == null)
-    {
-        Debug.LogErrorFormat("Unable to read the text from folder {0}. " +
-        "Please ensure a text file is in the folder, and it's  set to the assetbundle {1}.", obj.name, DataManager.currentStoryName);
-        yield break;
-    }*/
-
-        //float PreviousWordTime =0;
-        /*foreach (WordGroupObject wordGroup in obj.sentence.wordGroups)
-        {
-
-
-
-            if (wordGroup.text.Contains("///"))
-            {//Get The Narrator
-
-
-
-            sentenceContainerCurrent += 1;
-
-                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
-                {
-                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }
-
-            }
-                else
-                {
-                PreviousWordTime = wordGroup.time;
-                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
-                }
-        }*/
 
         if (obj.clip != null)
         {
@@ -969,8 +720,6 @@ public class PageManager : Singleton<PageManager>
             yield return new WaitForSeconds(waitTime);
             if (audioIndex == 36 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 2)
             {
-
-                Debug.Log(audioIndex + "///" + StoryManager.GetComponent<StoryManager>().pagesPerScene);
                 NextButton.SetActive(true);
                 BackButton.SetActive(true);
                 isAutoChapterSkip = 0;
@@ -1055,6 +804,72 @@ public class PageManager : Singleton<PageManager>
         }
 
 
+    }
+
+    public void SpeechBubbleStorage()
+    {
+        Debug.Log("Passing through here");
+        foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
+        {
+            
+            // do whatever you want with child transform object here
+            if (child.gameObject.tag == "TextPlacement")
+            {
+                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
+                sentenceContainerCounter++;
+                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                //Debug.Log("Working");
+            }
+
+            if (child.gameObject.tag == "SpeechBubble")
+            {
+
+                foreach (Transform Kiddo in child)
+                {
+                    // do whatever you want with child transform object here
+                    if (Kiddo.gameObject.tag == "TextPlacement")
+                    {
+                        sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
+                        sentenceContainerCounter++;
+                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+                                                           //Debug.Log("Working");
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    public void WordGroupParser()
+    {
+        foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
+        {
+
+
+
+            if (wordGroup.text.Contains("speaker"))
+            {//Get The Narrator
+                Speaker = wordGroup.text;
+                Speaker = Speaker.Remove(0, 10);
+                //Debug.Log(Speaker);
+            }
+            else if (wordGroup.text.Contains("///"))
+            {//Get The Narrator
+                
+                sentenceContainerCurrent += 1;
+                /*
+                if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
+                {
+                    sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
+                }*/
+            }
+            else
+            {
+                // PreviousWordTime = wordGroup.time;
+                sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
+            }
+        }
     }
 
     public void changeClickDragFunctionality(bool state)

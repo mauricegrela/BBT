@@ -128,7 +128,7 @@ public class StoryManager : MonoBehaviour {
         CameraRef.GetComponent<Camera>().enabled = true;
         //OGCameraRefPosition = CameraRef.transform.position;
         TextPositions = new GameObject[transform.childCount];
-        pagesPerScene = transform.childCount;
+        //pagesPerScene = transform.childCount;
         for (int i = 0; i < transform.childCount; i++)
         {//Store all the pages
             TextPositions[i] = transform.GetChild(i).gameObject;
@@ -142,12 +142,12 @@ public class StoryManager : MonoBehaviour {
 
         foreach (GameObject child in TextPositions)
         {//Store the First of the Text References                 
-            child.SetActive(false);
+            child.SetActive(true);
         }
 
         int position;
 
-        if(PageManager.GetComponent<PageManager>().isGoingBack == true)
+        /*if(PageManager.GetComponent<PageManager>().isGoingBack == true)
         {
         TextPositions[TextPositions.Length - 1].SetActive(true);
         position = TextPositions.Length - 1;
@@ -156,21 +156,26 @@ public class StoryManager : MonoBehaviour {
             {
             TextPositions[0].SetActive(true);
             position = 0;
-            }
-
-        foreach (Transform child in TextPositions[position].transform)
-        {//Store the First of the Text References 
-            
-            if (child.gameObject.tag == "TextPlacement")
-            {
-                PageManager.GetComponent<PageManager>().
-                sentenceContainer[PageManager.GetComponent<PageManager>().sentenceContainerCounter] 
-                = child.gameObject.GetComponent<SentenceRowContainer>();
-                
-                PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
-            }
+            }*/
 
 
+
+        for (int i = 0; i < TextPositions.Length; ++i)
+        {
+            foreach (Transform child in TextPositions[i].transform)
+            {//Store the First of the Text References 
+
+                if (child.gameObject.tag == "TextPlacement")
+                {
+                    PageManager.GetComponent<PageManager>().
+                    sentenceContainer[PageManager.GetComponent<PageManager>().sentenceContainerCounter]
+                    = child.gameObject.GetComponent<SentenceRowContainer>();
+
+                    PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
+                }
+
+
+            }  
         }
 
 
@@ -347,7 +352,7 @@ public class StoryManager : MonoBehaviour {
                     child.SetActive(false);
                 }
 
-                TextPositions[CurrentPage].SetActive(true);
+                //TextPositions[CurrentPage].SetActive(true);
 
                 isPanningRight = false;
                 PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
@@ -383,7 +388,7 @@ public class StoryManager : MonoBehaviour {
                         child.SetActive(false);
                     }
 
-                TextPositions[CurrentPage].SetActive(true);
+                //TextPositions[CurrentPage].SetActive(true);
 
                 GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 
