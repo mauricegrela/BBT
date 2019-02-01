@@ -25,8 +25,8 @@ public class CameraBob : MonoBehaviour {
 		else {
 			waveslice = Mathf.Sin(timer);
 			timer = timer + bobbingSpeed;
-			if (timer > Mathf.PI * 2) {
-				timer = timer - (Mathf.PI * 2);
+			if (timer > Mathf.PI * 25) {
+				timer = timer - (Mathf.PI * 25);
 			}
 		}
 		if (waveslice != 0) {
