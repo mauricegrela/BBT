@@ -59,6 +59,7 @@ public class DataManager
             AddFileToStory(story, file); 
             //Debug.Log (story+"//"+ file);
         }
+        Debug.Log(files.Length);
         UnloadAssetBundle();
         currentStory = story;
         return currentStory;
