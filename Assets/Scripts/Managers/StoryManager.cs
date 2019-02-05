@@ -49,7 +49,7 @@ public class StoryManager : MonoBehaviour {
     private void Awake()
     {
         StreamingAssetsCounter = 0;
-        SceneEnvironment = "Exterior";
+        //SceneEnvironment = "Exterior";
         Scene currentScene = SceneManager.GetActiveScene();
         //Debug.Log(currentScene.name);
 
@@ -70,7 +70,7 @@ public class StoryManager : MonoBehaviour {
 
                 }
 
-                if(scene.name == "Exterior")
+            if(scene.name == SceneEnvironment)
                 {
                 IsEnviroLoaded = true;
                 }
@@ -98,11 +98,19 @@ public class StoryManager : MonoBehaviour {
             IsScriptLoadingScene = true;
         }
     DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
+
     }
 
     public void InitialSetUp()///Awake()
     {
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
+
+        if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
+        {
+            SceneManager.UnloadScene(PageManager.GetComponent<PageManager>().StringPreviousLevel);
+            SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);   
+        }
+        PageManager.GetComponent<PageManager>().StringPreviousLevel = SceneEnvironment;
         //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
         if (PageManager.GetComponent<PageManager>().isLoading == true)
         {

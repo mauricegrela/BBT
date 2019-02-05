@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 78
   LevelName: S28-01
-  SceneEnvironment: 
+  SceneEnvironment: Interior_Bedroom
   pagesPerScene: 1
   NextScene: S28-02
   LastScene: S19-03
@@ -330,13 +330,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1819571059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.07877319, y: 0.91498166, z: -0.3299987, w: 0.2184131}
+  m_LocalPosition: {x: -0.516, y: 0.902, z: -0.261}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 39.665, y: 153.149, z: 0}
 --- !u!1001 &1964861505
 Prefab:
   m_ObjectHideFlags: 0
@@ -382,7 +382,7 @@ Prefab:
     - target: {fileID: 224580692028313788, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224580692028313788, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}

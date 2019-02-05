@@ -51,6 +51,8 @@ public class PageManager : Singleton<PageManager>
     public bool isLoading = false;
     private string CurrentLevel;
     private string PreviousLevel;
+    private string StringCurrentLevel;
+    public string StringPreviousLevel = "empty";
 
 
     //Narrative Manager vars
