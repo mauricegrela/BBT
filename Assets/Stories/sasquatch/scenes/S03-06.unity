@@ -263,7 +263,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644416547}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -429,12 +429,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1a896c9c137483a88234d0433746c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioIndexPosition: 27
-  LevelName: s08-01
+  AudioIndexPosition: 10
+  LevelName: S03-06
   SceneEnvironment: Exterior
   pagesPerScene: 1
-  NextScene: s08-02
-  LastScene: None
+  NextScene: S04-01
+  LastScene: S03-05
   isLastscene: 0
   isFirstscene: 1
   isLoadingLevel: 1
