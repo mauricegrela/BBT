@@ -11,7 +11,7 @@ using System.Reflection.Emit;
 public class DataManager
 {
     public static string currentLanguage = "english";
-    public static string currentStoryName = "sasquatch";
+    public static string currentStoryName = "littlepeople";
     public static bool isINISet = false;
     public static StoryObject currentStory;
     public static string[] languageManager;
@@ -25,7 +25,7 @@ public class DataManager
     {
         UnloadAssetBundle();
 
-		Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
+		//Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
 
 
         myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
@@ -57,9 +57,9 @@ public class DataManager
 		foreach (string file in files)
         {
             AddFileToStory(story, file); 
-            //Debug.Log (story+"//"+ file);
+            Debug.Log (story+"//"+ file);
         }
-        Debug.Log(files.Length);
+        //Debug.Log(files.Length);
         UnloadAssetBundle();
         currentStory = story;
         return currentStory;
@@ -94,7 +94,7 @@ public class DataManager
 
         for (int i = 0; i < splitPath.Length; i++)
         {
-			//Debug.Log (splitPath[i]);
+			Debug.Log (splitPath[i]);
             if (splitPath[i] == currentStoryName)
             {
                 if (i + pathDepth + 2 >= splitPath.Length)
@@ -120,6 +120,7 @@ public class DataManager
                 //Get the audio from the page. The name is actually the foldername, not the file name of the audio
                 string audioName = splitPath[i + pathDepth + 2];
 
+                Debug.Log(audioName);
                 //If the audio doesn't exist, craete a new one
                 AudioObject audioObj = page.GetAudio(audioName);
                 if (audioObj == null)
@@ -153,7 +154,7 @@ public class DataManager
             }
         }
 
-        Debug.Log("Done");
+        //Debug.Log("Done");
     }
 
     private static SentenceObject GetSentence(string dataString)

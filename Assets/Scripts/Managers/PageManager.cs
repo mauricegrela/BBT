@@ -24,6 +24,7 @@ public class PageManager : Singleton<PageManager>
     {
         get
         {
+            //Debug.Log(currentStory.pageObjects[pageIndex]);
             return currentStory.pageObjects[pageIndex];
         }
     }
