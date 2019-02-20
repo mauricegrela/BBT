@@ -57,12 +57,14 @@ public class DataManager
 		foreach (string file in files)
         {
             AddFileToStory(story, file); 
-            Debug.Log (story+"//"+ file);
+            //Debug.Log (story+"//"+ file);
         }
         //Debug.Log(files.Length);
         UnloadAssetBundle();
         currentStory = story;
+        //Debug.Log(currentStory.GetPageNames);
         return currentStory;
+
 
        
     }
@@ -94,8 +96,8 @@ public class DataManager
 
         for (int i = 0; i < splitPath.Length; i++)
         {
-			Debug.Log (splitPath[i]);
-            if (splitPath[i] == currentStoryName)
+            Debug.Log (splitPath[i]+"///"+currentStoryName);
+            if (splitPath[i] == "little people")
             {
                 if (i + pathDepth + 2 >= splitPath.Length)
                 {
@@ -105,7 +107,7 @@ public class DataManager
                 string pageName = splitPath[i + pathDepth + 1];
                 //Get the page from the story
                 PageObject page = story.GetPage(pageName);
-				//Debug.Log (pageName);
+				Debug.Log (pageName);
 				//page = null;
                 //If the page wasn't in the story yet, create a new object
                 if (page == null)
@@ -120,7 +122,7 @@ public class DataManager
                 //Get the audio from the page. The name is actually the foldername, not the file name of the audio
                 string audioName = splitPath[i + pathDepth + 2];
 
-                Debug.Log(audioName);
+                //Debug.Log(audioName);
                 //If the audio doesn't exist, craete a new one
                 AudioObject audioObj = page.GetAudio(audioName);
                 if (audioObj == null)
