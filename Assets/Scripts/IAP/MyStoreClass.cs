@@ -7,9 +7,17 @@ public class MyStoreClass : MonoBehaviour, IStoreListener
 {
     void Awake()
     {
-        ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
-        builder.AddProduct("com.imaginecreatemedia.daisy.StickerSet", ProductType.NonConsumable);
-        UnityPurchasing.Initialize(this, builder);
+        //Book One
+        ConfigurationBuilder builder_LP = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+        builder_LP.AddProduct("com.imaginecreatemedia.daisy.StickerSet", ProductType.NonConsumable);
+        UnityPurchasing.Initialize(this, builder_LP);
+
+
+        //Book Two
+        ConfigurationBuilder builder_K = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+        builder_K.AddProduct("com.imaginecreatemedia.daisy.StickerSet", ProductType.NonConsumable);
+        UnityPurchasing.Initialize(this, builder_K);
+
     }
 
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions) { }

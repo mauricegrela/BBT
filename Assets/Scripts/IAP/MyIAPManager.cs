@@ -22,7 +22,9 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     // specific mapping to Unity Purchasing's AddProduct, below.
     public static string kProductIDConsumable = "consumable";
 
-    public static string kProductIDNonConsumable = "com.imaginecreatemedia.daisy.StickerSet";
+    public static string kProductIDNonConsumableBookOne = "com.imaginecreatemedia.daisy.StickerSet";//TODO:Implement the actual name for the book
+    public static string kProductIDNonConsumableBookTwo = "com.imaginecreatemedia.daisy.StickerSet";//TODO:Implement the actual name for the book
+
 
 
 
@@ -36,7 +38,7 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     // Google Play Store-specific product identifier subscription product.
     private static string kProductNameGooglePlaySubscription = "com.unity3d.subscription.original";
 
-    //private INIParser ini;
+    private INIParser ini;
     private TextAsset asset;
     public ParentsCornerActivation Unlock;
 
@@ -54,16 +56,16 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
 
         if (m_StoreController == null)
         {
-        // Begin to configure our connection to Purchasing
-        InitializePurchasing();
+            // Begin to configure our connection to Purchasing
+            InitializePurchasing();
         }
 
-        int HasPurchased = PlayerPrefs.GetInt("IsPurchased",0);
+        int HasPurchased = PlayerPrefs.GetInt("IsPurchased", 0);
 
-        if(HasPurchased == 1)
+        if (HasPurchased == 1)
         {
-        Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
-        //debugtest.enabled = false;
+            Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+            //debugtest.enabled = false;
         }
     }
 
@@ -85,7 +87,8 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         // with its store-specific identifiers.
         builder.AddProduct(kProductIDConsumable, ProductType.Consumable);
         // Continue adding the non-consumable product.
-        builder.AddProduct(kProductIDNonConsumable, ProductType.NonConsumable);
+        builder.AddProduct(kProductIDNonConsumableBookOne, ProductType.NonConsumable);
+        builder.AddProduct(kProductIDNonConsumableBookTwo, ProductType.NonConsumable);
         // And finish adding the subscription product. Notice this uses store-specific IDs, illustrating
         // if the Product ID was configured differently between Apple and Google stores. Also note that
         // one uses the general kProductIDSubscription handle inside the game - the store-specific IDs 
@@ -119,13 +122,19 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     }
 
 
-    public void BuyNonConsumable()
+    public void BuyNonConsumableBookOne()
     {
         // Buy the non-consumable product using its general identifier. Expect a response either 
         // through ProcessPurchase or OnPurchaseFailed asynchronously.
-        BuyProductID(kProductIDNonConsumable);
+        BuyProductID(kProductIDNonConsumableBookOne);
     }
 
+    public void BuyNonConsumableBookTwo()
+    {
+        // Buy the non-consumable product using its general identifier. Expect a response either 
+        // through ProcessPurchase or OnPurchaseFailed asynchronously.
+        BuyProductID(kProductIDNonConsumableBookTwo);
+    }
 
     public void BuySubscription()
     {
@@ -279,7 +288,7 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // The consumable item has been successfully purchased, add 100 coins to the player's in-game score.
-           // ScoreManager.score += 100;
+            // ScoreManager.score += 100;
         }
         // Or ... a non-consumable product has been purchased by this user.
         else if (String.Equals(args.purchasedProduct.definition.id, kProductIDNonConsumable, StringComparison.Ordinal))
