@@ -291,12 +291,20 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
             // ScoreManager.score += 100;
         }
         // Or ... a non-consumable product has been purchased by this user.
-        else if (String.Equals(args.purchasedProduct.definition.id, kProductIDNonConsumable, StringComparison.Ordinal))
+        else if (String.Equals(args.purchasedProduct.definition.id, kProductIDNonConsumableBookOne, StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // TODO: The non-consumable item has been successfully purchased, grant this item to the player.
             Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
-            PlayerPrefs.SetInt("IsPurchased", 1);
+            PlayerPrefs.SetInt("IsBookOnePurchased", 1);
+        }
+        // Or ... a non-consumable product has been purchased by this user.
+        else if (String.Equals(args.purchasedProduct.definition.id, kProductIDNonConsumableBookTwo, StringComparison.Ordinal))
+        {
+            Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+            // TODO: The non-consumable item has been successfully purchased, grant this item to the player.
+            Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+            PlayerPrefs.SetInt("IsBookOnePurchased", 1);
         }
         // Or ... a subscription product has been purchased by this user.
         else if (String.Equals(args.purchasedProduct.definition.id, kProductIDSubscription, StringComparison.Ordinal))
