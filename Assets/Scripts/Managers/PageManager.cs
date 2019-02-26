@@ -846,16 +846,19 @@ public class PageManager : Singleton<PageManager>
 
     public void WordGroupParser()
     {
+
+        //Debug.Log(currentPage.audioObjects[audioIndex].sentence.wordGroups.ToString());
+
         foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
         {
 
 
-
+            Debug.Log(wordGroup.text);
             if (wordGroup.text.Contains("speaker"))
             {//Get The Narrator
                 Speaker = wordGroup.text;
                 Speaker = Speaker.Remove(0, 10);
-                //Debug.Log(Speaker);
+                Debug.Log(Speaker);
             }
             else if (wordGroup.text.Contains("///"))
             {//Get The Narrator

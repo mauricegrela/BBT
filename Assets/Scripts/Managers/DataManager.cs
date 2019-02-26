@@ -11,7 +11,7 @@ using System.Reflection.Emit;
 public class DataManager
 {
     public static string currentLanguage = "english";
-    public static string currentStoryName = "littlepeople";
+    public static string currentStoryName = "kalkalilh";
     public static bool isINISet = false;
     public static StoryObject currentStory;
     public static string[] languageManager;
@@ -42,7 +42,7 @@ public class DataManager
 		CurrentAssetPackage = packageToLoad.ToString ();
 
 		//AssetStreamingCounter++;
-        //Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
+        Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
 			
         if (myLoadedAssetBundle == null)
         {
@@ -57,7 +57,7 @@ public class DataManager
 		foreach (string file in files)
         {
             AddFileToStory(story, file); 
-            //Debug.Log (story+"//"+ file);
+            Debug.Log (story+"//"+ file);
         }
         //Debug.Log(files.Length);
         UnloadAssetBundle();
