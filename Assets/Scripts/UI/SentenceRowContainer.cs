@@ -74,7 +74,7 @@ public class SentenceRowContainer : MonoBehaviour
         for (int i = 0; i < words.Length; i++)
         {			
 			string word = words [i];
-
+            Debug.Log(word);
 				SentenceRow currentRow = rows [rowIndex];
 				WordText newText = currentRow.AddText (word);
                 //newText.text.color = NormalColor;
@@ -100,10 +100,9 @@ public class SentenceRowContainer : MonoBehaviour
 
 				} else {
 					//We set the wordGroup of each textfield so we can highlight them alltogether
-
+                    //Debug.Log(newText);
 					newText.wordGroup = wordGroup;
 					texts.Add (newText);
-
 				}
 		}
         

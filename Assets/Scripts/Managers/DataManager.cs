@@ -96,8 +96,8 @@ public class DataManager
 
         for (int i = 0; i < splitPath.Length; i++)
         {
-            Debug.Log (splitPath[i]+"///"+currentStoryName);
-            if (splitPath[i] == "little people")
+            //Debug.Log (splitPath[i]+"///"+currentStoryName);
+            if (splitPath[i] == currentStoryName)
             {
                 if (i + pathDepth + 2 >= splitPath.Length)
                 {
@@ -107,7 +107,7 @@ public class DataManager
                 string pageName = splitPath[i + pathDepth + 1];
                 //Get the page from the story
                 PageObject page = story.GetPage(pageName);
-				Debug.Log (pageName);
+				//Debug.Log (pageName);
 				//page = null;
                 //If the page wasn't in the story yet, create a new object
                 if (page == null)
