@@ -67,14 +67,14 @@ public class SentenceRowContainer : MonoBehaviour
 
     public void AddText(WordGroupObject wordGroup)
     {
-		//Debug.Log ("78THOUSAND");
+        //Debug.Log(wordGroup.text);
 
         string[] words = wordGroup.text.Split(' ');
 		narrator = words [0];
         for (int i = 0; i < words.Length; i++)
         {			
 			string word = words [i];
-            Debug.Log(word);
+            //Debug.Log(word);
 				SentenceRow currentRow = rows [rowIndex];
 				WordText newText = currentRow.AddText (word);
                 //newText.text.color = NormalColor;
