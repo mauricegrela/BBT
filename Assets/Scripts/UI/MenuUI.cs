@@ -66,8 +66,23 @@ public class MenuUI : MonoBehaviour
 
     public void StartGame(string LeveltoLoad)
     {
-        //Debug.Log("Working");
-        SceneManager.LoadScene("S08-01");
+        Debug.Log(LeveltoLoad);
+        DataManager.currentStoryName = LeveltoLoad;
+        if(LeveltoLoad== "sasquatch")
+        {
+        SceneManager.LoadScene("S01-01");    
+        }
+
+        if (LeveltoLoad == "littlepeople")
+        {
+            SceneManager.LoadScene("lp01-01");
+        }
+
+        if (LeveltoLoad == "kalkalilh")
+        {
+            SceneManager.LoadScene("kk01-01");
+        }
+
     }
 
     public void LoadNewLanguage(string LeveltoLoad)
