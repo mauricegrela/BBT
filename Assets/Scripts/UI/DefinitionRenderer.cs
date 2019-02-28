@@ -17,13 +17,20 @@ public class DefinitionRenderer : MonoBehaviour {
 	public string[] def_wordSasTranslation;
 	public Sprite [] def_wordSasPhotos;
 	public string[] def_BodySasEnglish;
-	public AudioClip[] def_WordSas_Audio; 
-
+	public AudioClip[] def_WordSas_Audio;  
 
 	public string[] def_wordLilPpl;
 	public string[] def_wordLilPplTranslation;
 	public Sprite [] def_wordLilPplPhotos;
 	public string[] def_BodyLilPplEnglish;
+    public AudioClip[] def_WordLil_Audio; 
+
+    public string[] def_wordKal;
+    public string[] def_wordKalTranslation;
+    public Sprite [] def_wordKalPhotos;
+    public string[] def_BodyKalEnglish;
+    public AudioClip[] def_WordKal_Audio; 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -51,7 +58,44 @@ public class DefinitionRenderer : MonoBehaviour {
 					//audioEmitter.Play ();
 				} 
 			}
-		} 
+		}
+            else if(DataManager.currentStoryName == "littlepeople") {
+                for (int i = 0; i < def_wordLilPpl.Length; i++)
+                {
+
+                    Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordLilPpl[i].ToLower());
+
+                    if (Definition.text.ToLower().Equals(def_wordLilPpl[i].ToLower()))
+                    {
+                        title.text = def_wordLilPpl[i];
+                        TextTranslation.text = def_wordLilPplTranslation[i];
+                        RenderPlacement.sprite = def_wordLilPplPhotos[i];
+                        TextBody.text = def_BodyLilPplEnglish[i];
+                        audioEmitter.clip = def_WordLilPpl_Audio[i];
+                        Debug.Log(Definition.text.ToLower());
+                        //audioEmitter.Play ();
+                    }
+                }
+            }
+                else if(DataManager.currentStoryName == "kalkalilh") {
+            for (int i = 0; i < def_wordKal.Length; i++)
+                    {
+
+                Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordKal[i].ToLower());
+
+                if (Definition.text.ToLower().Equals(def_wordKal[i].ToLower()))
+                        {
+                            title.text = def_wordKal[i];
+                            TextTranslation.text = def_wordKalTranslation[i];
+                            RenderPlacement.sprite = def_wordKalPhotos[i];
+                            TextBody.text = def_BodyKalEnglish[i];
+                            audioEmitter.clip = def_WordKal_Audio[i];
+                            Debug.Log(Definition.text.ToLower());
+                            //audioEmitter.Play ();
+                        }
+                    }
+                } 
+
 	}
 
 }

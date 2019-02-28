@@ -2823,6 +2823,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 958440951}
     m_Modifications:
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.size
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_WordLil_Audio.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.size
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 224075532240333520, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3086,6 +3101,461 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 844599e63dbbb6d448f71b09c2a93aee,
         type: 3}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[0]
+      value: piyesisak
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[1]
+      value: Nimis ahpo nisimis
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[2]
+      value: Maskimot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[3]
+      value: Pahkwesikan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[4]
+      value: Minisa
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[5]
+      value: Misiwapamek
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[6]
+      value: miskwami-manahikan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[7]
+      value: mawiswakan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[8]
+      value: Tehcikapawin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[9]
+      value: Ospiton (a)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[10]
+      value: Asiskiy ahpo mohcihk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[11]
+      value: Mikot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[12]
+      value: Wawiyakan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[13]
+      value: Emihkwanis
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[14]
+      value: aski-pahkwesikan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[15]
+      value: Kiyaskiwinsa
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[16]
+      value: Wasenamawin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[17]
+      value: Mahcaminisak ka pa-pahkisocik
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[18]
+      value: Nanoyacihiwewin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[19]
+      value: Piminawasowikamik
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[20]
+      value: mawiswakan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[21]
+      value: Napew
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[22]
+      value: Watapiy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[23]
+      value: Maskikiy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[24]
+      value: mistikwaskihk matwehikewin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[25]
+      value: Iskwewe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[26]
+      value: kisikaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[27]
+      value: Nanaskohmowin kikwayah
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplTranslation.Array.data[28]
+      value: Maskisin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_WordLil_Audio.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4699ae743990642f4834c79afd686c31, type: 3}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_WordLil_Audio.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa032294a48304fceaf3a0453cd81193, type: 3}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[0]
+      value: Cedar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[1]
+      value: Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[2]
+      value: Breeze
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[3]
+      value: Breakfast
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[4]
+      value: Asleep
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[5]
+      value: Radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[6]
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[7]
+      value: Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[8]
+      value: Potlatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[9]
+      value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[10]
+      value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[11]
+      value: salmon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[12]
+      value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[13]
+      value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[14]
+      value: Children
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[15]
+      value: Help
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[16]
+      value: Rocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[17]
+      value: Skulls
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[18]
+      value: dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[19]
+      value: Feast
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[20]
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[21]
+      value: Mosquito
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[22]
+      value: Parents
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[23]
+      value: Promise
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[24]
+      value: Kisses
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[25]
+      value: Outside
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[26]
+      value: Sleep
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[27]
+      value: Morning
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[28]
+      value: Salmon (Candy)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[29]
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[0]
+      value: Xpay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[1]
+      value: yaywes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[2]
+      value: Spahim
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[3]
+      value: ilhen ti natlh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[4]
+      value: i7tut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[5]
+      value: kwaxwa7 ti Kwekeleylstn
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[6]
+      value: kwekeleylstn
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[7]
+      value: yaywes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[8]
+      value: tl'enk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[9]
+      value: Lam'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[10]
+      value: Tsek tsek
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[11]
+      value: Schayilhen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[12]
+      value: Tsek tsek
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[13]
+      value: Siten
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[14]
+      value: Men men
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[15]
+      value: Chawat
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[16]
+      value: Smenmant
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[17]
+      value: Shewshawk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[18]
+      value: kwiyilsh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[19]
+      value: Stl'ashen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[20]
+      value: Kwenimach
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[21]
+      value: Kwenimach
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[22]
+      value: Elhtach
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[23]
+      value: timashi
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[24]
+      value: mukwutsin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[25]
+      value: Atsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[26]
+      value: Itut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[27]
+      value: Kwakwayel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[28]
+      value: Skey
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[29]
+      value: Sxwusum
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9b58cc206d82904b8f40062674858d9, type: 2}
   m_IsPrefabParent: 0
@@ -7683,6 +8153,7 @@ MonoBehaviour:
   Characters: []
   DynamicProps: []
   isLoading: 0
+  StringPreviousLevel: empty
   StoryManager: {fileID: 0}
   EnvironmentTracker: 
   PreviousLevelTracker: 
