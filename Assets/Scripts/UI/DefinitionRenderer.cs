@@ -23,7 +23,7 @@ public class DefinitionRenderer : MonoBehaviour {
 	public string[] def_wordLilPplTranslation;
 	public Sprite [] def_wordLilPplPhotos;
 	public string[] def_BodyLilPplEnglish;
-    public AudioClip[] def_WordLil_Audio; 
+    public AudioClip[] def_WordLilPpl_Audio; 
 
     public string[] def_wordKal;
     public string[] def_wordKalTranslation;
