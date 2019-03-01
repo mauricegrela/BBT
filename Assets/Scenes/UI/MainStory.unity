@@ -2826,7 +2826,22 @@ Prefab:
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
       propertyPath: def_wordKal.Array.size
-      value: 30
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.size
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
@@ -2835,8 +2850,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
+      propertyPath: def_BodySasFrench.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.size
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
       propertyPath: def_wordKalTranslation.Array.size
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 224075532240333520, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
@@ -3279,107 +3314,107 @@ Prefab:
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
       propertyPath: def_wordKal.Array.data[4]
-      value: Asleep
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKal.Array.data[5]
       value: Radio
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[6]
-      value: Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKal.Array.data[7]
-      value: Bed
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKal.Array.data[8]
+      propertyPath: def_wordKal.Array.data[5]
       value: Potlatch
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[9]
+      propertyPath: def_wordKal.Array.data[6]
       value: House
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[10]
+      propertyPath: def_wordKal.Array.data[7]
       value: Forest
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[11]
+      propertyPath: def_wordKal.Array.data[8]
       value: salmon
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[12]
-      value: Forest
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKal.Array.data[13]
+      propertyPath: def_wordKal.Array.data[9]
       value: Basket
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[14]
+      propertyPath: def_wordKal.Array.data[10]
       value: Children
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[15]
+      propertyPath: def_wordKal.Array.data[11]
       value: Help
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[16]
+      propertyPath: def_wordKal.Array.data[12]
       value: Rocks
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[17]
+      propertyPath: def_wordKal.Array.data[13]
       value: Skulls
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[18]
-      value: dance
+      propertyPath: def_wordKal.Array.data[14]
+      value: Dance
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[19]
-      value: Feast
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKal.Array.data[20]
+      propertyPath: def_wordKal.Array.data[15]
       value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[21]
+      propertyPath: def_wordKal.Array.data[16]
       value: Mosquito
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[22]
+      propertyPath: def_wordKal.Array.data[17]
       value: Parents
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[23]
+      propertyPath: def_wordKal.Array.data[18]
       value: Promise
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKal.Array.data[24]
+      propertyPath: def_wordKal.Array.data[19]
       value: Kisses
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[20]
+      value: Outside
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[21]
+      value: Sleep
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[22]
+      value: Morning
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[23]
+      value: Salmon Smoke Cure
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKal.Array.data[24]
+      value: Jam
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
@@ -3429,107 +3464,107 @@ Prefab:
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
       propertyPath: def_wordKalTranslation.Array.data[4]
-      value: i7tut
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[5]
       value: kwaxwa7 ti Kwekeleylstn
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[6]
-      value: kwekeleylstn
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[7]
-      value: yaywes
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[8]
+      propertyPath: def_wordKalTranslation.Array.data[5]
       value: tl'enk
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[9]
+      propertyPath: def_wordKalTranslation.Array.data[6]
       value: Lam'
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[10]
+      propertyPath: def_wordKalTranslation.Array.data[7]
       value: Tsek tsek
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[11]
+      propertyPath: def_wordKalTranslation.Array.data[8]
       value: Schayilhen
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[12]
-      value: Tsek tsek
+      propertyPath: def_wordKalTranslation.Array.data[9]
+      value: Kalkalilh
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[13]
-      value: Siten
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[14]
+      propertyPath: def_wordKalTranslation.Array.data[10]
       value: Men men
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[15]
+      propertyPath: def_wordKalTranslation.Array.data[11]
       value: Chawat
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[16]
+      propertyPath: def_wordKalTranslation.Array.data[12]
       value: Smenmant
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[17]
+      propertyPath: def_wordKalTranslation.Array.data[13]
       value: Shewshawk
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[18]
+      propertyPath: def_wordKalTranslation.Array.data[14]
       value: kwiyilsh
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[19]
-      value: Stl'ashen
+      propertyPath: def_wordKalTranslation.Array.data[15]
+      value: Yiyulh
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[20]
+      propertyPath: def_wordKalTranslation.Array.data[16]
       value: Kwenimach
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[21]
-      value: Kwenimach
-      objectReference: {fileID: 0}
-    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
-        type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[22]
+      propertyPath: def_wordKalTranslation.Array.data[17]
       value: Elhtach
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[23]
+      propertyPath: def_wordKalTranslation.Array.data[18]
       value: timashi
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
-      propertyPath: def_wordKalTranslation.Array.data[24]
+      propertyPath: def_wordKalTranslation.Array.data[19]
       value: mukwutsin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[20]
+      value: Atsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[21]
+      value: Itut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[22]
+      value: Kwakwayel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[23]
+      value: Skey
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalTranslation.Array.data[24]
+      value: Sxwusum
       objectReference: {fileID: 0}
     - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
         type: 2}
@@ -3555,6 +3590,1198 @@ Prefab:
         type: 2}
       propertyPath: def_wordKalTranslation.Array.data[29]
       value: Sxwusum
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[0]
+      value: Those shrubby trees outside our home are Rocky Mountain Junipers, or
+        Red Cedars. The colour of the bark is beautiful and the wood is strong for
+        carving. I've used this wood for making so many things around the house. We
+        also use the large cedars to sleek canoes that glide through the water for
+        racing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[1]
+      value: "A bed is a place for rest and contemplation. I know young children don\u2019t
+        stay asleep for very long, especially Lily and Thomas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[2]
+      value: Kookum and I love the mild summers in these Rocky Mountains. You can
+        feel the soft breeze at night, like a caress from nature. Can you hear it
+        through the curtains? If you listen close enough, you can hear the wind talking
+        to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[3]
+      value: "The first meal of the day is an important one.  If children want to
+        be big and strong, they should never skip breakfast. I\u2019ve only skipped
+        it once, when I was reading a really good book and forgot the time."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[4]
+      value: "This is an old radio that my father gave me long ago. I know kids prefer
+        television, but I think there\u2019s an old charm in closing our eyes and
+        listening to the world around us. Maybe Lily and Thomas will get what I mean
+        when they\u2019re older, and their heads are less filled with Saturday morning
+        cartoons."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[5]
+      value: Potlatches are very important. Not just because of the food! There would
+        be many reasons to hold a potlatch. Chiefs used to host potlatches to display
+        their wealth. We believe the richer you are, the more you give to your community.
+        They are also a part of celebration for weddings and naming ceremonies. We
+        still hold potlatches today even though they were once illegal!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[6]
+      value: "A house is more than a place of shelter, it\u2019s where we call home.
+        Kookum and I built this house together. It wasn\u2019t easy, I tell you. But
+        whenever I got tired and frustrated, she would make her candied salmon and
+        everything would be good again.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[7]
+      value: "A forest is a beautiful place covered in trees, and the home to many
+        animals. It provided for our ancestors as it provides for us now. Children
+        shouldn\u2019t go into the forest alone at night, because there are many spirits
+        and creatures that call the darkness their home. You don't want to meet them. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[8]
+      value: "Sometimes Kookum jokes that I married her for her candied salmon.  She
+        wouldn\u2019t tell me her secret recipe otherwise! These fish are born in
+        freshwater but live as adults in the ocean. When they\u2019re ready to have
+        children, they journey home to where they were born. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[9]
+      value: Kalkalilh carries her giant wicker basket every where she goes, enough
+        to fit many children. But baskets can come in all shapes and sizes and not
+        just for carrying children.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[10]
+      value: "It\u2019s been a long time since I\u2019ve been a child, but I remember
+        that children have always been very curious. I think that curiosity helps
+        them grow, but it can also get them in trouble when they don\u2019t listen
+        to their Elders."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[11]
+      value: "It\u2019s important to help others whenever possible I love to help
+        others, especially when it comes to helping Kookum eat all that bannock. It\u2019s
+        a hard task, but someone needs to do it. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[12]
+      value: If you ask elders in your community, they can tell you different stories.
+        Some rocks are sacred. Some rocks are spirits. In Squamish there is a large
+        mountain that is said to be a longhouse and host many spirits. Even rocks
+        you have to respect.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[13]
+      value: 'It might surprise Lily and Thomas to know that even the skulls of  animals
+        have their uses. When we hunt an animal, we give thanks to their spirit and
+        make sure no part is wasted. Kookum fashions the hides into clothing and I
+        use the bones to make knives and arrow shafts. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[14]
+      value: Dances are usually joyous, except when Kalkalilh is involved. All Indigenous
+        people have their customary dance, many of which revolve around singing and
+        dancing. Dancing usually tells a story which is passed down from generation
+        to generation. Kookum learnt to dance from her Cree family while I learnt
+        to dance from my Coast Salish family. Thomas and Lily are lucky because they
+        get to learn both Cree and Coast Salish dances.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[15]
+      value: 'Long ago, before refrigerators were invented, our people had to find
+        a way to preserve meat. Fire was not only used for cooking salmon, but also
+        to preserve it by smoking the fish. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[16]
+      value: "Kookum always gets bitten by mosquitoes in the summer, but they usually
+        don\u2019t bite me, I don\u2019t think they\u2019re fond of old, leathery
+        skin! Children should be careful when they come out at night. They\u2019re
+        mostly pests, but they can be dangerous because they can make people sick."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[17]
+      value: "Sometimes parents seem like they have too many rules, but they only
+        want what\u2019s best for their children. I hope Thomas and Lily agree that
+        the children should have listened to the older boy. They could have been safe
+        at home, listening to bedtime stories. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[18]
+      value: 'When someone gives their word to another, that would be making a promise.
+        Promises are about building trust.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[19]
+      value: "Why do we give kisses? To remind each other of our love. Thomas wrinkles
+        his face but I know he doesn\u2019t sleep well without a goodnight kiss from
+        Kookum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[20]
+      value: The outdoors is rejuvenating and provides us with life. Kookum and I
+        love when Lily and Thomas visit in the summer time. They need to go out more
+        to grow big and tall, like that sapling outside our home.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[21]
+      value: "I believe that dreams are connected to our spirit and give us guidance.
+        Lily doesn\u2019t seem to be sleeping well lately, so I will ask Kookum to
+        make a dreamcatcher from the willow tree. The dreamcatcher will protect her
+        from bad dreams and only let the good ones through."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[22]
+      value: I like going for walks just as the sun breaks and the morning dew is
+        still on the grass. Hunters have to get up early before the sun rises to get
+        their food but I just hunt for Kookums bannock for my walk.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[23]
+      value: Candied salmon is a tasty treat that is smoked with a sweetener like
+        maple syrup or honey. There are many ways to eat salmon but I think this may
+        be my favourite.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalEnglish.Array.data[24]
+      value: "Jam is one way we can enjoy berries year round, especially soapberries.
+        Lily and Thomas would find soapberries too sour otherwise, if it wasn\u2019t
+        sweetened enough for their little taste buds.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[0]
+      value: Montagne
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[1]
+      value: Bannock
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[2]
+      value: Promenade
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[3]
+      value: Fumoir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[4]
+      value: Regalia
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[5]
+      value: Ours
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[6]
+      value: Empreinte
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[7]
+      value: Rochers
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[8]
+      value: Animal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[9]
+      value: Chute
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[10]
+      value: "G\xE9ant"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[11]
+      value: Branches
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[12]
+      value: Cliquetis
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[13]
+      value: Collier
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[14]
+      value: Jouet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[15]
+      value: Sasquatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[16]
+      value: "For\xEAt"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[17]
+      value: "Rivi\xE8re"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[18]
+      value: Aider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[19]
+      value: Saumon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordSasFR.Array.data[20]
+      value: Lit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[0]
+      value: "Les montagnes que tu vois ont toutes un nom et une histoire. Certaines
+        sont des esprits ou des maisons longues pour les esprits. J\u2019ai toujours
+        admir\xE9 les montagnes pour leur patience, tandis qu\u2019elles veillent
+        sur le monde."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[1]
+      value: "C\u2019est un vrai r\xE9gal chaque fois que Kookum pr\xE9pare son fameux
+        bannock, un d\xE9licieux pain frit pr\xE9par\xE9 avec de la farine, du sel
+        et de l\u2019eau. J\u2019adore \xE7a lorsqu\u2019elle le fait revenir avec
+        un peu de graisse de bacon."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[2]
+      value: "J\u2019aime beaucoup les promenades matinales le long de la rivi\xE8re.
+        Elles me lib\xE8rent l\u2019esprit et me r\xE9servent toujours des surprises
+        au d\xE9tour du chemin. Je garde toujours les yeux ouverts au cas o\xF9 je
+        rencontrerais des Sasq&#39;ets."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[3]
+      value: "Nous utilisons du pin de la r\xE9gion pour notre fumoir. Nous y suspendons
+        nos saumons pour qu\u2019ils s\u2019impr\xE8gnent d\u2019un d\xE9licieux ar\xF4me
+        de fum\xE9e. Nous ne pouvons pas utiliser n\u2019importe quel bois, car cela
+        pourrait donner un go\xFBt diff\xE9rent au poisson. Il m\u2019a fallu plusieurs
+        jours pour construire ce fumoir, mais le savoureux saumon de Kookum en valait
+        vraiment la peine!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[4]
+      value: "La regalia est notre costume traditionnel de danse. Elle est diff\xE9rente
+        pour les hommes et les femmes, et varie d\u2019un territoire \xE0 l\u2019autre,
+        en fonction des motifs, des couleurs et des tissus. Chaque v\xEAtement raconte
+        une histoire reli\xE9e \xE0 la danse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[5]
+      value: "Les ours sont tr\xE8s forts. Ils laissent des traces dans la nature,
+        des branches cass\xE9es, des marques de griffes ou des empreintes g\xE9antes,
+        et il faut s\u2019en \xE9loigner tr\xE8s vite. Les enfants ne devraient jamais
+        marcher seuls dans la for\xEAt, m\xEAme en pleine journ\xE9e."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[6]
+      value: "Qu\u2019est-ce qui pourrait laisser une si grosse empreinte de patte
+        dans le sable? Un ours, ou un des gentils g\xE9ants peut-\xEAtre? Cet \xE9t\xE9,
+        je vais faire un projet d\u2019art avec Thomas et Lily et je vais leur montrer
+        comment conserver une empreinte en la moulant dans du ciment. Ils pourront
+        ensuite la mettre en peinture lorsqu\u2019elle sera s\xE8che."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[7]
+      value: "Si tu poses la question aux A\xEEn\xE9s de ta communaut\xE9, ils te
+        raconteront de nombreuses histoires sur les rochers. Certains rochers sont
+        sacr\xE9s. D\u2019autres sont des esprits. On dit que la grande montagne qui
+        est \xE0 Squamish est une maison longue qui abriterait plusieurs esprits.
+        Il faut respecter la nature, m\xEAme les rochers."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[8]
+      value: "Les animaux sont sacr\xE9s. Ils nous permettent de nous nourrir et de
+        nous v\xEAtir. Ils communiquent aussi avec nous si nous apprenons \xE0 les
+        \xE9couter."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[9]
+      value: "Quand j\u2019\xE9tais adolescent, j\u2019\xE9tais tr\xE8s maladroit;
+        je tr\xE9buchais et je tombais souvent \xE0 cause de mes grandes jambes. Un
+        jour, je suis m\xEAme tomb\xE9 sur Kookum. Je lui ai dit que j\u2019\xE9tais
+        tomb\xE9 amoureux d\u2019elle; elle savait que c\u2019\xE9tait un peu b\xEAte,
+        mais elle a ri quand m\xEAme."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[10]
+      value: "Un g\xE9ant est quelqu\u2019un de tr\xE8s, tr\xE8s grand. Compar\xE9
+        \xE0 Thomas et \xE0 Lily, j\u2019ai presque l\u2019air d\u2019un g\xE9ant.
+        Si, un jour, les enfants voient un Sasq&#39;et, ils sauront vraiment \xE0
+        quoi ressemble un g\xE9ant!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[11]
+      value: "Les branches sont les ramifications du tronc d\u2019un arbre sur lesquelles
+        poussent les feuilles. La fa\xE7on dont l\u2019\xE9nergie se transmet de la
+        terre \xE0 l\u2019extr\xE9mit\xE9 des branches et vice et versa m\u2019a toujours
+        \xE9tonn\xE9!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[12]
+      value: "Il y a tellement de petits bruits et de cliquetis autour de nous. Je
+        me suis souvent pos\xE9 la question suivante: si un arbre tombe dans la for\xEAt
+        et que personne n\u2019est l\xE0 pour le voir, est-ce qu\u2019il fait quand
+        m\xEAme beaucoup de bruit?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[13]
+      value: "Il y a bien longtemps, lorsque Kookum et moi nous sommes mari\xE9s,
+        je lui ai offert un collier de longs coquillages et de jolies plumes d\u2019oiseaux
+        que j\u2019avais ramass\xE9s. J\u2019\xE9tais loin de me douter qu\u2019elle
+        m\u2019avait fait un collier qui ressemblait beaucoup au mien, ce qui illustre
+        bien le dicton \xAB\_Qui se ressemble s&#39;assemble\_\xBB."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[14]
+      value: "Lorsqu\u2019elle \xE9tait petite, Kookum devait coudre les habits de
+        ses poup\xE9es. Ses parents savaient que cela repr\xE9sentait tellement de
+        travail que Kookum prendrait toujours soin de ses jouets."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[15]
+      value: "M\xEAme lorsque j\u2019\xE9tais petit, j\u2019entendais toujours des
+        histoires sur les Sasq&#39;ets. Certains les appelaient aussi Bigfoot. Je
+        croyais qu\u2019on parlait de moi parce que j\u2019avais de tr\xE8s grands
+        pieds."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[16]
+      value: "Lorsque j\u2019\xE9tais petit, je jouais dans la for\xEAt pendant des
+        heures. Mes grands-parents me disaient toujours de rester sur le chemin pour
+        que les cr\xE9atures myst\xE9rieuses de la for\xEAt ne viennent pas m\u2019attraper!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[17]
+      value: "Votre Kookum et moi, nous aimons les montagnes Rocheuses, parce qu\u2019il
+        y a tellement de choses merveilleuses \xE0 y voir. Cette petite rivi\xE8re,
+        par exemple, en rejoint une autre un peu plus loin avant de se transformer
+        en une magnifique cascade."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[18]
+      value: "C\u2019est important d\u2019aider les autres chaque fois que c\u2019est
+        possible. J\u2019aime bien aider les autres, surtout lorsqu\u2019il s\u2019agit
+        d\u2019aider Kookum \xE0 manger tout le bannock. C\u2019est un travail difficile,
+        mais il faut bien que quelqu\u2019un le fasse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[19]
+      value: "Quelquefois, Kookum plaisante en disant que je me suis mari\xE9 avec
+        elle pour son saumon confit. Sinon, elle ne m\u2019aurait jamais r\xE9v\xE9l\xE9
+        sa recette secr\xE8te!  Savais-tu que les saumons naissent en eau douce mais
+        vivent leur vie d\u2019adulte dans les oc\xE9ans? Lorsqu\u2019ils sont pr\xEAts,
+        ils remontent la rivi\xE8re o\xF9 ils sont n\xE9s pour se reproduire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodySasFrench.Array.data[20]
+      value: "Un lit est un endroit propice au repos et \xE0 la contemplation. Je
+        sais que les petits enfants ont du mal \xE0 s\u2019endormir lorsqu\u2019ils
+        sont excit\xE9s, surtout Lily et Thomas. Quelquefois, je dois leur raconter
+        une petite histoire pour qu\u2019ils puissent s\u2019endormir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[0]
+      value: Oiseaux
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[1]
+      value: Soeur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[2]
+      value: Sac
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[3]
+      value: Bannock
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[4]
+      value: Baies
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[5]
+      value: Saumon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[6]
+      value: "Cr\xE8me glac\xE9e"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[7]
+      value: Seaux
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[8]
+      value: Tabouret
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[9]
+      value: Bras
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[10]
+      value: Terre
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[11]
+      value: Nez
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[12]
+      value: Bol
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[13]
+      value: "Cuill\xE8re"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[14]
+      value: Farine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[15]
+      value: Mensonges
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[16]
+      value: "Fen\xEAtre"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[17]
+      value: "Ma\xEFs souffl\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[18]
+      value: Tour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[19]
+      value: Cuisine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[20]
+      value: Panier
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[21]
+      value: Homme
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[22]
+      value: Racine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[23]
+      value: "M\xE9decine"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[24]
+      value: Battement de tambour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[25]
+      value: Femme
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[26]
+      value: "Jour, journ\xE9e"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[27]
+      value: Cadeau
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordLilPplFR.Array.data[28]
+      value: Mocassins
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[0]
+      value: "Mes grands-parents, tout comme moi, chassaient souvent les oies et les
+        canards. C\u2019est au printemps que de nombreux oiseaux reviennent des pays
+        chauds. Demain, j\u2019emm\xE8nerai Lily et Thomas observer les oiseaux. C\u2019est
+        toujours tr\xE8s int\xE9ressant, car il y a plus de 280 esp\xE8ces d\u2019oiseaux
+        dans les montagnes Rocheuses."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[1]
+      value: "Thomas ne voudrait peut-\xEAtre pas l\u2019admettre, mais avoir une
+        petite soeur est une des plus belles choses au monde. Thomas adore \xEAtre
+        un grand fr\xE8re, mais cela implique aussi de grandes responsabilit\xE9s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[2]
+      value: "Les sacs \xE9taient faits en peau tann\xE9e, un mat\xE9riau qu\u2019on
+        utilise toujours pour les sacs de tambour et les sacs de plantes m\xE9dicinales.
+        Lily, elle aussi, a une petite sacoche en peau pour ranger ses babioles."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[3]
+      value: "C\u2019est un vrai r\xE9gal chaque fois que Kookum pr\xE9pare son fameux
+        bannock, un d\xE9licieux pain frit pr\xE9par\xE9 avec de la farine, du sel
+        et de l\u2019eau. J\u2019adore \xE7a lorsqu\u2019elle le fait revenir avec
+        un peu de graisse de bacon."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[4]
+      value: "En grandissant dans les Prairies, Kookum a pu manger beaucoup d\u2019am\xE9lanches.
+        Moi, j\u2019adore les m\xFBres de la Colombie-Britannique."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[5]
+      value: "Kookum a mang\xE9 du dor\xE9 en grandissant, mais elle a appris \xE0
+        faire le meilleur saumon confit quand elle a essay\xE9 de me s\xE9duire. Et
+        \xE7a a march\xE9!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[6]
+      value: "La cr\xE8me glac\xE9e sucr\xE9e que connaissent la plupart des gens
+        est bien diff\xE9rente de la cr\xE8me glac\xE9e aux sh\xE9pherdies. C\u2019est
+        une mousse faite de sh\xE9pherdies et de sucre liquide. Elle est un peu plus
+        am\xE8re que ce \xE0 quoi Thomas et Lily sont habitu\xE9s, mais bien meilleure
+        pour la sant\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[7]
+      value: "Thomas et Lily utilisent des vieux seaux de cr\xE8me glac\xE9e pour
+        transporter tous leurs petits fruits. Dans le temps, Kookum fabriquait des
+        paniers en \xE9corce de bouleau ou en coton. Quand j\u2019\xE9tais petit,
+        mes tantes tressaient des paniers en c\xE8dre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[8]
+      value: "Ce vieux tabouret en bois est une des premi\xE8res choses que j\u2019ai
+        fabriqu\xE9es dans cette maison. Ce tabouret solide ne paie peut-\xEAtre pas
+        de mine, mais je pense que ce qu\u2019on fabrique de ses propres mains a toujours
+        plus de valeur."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[9]
+      value: "Lily a dit un jour qu\u2019elle aimerait avoir plus de bras pour pouvoir
+        mieux jongler que Thomas. Je lui ai dit que sa vie serait tr\xE8s compliqu\xE9e
+        si elle avait autant de bras qu\u2019une pieuvre. Moi, je pr\xE9f\xE8rerais
+        avoir une bouche suppl\xE9mentaire pour pouvoir manger plus de ce d\xE9licieux
+        saumon confit pr\xE9par\xE9 par Kookum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[10]
+      value: "Je me suis toujours demand\xE9 ce qui vivait sous la terre. Y a-t-il
+        des lutins qui vivent dans des maisons souterraines ignor\xE9es de tous? Un
+        jour, j\u2019aimerais prendre une pelle et creuser le plus profond possible.
+        Je me demande si nous arriverions sur une terre lointaine."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[11]
+      value: "La premi\xE8re fois que j\u2019ai vu un lutin, j\u2019ai trouv\xE9 \xE7a
+        bizarre, car il n\u2019avait pas de nez. Je ne peux pas imaginer ne pas avoir
+        de nez, car j\u2019adore sentir les odeurs de la for\xEAt et les merveilles
+        que nous offre la nature, sans oublier les odeurs qui sortent de la cuisine
+        lorsque Kookum pr\xE9pare \xE0 manger."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[12]
+      value: "Nous avons beaucoup de bols qui brillent chez nous, n\u2019est-ce pas?
+        Mes anc\xEAtres aimaient fabriquer des bols en bois d\u2019aulne, parce que
+        ce bois n\u2019alt\xE8re pas la saveur des aliments."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[13]
+      value: "Lily a appris \xE0 se servir d\u2019une cuill\xE8re quand elle \xE9tait
+        petite. Elle faisait beaucoup de bruit avec cette petite cuill\xE8re! Il y
+        a longtemps, avant les cuill\xE8res brillantes d\u2019aujourd\u2019hui, nos
+        anc\xEAtres les fabriquaient \xE0 partir de cornes d\u2019animaux ou d\u2019os."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[14]
+      value: "Que ferions-nous sans farine? Nos anc\xEAtres pr\xE9paraient le bannock
+        un peu diff\xE9remment, en utilisant de la semoule de ma\xEFs et de la farine
+        de navets sauvages."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[15]
+      value: "On dit que les petits mensonges ne portent pas \xE0 cons\xE9quence,
+        mais ils peuvent parfois devenir gros et faire beaucoup de mal. Lily sait
+        que ce n\u2019est pas bien de mentir, mais m\xEAme Thomas a du mal \xE0 croire
+        qu\u2019elle ait vu des lutins. Les lutins ne se montrent qu\u2019\xE0 quelques
+        personnes sp\xE9ciales, ce qui explique pourquoi beaucoup de gens n\u2019y
+        croient pas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[16]
+      value: "Une fen\xEAtre permet de voir dehors: c\u2019est une fa\xE7on de garder
+        un lien avec l\u2019ext\xE9rieur. On dit que les yeux ouvrent une fen\xEAtre
+        sur notre \xE2me, mais je dirais qu\u2019ils ouvrent plut\xF4t une fen\xEAtre
+        sur mon estomac. Lorsque je vois les bonnes choses qu\u2019a pr\xE9par\xE9es
+        Kookum en train de refroidir devant la fen\xEAtre, mon estomac se met \xE0
+        gargouiller."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[17]
+      value: "Qu\u2019est-ce qui fait \xE9clater le ma\xEFs? Les grains de ma\xEFs
+        \xE9clatent lorsque la pression est tr\xE8s forte \xE0 l\u2019int\xE9rieur.
+        Les lutins aiment bien taquiner les gens, en leur jetant des petits fruits
+        m\xFBrs par exemple, comme du ma\xEFs souffl\xE9 qui sortirait d\u2019un \xE9clateur
+        de ma\xEFs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[18]
+      value: "Les lutins s\u2019amusent en jouant des tours \xE0 Thomas, mais Thomas
+        ne trouve pas \xE7a dr\xF4le du tout. Les tours sont des farces qui sont suppos\xE9es
+        \xEAtre dr\xF4les, mais il ne faut jamais aller trop loin pour ne pas blesser
+        les gens."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[19]
+      value: "C\u2019est dans la cuisine que nous mangeons tous ensemble, que Kookum
+        pr\xE9pare ses plats d\xE9licieux et que Lily se retrouve dans le p\xE9trin!
+        Pour moi, c\u2019est un endroit merveilleux, une source de plaisir et de cr\xE9ativit\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[20]
+      value: "Kookum a fabriqu\xE9 tous ces objets avec de l\u2019\xE9corce de bouleau,
+        comme les petits paniers o\xF9 elle range toutes ses bagues. Autrefois, les
+        paniers \xE9taient plus gros et compl\xE8tement \xE9tanches pour pouvoir transporter
+        de l\u2019eau."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[21]
+      value: "Lily a vu un petit homme myst\xE9rieux dans la cuisine. Penses-tu que
+        c\u2019est un lutin? On dirait qu\u2019il aime bien les choses brillantes,
+        surtout les cuill\xE8res que nous avons ramen\xE9es de voyage l\u2019ann\xE9e
+        derni\xE8re."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[22]
+      value: "Les racines fixent un arbre au sol et sont \xE0 l\u2019origine de toute
+        sa force int\xE9rieure. Nous avons tous besoin d\u2019une grande force int\xE9rieure.
+        Les racines ont \xE9galement des propri\xE9t\xE9s m\xE9dicinales et peuvent
+        \xEAtre utilis\xE9es pour pr\xE9parer des pommades."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[23]
+      value: "Toutes les cultures autochtones ont recours \xE0 la m\xE9decine traditionnelle
+        et utilisent les ingr\xE9dients qui sont dans la nature. Les rem\xE8des se
+        trouvent dans les aliments que nous mangeons et dans les herbes autour de
+        nous. Nous utilisons aussi le foin d\u2019odeur, la sauge et l\u2019eau pour
+        les rituels de purification."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[24]
+      value: "Les battements de tambour reproduisent le pouls de notre m\xE8re la
+        Terre. C\u2019est dans notre sang. Il y a plusieurs tailles de tambour et
+        leur membrane est toujours en peau tann\xE9e. Au cours des pow- wow, il y
+        a g\xE9n\xE9ralement plusieurs joueurs de tambour assis en cercle autour d\u2019un
+        gros tambour. Il faut avoir la permission des autres joueurs de tambour pour
+        pouvoir s\u2019asseoir dans le cercle."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[25]
+      value: "Les femmes sont tenues en tr\xE8s haute estime dans notre culture car
+        elle sont des donneuses de vie. Sans elles, aucun d\u2019entre nous ne serait
+        ici!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[26]
+      value: "Le jour appartient au soleil\_qui darde ses rayons \xE9clatants sur
+        la Terre et apporte joie et r\xE9confort \xE0 tous ceux que r\xE9chauffe sa
+        lumi\xE8re flamboyante. Il ne se passe pas un jour sans que je pense \xE0
+        la chance que j\u2019ai d\u2019avoir deux petits-enfants merveilleux comme
+        Thomas et Lily."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[27]
+      value: "Lorsque les lutins aident quelqu\u2019un, il est d\u2019usage de leur
+        offrir un cadeau pour les remercier. Les lutins sont des \xEAtres tr\xE8s
+        malicieux, et il est pr\xE9f\xE9rable de ne pas les mettre en col\xE8re. Nous
+        offrons aussi des cadeaux aux gens qui nous aident ou qui nous sont chers
+        et faisons des offrandes \xE0 la Terre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyLilPplFrench.Array.data[28]
+      value: "Autrefois, les mocassins \xE9taient en peau d\u2019animal, notamment
+        en peau de lapin ou de wapiti. En hiver, les mocassins doubl\xE9s de fourrure
+        tiennent les pieds bien au chaud."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[0]
+      value: "C\xE8dre"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[1]
+      value: Lit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[2]
+      value: Brise
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[3]
+      value: "Petit d\xE9jeuner"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[4]
+      value: Radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[5]
+      value: Potlatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[6]
+      value: Maison
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[7]
+      value: "For\xEAt"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[8]
+      value: Saumon
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[9]
+      value: Panier
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[10]
+      value: Enfants
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[11]
+      value: Aider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[12]
+      value: Rochers
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[13]
+      value: "Cr\xE2nes"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[14]
+      value: Danse
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[15]
+      value: Feu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[16]
+      value: Moustiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[17]
+      value: Parents
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[18]
+      value: Promesse
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[19]
+      value: Embrasser
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[20]
+      value: Dehors
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[21]
+      value: Dormir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[22]
+      value: Matin
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[23]
+      value: Saumon confit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_wordKalFR.Array.data[24]
+      value: Confiture
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[0]
+      value: "Ces arbustes devant notre maison sont des gen\xE9vriers des Rocheuses,
+        que l\u2019on appelle aussi c\xE8dres rouges. La couleur de l\u2019\xE9corce
+        est tr\xE8s jolie et le bois est id\xE9al pour la sculpture. J\u2019ai utilis\xE9
+        du c\xE8dre rouge pour fabriquer plusieurs meubles dans la maison. Nous utilisons
+        les plus grands arbres pour construire des pirogues \xE9lanc\xE9es qui se
+        d\xE9placent tr\xE8s vite sur l\u2019eau."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[1]
+      value: "Un lit est un endroit propice au repos et \xE0 la contemplation. Je
+        sais que les petits enfants ne restent pas au lit tr\xE8s longtemps, surtout
+        Lily et Thomas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[2]
+      value: "Kookum et moi aimons la douceur de l\u2019\xE9t\xE9 dans les montagnes
+        Rocheuses. La nuit, on peut sentir la brise glisser sur nos corps, comme une
+        caresse de la nature. L\u2019entends-tu qui agite les rideaux? Si tu \xE9coutes
+        attentivement, le vent te murmurera peut-\xEAtre quelque chose \xE0 l\u2019oreille."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[3]
+      value: "Le premier repas de la journ\xE9e est important. Les enfants ne devraient
+        jamais sauter le petit d\xE9jeuner s\u2019ils veulent devenir grands et forts.
+        Je n\u2019ai saut\xE9 mon petit d\xE9jeuner qu\u2019une seule fois, parce
+        que je lisais un livre passionnant et que j\u2019avais oubli\xE9 l\u2019heure."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[4]
+      value: "C\u2019est mon p\xE8re qui m\u2019a donn\xE9 cette vieille radio il
+        y a longtemps. Je sais que les enfants pr\xE9f\xE8rent regarder la t\xE9l\xE9vision,
+        mais pour moi, \xE9couter la radio en fermant les yeux a conserv\xE9 tout
+        son charme d\u2019autrefois. Peut-\xEAtre que Lily et Thomas comprendront
+        ce que je veux dire quand ils seront plus \xE2g\xE9s et qu\u2019ils penseront
+        \xE0 autre chose que les dessins anim\xE9s du samedi matin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[5]
+      value: "Les potlatchs sont des c\xE9r\xE9monies tr\xE8s importantes. Et pas
+        uniquement \xE0 cause de la nourriture! Ils ont plusieurs fonctions. Autrefois,
+        les chefs en organisaient pour faire \xE9talage de leur richesse. Nous estimons
+        que plus on est riche, plus on doit redonner \xE0 la communaut\xE9. Aujourd\u2019hui,
+        les potlatchs font partie des c\xE9l\xE9brations de mariage et d\u2019attribution
+        de nom. Nous les organisons toujours, m\xEAme s\u2019ils ont \xE9t\xE9 interdits
+        pendant longtemps!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[6]
+      value: "Une maison n\u2019est pas qu\u2019un simple abri, c\u2019est aussi un
+        endroit o\xF9 nous nous sentons chez nous. Kookum et moi avons construit cette
+        maison ensemble, et je peux te dire que \xE7a n\u2019a pas toujours \xE9t\xE9
+        facile, mais chaque fois que j\u2019\xE9tais fatigu\xE9 ou frustr\xE9, elle
+        pr\xE9parait son saumon confit et tout allait mieux."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[7]
+      value: "Une for\xEAt est un bel endroit o\xF9 il y a beaucoup d\u2019arbres;
+        de nombreux animaux y habitent. Les for\xEAts ont subvenu aux besoins de nos
+        anc\xEAtres et elles subviennent aux n\xF4tres aujourd\u2019hui. Les enfants
+        ne devraient pas se promener seuls dans la for\xEAt la nuit, car c\u2019est
+        le moment o\xF9 sortent les esprits et les cr\xE9atures qui aiment l\u2019obscurit\xE9.
+        Tu ne veux certainement pas les rencontrer."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[8]
+      value: "Quelquefois, Kookum plaisante en disant que je me suis mari\xE9 avec
+        elle pour son saumon confit. Sinon, elle ne m\u2019aurait jamais r\xE9v\xE9l\xE9
+        sa recette secr\xE8te! Les saumons naissent en eau douce mais vivent leur
+        vie d\u2019adulte dans les oc\xE9ans. Lorsqu\u2019ils sont pr\xEAts, ils remontent
+        la rivi\xE8re o\xF9 ils sont n\xE9s pour se reproduire."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[9]
+      value: "Kalkalilh emporte toujours son grand panier en osier avec elle. Il est
+        assez gros pour y mettre plusieurs enfants. Les paniers existent sous plusieurs
+        formes et en plusieurs dimensions, et ils ne servent pas juste \xE0 transporter
+        les enfants."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[10]
+      value: "Cela fait longtemps que je ne suis plus un enfant, mais je sais que
+        les enfants sont toujours tr\xE8s curieux. La curiosit\xE9 les aide \xE0 grandir,
+        mais elle peut aussi leur attirer des ennuis s\u2019ils n\u2019\xE9coutent
+        pas leurs A\xEEn\xE9s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[11]
+      value: "C\u2019est important d\u2019aider les autres chaque fois que c\u2019est
+        possible. J\u2019aime bien aider les autres, surtout lorsqu\u2019il s\u2019agit
+        d\u2019aider Kookum \xE0 manger tout le bannock. C\u2019est un travail difficile,
+        mais il faut bien que quelqu\u2019un le fasse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[12]
+      value: "Si tu poses la question aux A\xEEn\xE9s de ta communaut\xE9, ils te
+        raconteront de nombreuses histoires sur les rochers. Certains rochers sont
+        sacr\xE9s. D\u2019autres sont des esprits. On dit que la grande montagne qui
+        est \xE0 Squamish est une maison longue qui abriterait plusieurs esprits.
+        Il faut respecter la nature, m\xEAme les rochers."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[13]
+      value: "Lily et Thomas seraient peut-\xEAtre surpris de savoir que m\xEAme les
+        cr\xE2nes des animaux servent \xE0 quelque chose. Lorsque nous abattons un
+        animal \xE0 la chasse, nous remercions son esprit et nous veillons \xE0 ce
+        que rien ne soit gaspill\xE9. Kookum fabrique des v\xEAtements avec les peaux
+        et j\u2019utilise les os pour faire des couteaux et des f\xFBts de fl\xE8ches."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[14]
+      value: "Les danses sont g\xE9n\xE9ralement des occasions joyeuses, sauf lorsque
+        Kalkalilh s\u2019en m\xEAle. Tous les peuples autochtones ont leurs coutumes,
+        avec leurs propres chants et leurs propres danses. Les danses racontent souvent
+        des histoires qui sont transmises de g\xE9n\xE9ration en g\xE9n\xE9ration.
+        Kookum a appris \xE0 danser avec sa famille crie, tandis que moi j\u2019ai
+        appris avec ma famille salishenne. Thomas et Lily ont de la chance car ils
+        auront l\u2019occasion d\u2019apprendre des danses des Cris et des Salish
+        du littoral."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[15]
+      value: "Dans l\u2019ancien temps, bien avant l\u2019invention des r\xE9frig\xE9rateurs,
+        nos anc\xEAtres ont d\xFB trouver une fa\xE7on de conserver la viande. Le
+        feu ne servait pas seulement \xE0 faire cuire le saumon, il permettait aussi
+        de le fumer pour le conserver plus longtemps."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[16]
+      value: "Kookum se fait toujours piquer par des moustiques en \xE9t\xE9, mais
+        ils me laissent g\xE9n\xE9ralement tranquille parce que je crois qu\u2019ils
+        n\u2019aiment pas ma vieille peau coriace qui ressemble \xE0 du cuir! Les
+        enfants devraient faire attention quand ils sont dehors la nuit. Les moustiques
+        sont surtout emb\xEAtants, mais ils peuvent aussi \xEAtre dangereux car ils
+        transmettent des maladies."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[17]
+      value: "Les parents semblent parfois vouloir imposer trop de r\xE8gles, mais
+        ils veulent seulement ce qu\u2019il y a de mieux pour leurs enfants. J\u2019esp\xE8re
+        que Thomas et Lily sont d\u2019accord pour dire que les enfants auraient d\xFB
+        \xE9couter le jeune adolescent. Ils auraient \xE9t\xE9 en s\xE9curit\xE9 dans
+        la maison longue, \xE0 \xE9couter des histoires avant de se coucher."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[18]
+      value: "On fait une promesse lorsqu\u2019on donne sa parole \xE0 quelqu\u2019un,
+        lorsqu\u2019on s\u2019engage \xE0 faire quelque chose. Les promesses permettent
+        d\u2019\xE9tablir des relations de confiance."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[19]
+      value: "On embrasse quelqu\u2019un pour lui rappeler \xE0 quel point on l\u2019aime.
+        Thomas fait un peu la grimace, mais je sais qu\u2019il a du mal \xE0 s\u2019endormir
+        tant que Kookum ne l\u2019a pas embrass\xE9 pour lui souhaiter bonne nuit."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[20]
+      value: "J\u2019ai l\u2019impression de rajeunir et de reprendre vie chaque fois
+        que je suis dehors. Kookum et moi sommes toujours contents lorsque Lily et
+        Thomas viennent nous rendre visite en \xE9t\xE9. Ils ont besoin d\u2019\xEAtre
+        dehors plus souvent pour devenir grands et forts, comme cet arbre devant notre
+        maison."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[21]
+      value: "Je crois que les r\xEAves sont une manifestation de notre esprit et
+        qu\u2019ils nous apportent de bons conseils. J\u2019ai l\u2019impression que
+        Lily ne dort pas tr\xE8s bien r\xE9cemment. Je vais demander \xE0 Kookum de
+        lui fabriquer un capteur de r\xEAves en saule. Le capteur de r\xEAves laissera
+        passer les belles images de la nuit et d\xE9truira les cauchemars."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[22]
+      value: "J\u2019aime me promener au lever du jour lorsque les brins d\u2019herbe
+        scintillent de ros\xE9e. Les chasseurs doivent \xEAtre debout avant l\u2019aube
+        s\u2019ils veulent attraper du gibier. Moi, je chasse juste pour que Kookum
+        puisse pr\xE9parer du bannock."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[23]
+      value: "Le saumon confit est un mets savoureux pr\xE9par\xE9 avec du saumon
+        fum\xE9 et du sirop d\u2019\xE9rable ou du miel. On peut d\xE9guster le saumon
+        de nombreuses fa\xE7ons, mais je pr\xE9f\xE8re de loin le saumon confit."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537942952497366, guid: c9b58cc206d82904b8f40062674858d9,
+        type: 2}
+      propertyPath: def_BodyKalFrench.Array.data[24]
+      value: "La confiture nous permet de manger des fruits toute l\u2019ann\xE9e,
+        surtout des sh\xE9pherdies. Ces petits fruits seraient trop amers pour Lily
+        et Thomas. Le sucre des confitures leur permet de mieux les appr\xE9cier."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9b58cc206d82904b8f40062674858d9, type: 2}

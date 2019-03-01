@@ -14,23 +14,31 @@ public class DefinitionRenderer : MonoBehaviour {
 	public AudioSource audioEmitter;
 
 	public string[] def_wordSas;
+    public string[] def_wordSasFR;
 	public string[] def_wordSasTranslation;
-	public Sprite [] def_wordSasPhotos;
+	public Sprite[] def_wordSasPhotos;
 	public string[] def_BodySasEnglish;
+    public string[] def_BodySasFrench;
 	public AudioClip[] def_WordSas_Audio;  
 
 	public string[] def_wordLilPpl;
+    public string[] def_wordLilPplFR;
 	public string[] def_wordLilPplTranslation;
-	public Sprite [] def_wordLilPplPhotos;
+	public Sprite[] def_wordLilPplPhotos;
 	public string[] def_BodyLilPplEnglish;
+    public string[] def_BodyLilPplFrench;
     public AudioClip[] def_WordLilPpl_Audio; 
 
     public string[] def_wordKal;
+    public string[] def_wordKalFR;
     public string[] def_wordKalTranslation;
-    public Sprite [] def_wordKalPhotos;
+    public Sprite[] def_wordKalPhotos;
     public string[] def_BodyKalEnglish;
-    public AudioClip[] def_WordKal_Audio; 
+    public string[] def_BodyKalFrench;
+    public AudioClip[] def_WordKal_Audio;
 
+    private string RefWorld;
+    private string RefWorldBody;
 	// Use this for initialization
 	void Start () {
 		
@@ -46,16 +54,28 @@ public class DefinitionRenderer : MonoBehaviour {
 		if (DataManager.currentStoryName == "sasquatch") {
 			for (int i = 0; i < def_wordSas.Length; i++) {
 
-                Debug.Log(Definition.text.ToLower()+"\\\\"+def_wordSas[i].ToLower());
-
-				if (Definition.text.ToLower ().Equals (def_wordSas [i].ToLower ())) {
-					title.text = def_wordSas [i];
+                if(DataManager.currentLanguage == "english")
+                {
+                RefWorld = def_wordSas[i].ToLower();
+                RefWorldBody = def_BodySasEnglish[i];    
+                }
+                    else if (DataManager.currentLanguage == "french")
+                    {
+                        RefWorld = def_wordSas[i].ToLower();
+                        RefWorldBody = def_BodySasEnglish[i];
+                    }
+                        else if (DataManager.currentLanguage == "indigenous")
+                        {
+                            RefWorld = def_wordSas[i].ToLower();
+                            RefWorldBody = def_BodySasEnglish[i];
+                        }
+                if (Definition.text.ToLower ().Equals (RefWorld)) 
+                {
+                    title.text = RefWorld;
 					TextTranslation.text = def_wordSasTranslation [i];
 					RenderPlacement.sprite = def_wordSasPhotos [i];
-					TextBody.text = def_BodySasEnglish [i];
+                    TextBody.text = RefWorldBody;
 					audioEmitter.clip = def_WordSas_Audio [i];
-                    Debug.Log(Definition.text.ToLower());
-					//audioEmitter.Play ();
 				} 
 			}
 		}
@@ -63,7 +83,7 @@ public class DefinitionRenderer : MonoBehaviour {
                 for (int i = 0; i < def_wordLilPpl.Length; i++)
                 {
 
-                    Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordLilPpl[i].ToLower());
+                    //Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordLilPpl[i].ToLower());
 
                     if (Definition.text.ToLower().Equals(def_wordLilPpl[i].ToLower()))
                     {
@@ -81,7 +101,7 @@ public class DefinitionRenderer : MonoBehaviour {
             for (int i = 0; i < def_wordKal.Length; i++)
                     {
 
-                Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordKal[i].ToLower());
+               // Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordKal[i].ToLower());
 
                 if (Definition.text.ToLower().Equals(def_wordKal[i].ToLower()))
                         {

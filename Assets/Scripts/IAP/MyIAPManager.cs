@@ -22,8 +22,8 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     // specific mapping to Unity Purchasing's AddProduct, below.
     public static string kProductIDConsumable = "consumable";
 
-    public static string kProductIDNonConsumableBookOne = "com.imaginecreatemedia.daisy.StickerSet";//TODO:Implement the actual name for the book
-    public static string kProductIDNonConsumableBookTwo = "com.imaginecreatemedia.daisy.StickerSet";//TODO:Implement the actual name for the book
+    public static string kProductIDNonConsumableBookOne = "com.RivalSchools.BBT.littlepeople";//TODO:Implement the actual name for the book
+    public static string kProductIDNonConsumableBookTwo = "com.RivalSchools.BBT.kalkalilh";//TODO:Implement the actual name for the book
 
 
 
