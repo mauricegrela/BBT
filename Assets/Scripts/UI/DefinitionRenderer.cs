@@ -83,10 +83,23 @@ public class DefinitionRenderer : MonoBehaviour {
                 for (int i = 0; i < def_wordLilPpl.Length; i++)
                 {
 
-                    //Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordLilPpl[i].ToLower());
-
-                    if (Definition.text.ToLower().Equals(def_wordLilPpl[i].ToLower()))
+                    if (DataManager.currentLanguage == "english")
                     {
+                    RefWorld = def_wordLilPpl[i].ToLower();
+                    RefWorldBody = def_BodyLilPplEnglish[i];
+                    }
+                        else if (DataManager.currentLanguage == "french")
+                        {
+                        RefWorld = def_wordLilPpl[i].ToLower();
+                        RefWorldBody = def_BodyLilPplEnglish[i];
+                        }
+                            else if (DataManager.currentLanguage == "indigenous")
+                            {
+                            RefWorld = def_wordLilPpl[i].ToLower();
+                            RefWorldBody = def_BodyLilPplEnglish[i];
+                            }
+                if (Definition.text.ToLower().Equals(RefWorld))
+                {
                         title.text = def_wordLilPpl[i];
                         TextTranslation.text = def_wordLilPplTranslation[i];
                         RenderPlacement.sprite = def_wordLilPplPhotos[i];
@@ -101,10 +114,23 @@ public class DefinitionRenderer : MonoBehaviour {
             for (int i = 0; i < def_wordKal.Length; i++)
                     {
 
-               // Debug.Log(Definition.text.ToLower() + "\\\\" + def_wordKal[i].ToLower());
-
-                if (Definition.text.ToLower().Equals(def_wordKal[i].ToLower()))
+                if (DataManager.currentLanguage == "english")
+                {
+                    RefWorld = def_wordKal[i].ToLower();
+                    RefWorldBody = def_BodyKalEnglish[i];
+                }
+                    else if (DataManager.currentLanguage == "french")
+                    {
+                    RefWorld = def_wordKal[i].ToLower();
+                    RefWorldBody = def_BodyKalEnglish[i];
+                    }
+                        else if (DataManager.currentLanguage == "indigenous")
                         {
+                    RefWorld = def_wordKal[i].ToLower();
+                    RefWorldBody = def_BodyKalEnglish[i];
+                        }
+                if (Definition.text.ToLower().Equals(RefWorld))
+                {
                             title.text = def_wordKal[i];
                             TextTranslation.text = def_wordKalTranslation[i];
                             RenderPlacement.sprite = def_wordKalPhotos[i];
