@@ -86,10 +86,10 @@ public class DefinitionRenderer : MonoBehaviour {
                     }
                         else if (DataManager.currentLanguage == "french")
                         {
-                        RefWorld = def_wordLilPpl[i].ToLower();
+                        RefWorld = def_wordLilPplFR[i].ToLower();
                         RefWorldBody = def_BodyLilPplFrench[i];
                         }
-
+                Debug.Log(Definition.text.ToLower() + "//" + RefWorld);
                 if (Definition.text.ToLower().Equals(RefWorld))
                 {
                         title.text = def_wordLilPpl[i];
