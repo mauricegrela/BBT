@@ -10,7 +10,7 @@ using System.Reflection.Emit;
 
 public class DataManager
 {
-    public static string currentLanguage = "english";
+    public static string currentLanguage = "french";
     public static string currentStoryName = "kalkalilh";
     public static bool isINISet = false;
     public static StoryObject currentStory;

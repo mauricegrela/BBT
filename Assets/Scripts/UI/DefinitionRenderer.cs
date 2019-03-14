@@ -64,11 +64,7 @@ public class DefinitionRenderer : MonoBehaviour {
                         RefWorld = def_wordSas[i].ToLower();
                         RefWorldBody = def_BodySasEnglish[i];
                     }
-                        else if (DataManager.currentLanguage == "indigenous")
-                        {
-                            RefWorld = def_wordSas[i].ToLower();
-                            RefWorldBody = def_BodySasEnglish[i];
-                        }
+
                 if (Definition.text.ToLower ().Equals (RefWorld)) 
                 {
                     title.text = RefWorld;
@@ -91,13 +87,9 @@ public class DefinitionRenderer : MonoBehaviour {
                         else if (DataManager.currentLanguage == "french")
                         {
                         RefWorld = def_wordLilPpl[i].ToLower();
-                        RefWorldBody = def_BodyLilPplEnglish[i];
+                        RefWorldBody = def_BodyLilPplFrench[i];
                         }
-                            else if (DataManager.currentLanguage == "indigenous")
-                            {
-                            RefWorld = def_wordLilPpl[i].ToLower();
-                            RefWorldBody = def_BodyLilPplEnglish[i];
-                            }
+
                 if (Definition.text.ToLower().Equals(RefWorld))
                 {
                         title.text = def_wordLilPpl[i];
@@ -121,14 +113,10 @@ public class DefinitionRenderer : MonoBehaviour {
                 }
                     else if (DataManager.currentLanguage == "french")
                     {
-                    RefWorld = def_wordKal[i].ToLower();
-                    RefWorldBody = def_BodyKalEnglish[i];
+                    RefWorld = def_wordKalFR[i].ToLower();
+                    RefWorldBody = def_BodyKalFrench[i];
                     }
-                        else if (DataManager.currentLanguage == "indigenous")
-                        {
-                    RefWorld = def_wordKal[i].ToLower();
-                    RefWorldBody = def_BodyKalEnglish[i];
-                        }
+                Debug.Log(Definition.text.ToLower()+"//"+RefWorld);
                 if (Definition.text.ToLower().Equals(RefWorld))
                 {
                             title.text = def_wordKal[i];

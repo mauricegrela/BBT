@@ -853,7 +853,7 @@ public class PageManager : Singleton<PageManager>
         {
 
 
-            Debug.Log(wordGroup.text);
+            //Debug.Log(wordGroup.text);
             if (wordGroup.text.Contains("speaker"))
             {//Get The Narrator
                 Speaker = wordGroup.text;
