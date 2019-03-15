@@ -74,7 +74,7 @@ public class SentenceRowContainer : MonoBehaviour
         for (int i = 0; i < words.Length; i++)
         {			
 			string word = words [i];
-            Debug.Log(words[i]);
+            //Debug.Log(words[i]);
 				SentenceRow currentRow = rows [rowIndex];
 				WordText newText = currentRow.AddText (word);
                 //newText.text.color = NormalColor;

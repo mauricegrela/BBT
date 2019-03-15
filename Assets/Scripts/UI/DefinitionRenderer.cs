@@ -92,10 +92,10 @@ public class DefinitionRenderer : MonoBehaviour {
                 Debug.Log(Definition.text.ToLower() + "//" + RefWorld);
                 if (Definition.text.ToLower().Equals(RefWorld))
                 {
-                        title.text = def_wordLilPpl[i];
+                        title.text = RefWorld;
                         TextTranslation.text = def_wordLilPplTranslation[i];
                         RenderPlacement.sprite = def_wordLilPplPhotos[i];
-                        TextBody.text = def_BodyLilPplEnglish[i];
+                        TextBody.text = RefWorldBody;
                         audioEmitter.clip = def_WordLilPpl_Audio[i];
                         Debug.Log(Definition.text.ToLower());
                         //audioEmitter.Play ();
@@ -104,7 +104,7 @@ public class DefinitionRenderer : MonoBehaviour {
             }
                 else if(DataManager.currentStoryName == "kalkalilh") {
             for (int i = 0; i < def_wordKal.Length; i++)
-                    {
+            {
 
                 if (DataManager.currentLanguage == "english")
                 {
@@ -119,16 +119,16 @@ public class DefinitionRenderer : MonoBehaviour {
                 Debug.Log(Definition.text.ToLower()+"//"+RefWorld);
                 if (Definition.text.ToLower().Equals(RefWorld))
                 {
-                            title.text = def_wordKal[i];
-                            TextTranslation.text = def_wordKalTranslation[i];
-                            RenderPlacement.sprite = def_wordKalPhotos[i];
-                            TextBody.text = def_BodyKalEnglish[i];
-                            audioEmitter.clip = def_WordKal_Audio[i];
-                            Debug.Log(Definition.text.ToLower());
-                            //audioEmitter.Play ();
-                        }
-                    }
-                } 
+                title.text = RefWorld;
+                TextTranslation.text = def_wordKalTranslation[i];
+                RenderPlacement.sprite = def_wordKalPhotos[i];
+                TextBody.text = RefWorldBody;
+                audioEmitter.clip = def_WordKal_Audio[i];
+                Debug.Log(Definition.text.ToLower());
+                //audioEmitter.Play ();
+                }
+            }
+        } 
 
 	}
 

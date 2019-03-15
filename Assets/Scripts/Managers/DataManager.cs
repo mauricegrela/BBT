@@ -10,8 +10,8 @@ using System.Reflection.Emit;
 
 public class DataManager
 {
-    public static string currentLanguage = "indigenous";
-    public static string currentStoryName = "kalkalilh";
+    public static string currentLanguage = "french";
+    public static string currentStoryName = "littlepeople";
     public static bool isINISet = false;
     public static StoryObject currentStory;
     public static string[] languageManager;
@@ -42,7 +42,7 @@ public class DataManager
 		CurrentAssetPackage = packageToLoad.ToString ();
 
 		//AssetStreamingCounter++;
-        Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
+        //.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
 			
         if (myLoadedAssetBundle == null)
         {
