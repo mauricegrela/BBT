@@ -67,6 +67,7 @@ public class MenuUI : MonoBehaviour
     public void StartGame(string LeveltoLoad)
     {
         Debug.Log(LeveltoLoad);
+        AssetsINIRef[1].gameObject.SetActive(true);
         DataManager.currentStoryName = LeveltoLoad;
         if(LeveltoLoad== "sasquatch")
         {
