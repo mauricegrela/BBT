@@ -30,7 +30,7 @@ public class AccelerometerTest : MonoBehaviour {
         dir.y = Input.acceleration.y* Inverterx;
 
         // clamp acceleration vector to unit sphere
-        if (dir.sqrMagnitude > 1)
+        if (dir.sqrMagnitude > 2)
             dir.Normalize();
 
         // Make it move 10 meters per second instead of 10 meters per frame...
@@ -38,13 +38,13 @@ public class AccelerometerTest : MonoBehaviour {
 
 
         // Move object
-        transform.Translate(dir * 10);    
+        transform.Translate(dir);    
         
         // initially, the temporary vector should equal the player's position
         Vector3 clampedPosition = transform.localPosition;
         // Now we can manipulte it to clamp the y element
-        clampedPosition.y = Mathf.Clamp(transform.localPosition.y, -100.1f, 100.1f);
-        clampedPosition.x = Mathf.Clamp(transform.localPosition.x, -100.1f, 100.1f);
+        clampedPosition.y = Mathf.Clamp(transform.localPosition.z, -0.1f, 0.1f);
+        clampedPosition.x = Mathf.Clamp(transform.localPosition.x, -0.1f, 0.1f);
         // re-assigning the transform's position will clamp it
         transform.localPosition = clampedPosition;
 
