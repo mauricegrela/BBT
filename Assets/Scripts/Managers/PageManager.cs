@@ -167,13 +167,7 @@ public class PageManager : Singleton<PageManager>
 
     public void ChapterskipSetCharacters(int StartingPosition)
     {
-        foreach (GameObject Child in Characters)
-        {//Play the next animation on all the characters
-            if (Child.GetComponent<Animator>() != null || Child.GetComponent<Camera>() != null || Child.GetComponent<Image>() != null)
-            {
-                Child.GetComponent<CharacterAnimationSystems>().setUpCharacters(StartingPosition);
-            }
-        }
+
     }
 
     public void ChapterSkip(String LevelToLoad)
@@ -397,9 +391,6 @@ public class PageManager : Singleton<PageManager>
         //Set Story Variables
         isGoingBack = true;
         isForward = false;
-
-        //UI Dots
-        UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
 
         GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 

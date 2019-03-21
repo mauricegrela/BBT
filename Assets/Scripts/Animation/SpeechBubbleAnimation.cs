@@ -11,7 +11,7 @@ public class SpeechBubbleAnimation : MonoBehaviour {
     string message;
     Text textComp;
 
-  	\\This code will create a fill out animation on the text of the component its attached to 
+  	//This code will create a fill out animation on the text of the component its attached to 
 	
     public void setActive()
     {

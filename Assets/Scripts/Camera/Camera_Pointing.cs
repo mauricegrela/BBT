@@ -20,7 +20,7 @@ public class Camera_Pointing : MonoBehaviour {
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.Log("wokring");
-                hit.collider.gameObject.GetComponent<SpriteRotation>().Throw();
+                //hit.collider.gameObject.GetComponent<SpriteRotation>().Throw();
                 //hit.collider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 /*if (hit.collider != null)
                 {

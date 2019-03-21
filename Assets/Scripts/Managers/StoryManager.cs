@@ -51,8 +51,21 @@ public class StoryManager : MonoBehaviour {
         StreamingAssetsCounter = 0;
         //SceneEnvironment = "Exterior";
         Scene currentScene = SceneManager.GetActiveScene();
-        //Debug.Log(currentScene.name);
+        string FirstTwo = currentScene.name.Substring(0, 1);
+        Debug.Log(FirstTwo);
 
+        if(FirstTwo == "L")
+        {
+            DataManager.currentStoryName = "littlepeople";
+        }
+            else if(FirstTwo == "K")
+            {
+            DataManager.currentStoryName = "kalkalilh";
+            }
+                else if(FirstTwo == "S")
+                {
+                DataManager.currentStoryName = "sasquatch";
+                }
         /*if(currentScene.name != "MainStory")
         {
             SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
@@ -215,16 +228,10 @@ public class StoryManager : MonoBehaviour {
 	// Use this for initialization
 	public void CoroutineLoad()//Start () 
     {
-		for(int i = 0; i < Canvas.transform.childCount; i++)
-		{//This loop generates the book mark dots 
-			if (Canvas.transform.GetChild (i).name == "UI Dots") {
-				Canvas.transform.GetChild (i).GetComponent<DotGenerator> ().GenrateTheDots (pagesPerScene);
-			}
-		}
 
 		if (PageManager.GetComponent<PageManager> ().isGoingBack == false) 
         {
-        PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
+        //PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
         PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
         PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
