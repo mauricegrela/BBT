@@ -11,7 +11,7 @@ public class AccelerometerTest : MonoBehaviour {
     [SerializeField]
     private Text TextRef;
     private float PrevStep;
-    // Use this for initialization
+    // This script is responcible to moving the script based off a phones accelerometer data. 
 	void Start () {
 		
 	}
