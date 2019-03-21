@@ -17,36 +17,24 @@ public class ImageAnimator : MonoBehaviour {
     void Start()
     {
         OGPose = transform.position;
-		//StartCoroutine("nukeMethod");
-        /*if (isAnimated == true)
-        { 
-        StartCoroutine("nukeMethod");
-        }*/
     }
 
     public IEnumerator nukeMethod()
     {
-            for (int i = 0; i < sprites.Length; i++)
-            {
-                
-                gameObject.GetComponent<SpriteRenderer>().sprite = sprites[i];
-                
-
-             
-                yield return new WaitForSeconds(animationSpeed);
-
-            }
-        //isAnimating = false;
-        if(IsLooping==true)
-        {
-        StartCoroutine("nukeMethod");   
-        }
-        else
-        {
-            StopAllCoroutines();
-        }
-
-        
+	for (int i = 0; i < sprites.Length; i++)
+	{
+	gameObject.GetComponent<SpriteRenderer>().sprite = sprites[i];
+	yield return new WaitForSeconds(animationSpeed);
+	}
+	    
+	if(IsLooping==true)
+	{//if the animation is one that loops start up the co routine again.
+	StartCoroutine("nukeMethod");   
+	}
+		else
+		{//Stop it
+		    StopAllCoroutines();
+		} 
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -63,11 +51,8 @@ public class ImageAnimator : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        //SFXSource.Play();
         SFXSource.loop = false;
-
         isAnimating = false;
-        //gameObject.GetComponent<Image>().sprite = sprites[0];
     }
 
     public void ResetPosition()
@@ -77,15 +62,12 @@ public class ImageAnimator : MonoBehaviour {
 
     void OnEnable()
     {
-        
         StartCoroutine("nukeMethod"); 
-        //Debug.Log("Triggered");
     }
 
     void OnDisable()
     {
         StopAllCoroutines();
-        //Debug.Log("Triggered");
     }
 
 }
