@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class DefinitionRenderer : MonoBehaviour {
 
+	//This code will be called when the player pressed a word with a linked definition 
+	
 	public Text title;
 	public Text TextTranslation;
 	public Text TextBody;
-
 
 	public Image RenderPlacement;
 	public AudioSource audioEmitter;
 
 	public string[] def_wordSas;
-    public string[] def_wordSasFR;
+	public string[] def_wordSasFR;
 	public string[] def_wordSasTranslation;
 	public Sprite[] def_wordSasPhotos;
 	public string[] def_BodySasEnglish;
