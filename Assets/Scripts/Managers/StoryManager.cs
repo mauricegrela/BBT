@@ -231,7 +231,7 @@ public class StoryManager : MonoBehaviour {
 
 		if (PageManager.GetComponent<PageManager> ().isGoingBack == false) 
         {
-        //PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
+        PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
         PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
         PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);

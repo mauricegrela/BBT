@@ -152,14 +152,14 @@ public class PageManager : Singleton<PageManager>
         Resources.UnloadUnusedAssets();
         EnvironmentTracker = CurrentLevel;
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        Debug.Log("Working");
 
 
 
         if (isGoingBack == true)
         {
             //sceneindex = lastPage;
-            //Debug.Log(sceneindex);
-
+            //
         }
 
 
