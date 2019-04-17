@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 6e83f1c48e7094c088849d7cd5637c92
-timeCreated: 1496590352
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: bind_JNT_Kookum_Head
     100002: bind_JNT_Kookum_Hips1
@@ -200,10 +198,23 @@ ModelImporter:
     13700002: kookum_outfit001
     13700004: kookum_body001.001
     13700006: kookum_outfit001.001
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kook_outfit
+    second: {fileID: 2100000, guid: 6b00f0f0ad3fd484a8fc6de8c537767f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kookum_body
+    second: {fileID: 2100000, guid: 7d610aa1d631c44c382d779f06380331, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -211,17 +222,24 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'bind_JNT_Kookum_LeftLeg' : position
+      error = 107.803467 mm\n\t'bind_JNT_Kookum_LeftFoot' : position error = 113.326279
+      mm\n\t'bind_JNT_Kookum_RightLeg' : position error = 107.804214 mm\n\t'bind_JNT_Kookum_RightFoot'
+      : position error = 113.325790 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -229,13 +247,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -245,6 +268,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

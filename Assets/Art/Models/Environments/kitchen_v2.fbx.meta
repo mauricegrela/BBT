@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: a66c305d56ec94d66a6286c1746d4f40
-timeCreated: 1495857302
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: ____DOOR
     100002: ____DOOR_frame
@@ -1094,10 +1092,163 @@ ModelImporter:
     4300376: Lantern_Handle
     4300378: Lantern_Glass
     4300380: Lantern_Cage
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorFrame
+    second: {fileID: 2100000, guid: dac1428503fce4ae3a2d92efe2d8e1a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontDoor.001
+    second: {fileID: 2100000, guid: c4b8cc1e6cd6540f8a595a011421a867, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LongLog
+    second: {fileID: 2100000, guid: 99f8cfe5f86fe44e0b5eba66ff55f43d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.015
+    second: {fileID: 2100000, guid: 844905c1661714ba098830845af48761, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.016
+    second: {fileID: 2100000, guid: d5d993d69edf249b79d12415582ff44f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 51d72f665b38742808abb85a9a382c05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R.lg.beam9
+    second: {fileID: 2100000, guid: 5e52515ad986f4f8f9a27b09c93540eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RodHandle
+    second: {fileID: 2100000, guid: cc7e361eef9744919bd19b1d3faf3a99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stool
+    second: {fileID: 2100000, guid: e3f5de0b918844335b52da2adadd5ecb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: d8cb0ae42d81c41558e2dbc77a32b24a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: betty_fridge_fridge2
+    second: {fileID: 2100000, guid: 87a7a09c002c94859be7b6deb54fb8ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: betty_rug_rug2
+    second: {fileID: 2100000, guid: 96ce8b3d811f04e28b4beddcf2f5e17b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: betty_stove_v03_stove misc3
+    second: {fileID: 2100000, guid: b9ff6ce90012b4605bf62d83f9623d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: calendar.001
+    second: {fileID: 2100000, guid: e1241e215b76744f49a2f77b8d34baef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: 32ea015c18be4499c9ce31d10eea4751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome.002
+    second: {fileID: 2100000, guid: 815b4edfd2a134dcfb43445fb4d8c521, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fishing rod07
+    second: {fileID: 2100000, guid: 68099937fe29c41bb9aa922ff1c100a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fishing rod08
+    second: {fileID: 2100000, guid: a008e91a133e74197b7aa95e320b770d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: membrane
+    second: {fileID: 2100000, guid: 08cc6b2446871467b8ca03de0139646c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 4562b1ee179f44a7481e456e6821cf1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skillet.001
+    second: {fileID: 2100000, guid: 75874f6abdb0c44aa9ece7af592974e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steel
+    second: {fileID: 2100000, guid: 5bc5e3f97bfaf4377a2c0b2ef683a9ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove
+    second: {fileID: 2100000, guid: 46c7fa71c070b49868b54b0110202c5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table
+    second: {fileID: 2100000, guid: ef8db0b4ec5044747a2529edcd966b05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window frame3
+    second: {fileID: 2100000, guid: 30faeac9063ea42f993a02008a5a12e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire_013013013
+    second: {fileID: 2100000, guid: 3c9fbf756302f42b48fef7a50fc5527b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire_086060037
+    second: {fileID: 2100000, guid: 090c7090934444c29a77cb34804ff429, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire_154154229
+    second: {fileID: 2100000, guid: 1bcd8dae4fda24bca9a5027b126c5c73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short
+    second: {fileID: 2100000, guid: 0879f301b698340cabde1195a899fa86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: worktable1
+    second: {fileID: 2100000, guid: adf075613b9dc43e3ac31608be823331, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -1110,6 +1261,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -1134,6 +1287,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

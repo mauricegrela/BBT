@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 022249b05974a4c5fa4a7c9751d7d7c5
-timeCreated: 1506200820
-licenseType: Free
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: 08_bedroom
     100002: _Combined Mesh [ExtBeach].001
@@ -222,10 +220,173 @@ ModelImporter:
     4300080: ground
     7400000: blanket|blanketAction
     9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGMat
+    second: {fileID: 2100000, guid: e1d29d77dff3f4791921a5c5dfcaa957, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: df5e4423a754b437cae6d00e5e217121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base
+    second: {fileID: 2100000, guid: e02e400d0dd284d289e528eb0073becb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost_tall
+    second: {fileID: 2100000, guid: 4685a3d40214b49cabacc967bfb1aea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost_tall.1
+    second: {fileID: 2100000, guid: afa799a6a7ada43a9871c9045ee9e5c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blanket_mat
+    second: {fileID: 2100000, guid: d91dcb86a955440fc9085c2eb3f11659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_mat
+    second: {fileID: 2100000, guid: 81f0e11c057af4e04a2bf44d61851dac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: curtains_mat
+    second: {fileID: 2100000, guid: f94276b9c572749be85f177518429d3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dresser1
+    second: {fileID: 2100000, guid: e69756953984a43539342e8a6d660ecc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dresserfoot
+    second: {fileID: 2100000, guid: 538fb699cec3b46f39189738fa442748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dresserlog
+    second: {fileID: 2100000, guid: 7e4b67475e90444d7a2c1dfd539cf25e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground
+    second: {fileID: 2100000, guid: 9adabe3e048244a6bb6ddcca6c5080c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hat_mat
+    second: {fileID: 2100000, guid: 9e0f2c531d4b64ca68828fc71d17320f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hat_mat.1
+    second: {fileID: 2100000, guid: 660358ecca9894d7c95ff4012ea465d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headoard_crossbeam
+    second: {fileID: 2100000, guid: e84e76cb7b4fc4ba4ae5bca35cae815d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window_frame_mat
+    second: {fileID: 2100000, guid: a910df63c796048dea8f6a8909494a88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood.001
+    second: {fileID: 2100000, guid: 117f1bb387617442d8aa818108e1158a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short
+    second: {fileID: 2100000, guid: 54e734785e2874863b050dc8831f7478, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.1
+    second: {fileID: 2100000, guid: d5524c8d47f6d46fa9a79703a5ca3dff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.10
+    second: {fileID: 2100000, guid: e07e1f35d568e44a6a95079a08ba47bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.11
+    second: {fileID: 2100000, guid: a47f05af3ce90492db8a40ae391d6200, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.12
+    second: {fileID: 2100000, guid: 7559a27ccaac44b448717f5e299f05f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.13
+    second: {fileID: 2100000, guid: 1ce21396d287f474292ec8cb0bbc75dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.14
+    second: {fileID: 2100000, guid: fe5ed3e5868ba4802a9b602fe65dcacb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.2
+    second: {fileID: 2100000, guid: 73066f0995e0e4104be1ef23e5e71a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.3
+    second: {fileID: 2100000, guid: bcbbaf583ed3f46b2affe1733e98724d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.4
+    second: {fileID: 2100000, guid: 5c38a5ce490854a0896fcbf593319db8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.5
+    second: {fileID: 2100000, guid: 88c8096b531444270a3b76ade78ee42f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.6
+    second: {fileID: 2100000, guid: e50b8d4ea88df46919b432ed78f60a78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.7
+    second: {fileID: 2100000, guid: 7b36225c06c5f4aa78c7d766b8e087c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.8
+    second: {fileID: 2100000, guid: 0134aee799bd3474dacd0fe9ec18a34f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodwall_short.9
+    second: {fileID: 2100000, guid: 2c3c1357b2a8c4516be8b6df9625cc2c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -238,6 +399,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -262,6 +425,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

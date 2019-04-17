@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 310618ac9e72d446eac6d1f8a96f28e6
-timeCreated: 1509657994
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: ___single_log_1_2.001
     100002: ___single_log_1_2.002
@@ -190,10 +188,98 @@ ModelImporter:
     4300056: wall2.001
     4300058: ___single_log_1_2.002
     4300060: ___single_log_1_2.001
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass - Borosilicate.001
+    second: {fileID: 2100000, guid: 60fa8f5ec168b47359b2732c6f398d4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal - Stainless Steel Matte.001
+    second: {fileID: 2100000, guid: 307c4b66b4ba544bca2501d8b6982cf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blanket
+    second: {fileID: 2100000, guid: 6d4579fa6861d4f58ac6cc2bcf8b2d44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair
+    second: {fileID: 2100000, guid: bc296cd6fba6f4b2187b6265861ceb38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: 32ea015c18be4499c9ce31d10eea4751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: curtains
+    second: {fileID: 2100000, guid: e06caf8f8581c40bca559766122116d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desser_drawer
+    second: {fileID: 2100000, guid: 8f9628644931a45b784c8ef88face75e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: a57ca82b8747943308b100803420a082, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: frame
+    second: {fileID: 2100000, guid: 16a770a9149114a70a1ca64f07bcffd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hat
+    second: {fileID: 2100000, guid: 4775da3cc76744a4b992bb3cd61e73f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: logs
+    second: {fileID: 2100000, guid: 502c61740919c49058e2092bab3d02bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: posts
+    second: {fileID: 2100000, guid: 3b76e88ad6f194a9da490619c4b1ed7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sheets
+    second: {fileID: 2100000, guid: 708d292a3bcad4cc28c05c37a5555da3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tapestry
+    second: {fileID: 2100000, guid: 68cce2c3f1364430ea7e95d9509154cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_clock_red
+    second: {fileID: 2100000, guid: 1c6abd11f98374f33a701188ee106859, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walls.003
+    second: {fileID: 2100000, guid: 0ba363020497e4ad3865f6de5ccfeddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: windowframe
+    second: {fileID: 2100000, guid: ca9d0471d25f74cf5b6c82b08c7e30ae, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -206,12 +292,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -219,13 +308,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -235,6 +329,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
