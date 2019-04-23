@@ -17,22 +17,46 @@ public class MenuStoryObjects : MonoBehaviour {
     public GameObject PlayButton;
     Image PlayButtonImage;
 
+    public GameObject UnlockContentButton;
+    Image UnlockContentButtonImage;
+
+    public GameObject UnlockContentQuastionScreen;
+    Image UnlockContentQuastionScreenImage;
+
     public RectTransform CommingSoonRect;
 
     public RectTransform CommingSoonRectCloseRectLeft;
     public RectTransform CommingSoonRectCloseRecRight;
+
+    public GameObject CorrectTextObject;
 
     private void Start()
     {
         Title.gameObject.SetActive(true);
         Logo.gameObject.SetActive(true);
         Description.gameObject.SetActive(true);
-
+        
         if (PlayButton != null)
         {
             PlayButton.gameObject.SetActive(false);
             PlayButtonImage = PlayButton.GetComponent<Image>();
             SetImageAlpha(PlayButtonImage, 0);
+        }
+
+        if(UnlockContentButton != null)
+        {
+            UnlockContentButton.SetActive(false);
+            UnlockContentButtonImage = UnlockContentButton.GetComponent<Image>();
+            SetImageAlpha(UnlockContentButtonImage, 0);
+        }
+
+        if (UnlockContentQuastionScreen != null)
+        {
+            UnlockContentQuastionScreen.SetActive(false);
+            UnlockContentQuastionScreenImage = UnlockContentQuastionScreen.GetComponent<Image>();
+            SetImageAlpha(UnlockContentQuastionScreenImage, 0);
+
+            CorrectTextObject.SetActive(false);
         }
 
         SetImageAlpha(Logo, 0);
@@ -44,7 +68,6 @@ public class MenuStoryObjects : MonoBehaviour {
     void SetImageAlpha(Image _image, float _alpha)
     {
         _image.color = new Color(_image.color.r, Logo.color.g, _image.color.b, _alpha);
-
     }
 
     public void SlideOpened()
@@ -59,7 +82,12 @@ public class MenuStoryObjects : MonoBehaviour {
             PlayButton.SetActive(true);
             StartCoroutine(LerpLogoAlpha(0, 0, 1, 2, PlayButtonImage));
         }
-        //StartCoroutine(LerpTitlePos(0,0, TitleRect,));
+
+        if (UnlockContentButton != null)
+        {
+            UnlockContentButton.SetActive(true);
+            StartCoroutine(LerpLogoAlpha(0, 0, 1, 2, UnlockContentButtonImage));
+        }
     }
 
     public void SlideClosed(bool _shouldCloseToLeft)
@@ -93,9 +121,36 @@ public class MenuStoryObjects : MonoBehaviour {
             PlayButton.SetActive(false);
             StartCoroutine(LerpLogoAlpha(0, 0, 0, 2, PlayButtonImage));
         }
+
+        if (UnlockContentButton != null)
+        {
+            UnlockContentButton.SetActive(false);
+            StartCoroutine(LerpLogoAlpha(0, 0, 0, 2, UnlockContentButtonImage));
+        }
+
+        if (UnlockContentQuastionScreen != null)
+        {
+            UnlockContentQuastionScreen.SetActive(false);
+            StartCoroutine(LerpLogoAlpha(0, 0, 0, 2, UnlockContentQuastionScreenImage));
+
+            CorrectTextObject.SetActive(false);
+        }
     }
 
+    public void ClickedUnlockContentButton()
+    {
+        if (UnlockContentQuastionScreen != null)
+        {
+            UnlockContentQuastionScreen.SetActive(true);
+            SetImageAlpha(UnlockContentQuastionScreenImage, 1);
+        }
+    }
 
+    public void ClickedCorrectAnswer()
+    {
+        CorrectTextObject.SetActive(true);
+
+    }
 
     IEnumerator LerpLogoAlpha(float currentTime, float normalizedValue, float _alphaValueToChangeTo, float timeOfTravel,Image _image)
     {
