@@ -261,6 +261,11 @@ Prefab:
       propertyPath: m_FontData.m_FontSize
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -443.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
   m_IsPrefabParent: 0
@@ -520,14 +525,14 @@ RectTransform:
   m_GameObject: {fileID: 1879756039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1.1001381, y: 1.1001381, z: 1.1001381}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 172532852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000414, y: 114.08927}
+  m_AnchoredPosition: {x: -1.7000427, y: -225}
   m_SizeDelta: {x: 963, y: 1370.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879756041
@@ -550,7 +555,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c009e7b2a56f6482d8422da2baee6179, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e53176b4bd1848869343333e9ebf43f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -141,15 +141,15 @@ RectTransform:
   m_GameObject: {fileID: 60058980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1.1001381, y: 1.1001381, z: 1.1001381}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 898509548}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: 114.08929}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: 96.79997, y: -214.8}
+  m_SizeDelta: {x: 765.99994, y: 1370.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60058982
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c009e7b2a56f6482d8422da2baee6179, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cab3afcf056d8472b9a2f6a416c5ac56, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -333,6 +333,31 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_FontSize
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114120824215152762, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 381.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -104.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847791220781816, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_ChildAlignment
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
