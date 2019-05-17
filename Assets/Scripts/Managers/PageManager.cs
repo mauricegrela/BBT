@@ -32,7 +32,7 @@ public class PageManager : Singleton<PageManager>
     //PageKeepers
     private int pageIndex;
     public int audioIndex;
-    public int sceneindex;
+    //public int sceneindex;
     /// <summary>/// /////TURN THIS PRIVATE/// </summary>
     private int LastPageLoader;
     public bool isGoingBack = false;
@@ -173,7 +173,7 @@ public class PageManager : Singleton<PageManager>
     public void ChapterSkip(String LevelToLoad)
     {//Launches when the player skips to a chapter through clicking on the book mark
         StopAllCoroutines();
-        LoadingScreen.GetComponent<LoadingScript>().VisualToggle(true);
+        //LoadingScreen.GetComponent<LoadingScript>().VisualToggle(true);
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
             if (Child != null)
@@ -200,33 +200,83 @@ public class PageManager : Singleton<PageManager>
             SceneManager.UnloadScene(EnvironmentTracker);
         }
 
-        SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
+        StartCoroutine(LoadLevel(LevelToLoad));
+
+        //SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
 
         //PreviousLevelTracker = EnvironmentTracker;
 
         //StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
+        //print(StoryManager.GetComponent<StoryManager>().LevelName);
         //StoryManager.GetComponent<StoryManager>().InitialSetUp();
+
+        //GameObject[] storyManagers = GameObject.FindGameObjectsWithTag("StoryManager");
+
+
+
+        //storyManagers[] storyManagers = storyManagers[].GetComponent<StoryManager>();
+
 
         //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
         //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().LastScene, LoadSceneMode.Additive);
 
-        sceneindex = 0;
+        //sceneindex = 0;
 
 
     }
 
-    public void ChapterSkipToTheEnd(String LevelToLoad)
+    AsyncOperation asyncLoadLevel;
+
+    IEnumerator LoadLevel(string LevelToLoad)
     {
+        asyncLoadLevel = SceneManager.LoadSceneAsync(LevelToLoad, LoadSceneMode.Additive);
 
-        Resources.UnloadUnusedAssets();
-        //SceneManager.UnloadSceneAsync(EnvironmentTracker);
-        //SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
-        //Resetting logic for finding the 
-        sentenceContainerCounter = 0;
-        sentenceContainerCurrent = 0;
-        //GameObject TextPositionref;
-        SpeechBubbleStorage();
+        while (!asyncLoadLevel.isDone)
+        {
+            print("Loading the Scene");
+            yield return null;
+
+        }
+
+        GameObject[] storyManagers = GameObject.FindGameObjectsWithTag("StoryManager");
+
+        //storyManagers[] storyManagers = storyManagers[].GetComponent<StoryManager>();
+        for (int i = 0; i < storyManagers.Length; i++)
+        {
+            //StoryManagers.Add(storyManagers[i].GetComponent<StoryManager>());
+            StoryManager a = storyManagers[i].GetComponent<StoryManager>();
+            print("lvlName");
+            print(a.LevelName);
+
+            if (a.LevelName == LevelToLoad)
+            {
+                EnvironmentTracker = LevelToLoad;
+                print("YES PLEASE");
+                //PreviousLevelTracker = EnvironmentTracker;
+                StoryManager = a.gameObject;
+                //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
+
+                a.InitialSetUp();
+
+
+            }
+        }
     }
+
+
+
+    //public void ChapterSkipToTheEnd(String LevelToLoad)
+    //{
+
+    //    Resources.UnloadUnusedAssets();
+    //    //SceneManager.UnloadSceneAsync(EnvironmentTracker);
+    //    //SceneManager.LoadScene(LevelToLoad, LoadSceneMode.Additive);
+    //    //Resetting logic for finding the 
+    //    sentenceContainerCounter = 0;
+    //    sentenceContainerCurrent = 0;
+    //    //GameObject TextPositionref;
+    //    SpeechBubbleStorage();
+    //}
 
 
     void Update()
@@ -237,20 +287,20 @@ public class PageManager : Singleton<PageManager>
 
     public void GotoNext()
     {
-        sceneindex++;
+        //sceneindex++;
         //bool isloadingScene;
 
         string NextScene;
         NextScene = StoryManager.GetComponent<StoryManager>().NextScene;
 
         //StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
-        StoryManager.GetComponent<StoryManager>().isPanningLeft = false;
-        StoryManager.GetComponent<StoryManager>().isPanningRight = false;
-        if (sceneindex >= StoryManager.GetComponent<StoryManager>().pagesPerScene)
-        {//If the player is at the last page of the scene
+        //StoryManager.GetComponent<StoryManager>().isPanningLeft = false; //old stuff- 
+        //StoryManager.GetComponent<StoryManager>().isPanningRight = false;//old stuff- 
+        //if (sceneindex >= StoryManager.GetComponent<StoryManager>().pagesPerScene) /-- old stuff for when there was more then a page per scene
+        //{//If the player is at the last page of the scene
 
-            // = true;
-            audioSource.Stop();
+        // = true;
+        audioSource.Stop();
 
             Resources.UnloadUnusedAssets();
             SceneManager.UnloadScene(EnvironmentTracker);
@@ -262,10 +312,13 @@ public class PageManager : Singleton<PageManager>
             }
 
             isGoingBack = false;
-            sceneindex = 0;
+            //sceneindex = 0;
 
 
             PreviousLevelTracker = EnvironmentTracker;
+            //PreviousLevelTracker- previous scene
+            //EnvironmentTracker- next scene
+
             StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
             if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
             {
@@ -281,11 +334,11 @@ public class PageManager : Singleton<PageManager>
             sentenceContainerCounter = 0;
             sentenceContainerCurrent = 0;
 
-        }
-        else
-        {
-            StoryManager.GetComponent<StoryManager>().PanRight();
-        }
+        //}
+        //else
+        //{
+        //    StoryManager.GetComponent<StoryManager>().PanRight();
+        //}
         SetAudioTrack();
     }
 
@@ -331,14 +384,14 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
-        SpeechBubbleStorage();
+        //SpeechBubbleStorage();
 
         NextSentence(isForward);
     }
 
     public void GotoPrevious()
     {
-        sceneindex--;
+        //sceneindex--;
 
         //Debug.Log(sceneindex);
         //bool isloadingScene;
@@ -346,10 +399,10 @@ public class PageManager : Singleton<PageManager>
         string LastScene;
         LastScene = StoryManager.GetComponent<StoryManager>().LastScene;
 
-        if (sceneindex < 0)
-        {//If the player is at the last page of the scene
+        //if (sceneindex < 0)
+        //{//If the player is at the last page of the scene
             //isloadingScene = true;
-            sceneindex = 0;
+            //sceneindex = 0;
             Debug.Log(EnvironmentTracker);
 
             audioSource.Stop();
@@ -378,11 +431,11 @@ public class PageManager : Singleton<PageManager>
                 SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().LastScene, LoadSceneMode.Additive);
             }
             PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
-        }
-        else
-        {
-            StoryManager.GetComponent<StoryManager>().PanLeft();
-        }
+        //}
+        //else
+        //{
+            //StoryManager.GetComponent<StoryManager>().PanLeft();
+        //}
         SetAudioTrack();
     }
 
@@ -413,7 +466,7 @@ public class PageManager : Singleton<PageManager>
         sentenceContainerCounter = 0;
         sentenceContainerCurrent = 0;
 
-        SpeechBubbleStorage();
+        //SpeechBubbleStorage();
 
         PreviousSentence(isGoingBack);
 
@@ -442,20 +495,20 @@ public class PageManager : Singleton<PageManager>
                 Cam.GetComponent<AudioSource>().Stop();
             }
         }
-        if (sceneindex == 1 && StoryManager.GetComponent<StoryManager>().PanningPageSong2 != null)
-        {
-            StoryManager.GetComponent<StoryManager>().PageSong = StoryManager.GetComponent<StoryManager>().PanningPageSong2;
-            Cam.GetComponent<AudioSource>().clip = StoryManager.GetComponent<StoryManager>().PanningPageSong2;
-            Cam.GetComponent<AudioSource>().volume = StoryManager.GetComponent<StoryManager>().Volume;
-            Cam.GetComponent<AudioSource>().Play();
-        }
+        //if (sceneindex == 1 && StoryManager.GetComponent<StoryManager>().PanningPageSong2 != null)
+        //{
+        //    StoryManager.GetComponent<StoryManager>().PageSong = StoryManager.GetComponent<StoryManager>().PanningPageSong2;
+        //    Cam.GetComponent<AudioSource>().clip = StoryManager.GetComponent<StoryManager>().PanningPageSong2;
+        //    Cam.GetComponent<AudioSource>().volume = StoryManager.GetComponent<StoryManager>().Volume;
+        //    Cam.GetComponent<AudioSource>().Play();
+        //}
     }
 
-    public void SetToLastPosition()
-    {//This function goes through all the dynamic instances in the scene and sets their location to the last memeber of the array
+    //public void SetToLastPosition()
+    //{//This function goes through all the dynamic instances in the scene and sets their location to the last memeber of the array
 
-        //UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
-    }
+    //    //UIDots.GetComponent<DotGenerator>().updateDots(sceneindex);
+    //}
 
     private void LanguageMenuDeploy()
     {
@@ -800,40 +853,40 @@ public class PageManager : Singleton<PageManager>
 
     }
 
-    public void SpeechBubbleStorage()
-    {
-        Debug.Log("Passing through here");
-        foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
-        {
+    //public void SpeechBubbleStorage()
+    //{
+    //    Debug.Log("Passing through here");
+    //    foreach (Transform child in StoryManager.GetComponent<StoryManager>().TextPositions[sceneindex].transform)
+    //    {
             
-            // do whatever you want with child transform object here
-            if (child.gameObject.tag == "TextPlacement")
-            {
-                sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
-                sentenceContainerCounter++;
-                TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                //Debug.Log("Working");
-            }
+    //        // do whatever you want with child transform object here
+    //        if (child.gameObject.tag == "TextPlacement")
+    //        {
+    //            sentenceContainer[sentenceContainerCounter] = child.gameObject.GetComponent<SentenceRowContainer>(); ;
+    //            sentenceContainerCounter++;
+    //            TextPositionref = child.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+    //            //Debug.Log("Working");
+    //        }
 
-            if (child.gameObject.tag == "SpeechBubble")
-            {
+    //        if (child.gameObject.tag == "SpeechBubble")
+    //        {
 
-                foreach (Transform Kiddo in child)
-                {
-                    // do whatever you want with child transform object here
-                    if (Kiddo.gameObject.tag == "TextPlacement")
-                    {
-                        sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
-                        sentenceContainerCounter++;
-                        TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
-                                                           //Debug.Log("Working");
-                    }
-                }
-            }
+    //            foreach (Transform Kiddo in child)
+    //            {
+    //                // do whatever you want with child transform object here
+    //                if (Kiddo.gameObject.tag == "TextPlacement")
+    //                {
+    //                    sentenceContainer[sentenceContainerCounter] = Kiddo.gameObject.GetComponent<SentenceRowContainer>(); ;
+    //                    sentenceContainerCounter++;
+    //                    TextPositionref = Kiddo.gameObject;//GameObject.FindWithTag("TextPlacement"); 
+    //                                                       //Debug.Log("Working");
+    //                }
+    //            }
+    //        }
 
-        }
+    //    }
 
-    }
+    //}
 
     public void WordGroupParser()
     {

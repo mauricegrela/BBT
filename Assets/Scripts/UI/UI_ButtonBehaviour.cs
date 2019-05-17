@@ -25,20 +25,35 @@ public class UI_ButtonBehaviour : MonoBehaviour {
 
 	public void GoToNext()
 	{
-        if (isReadyToClick == true && Pagemanager.GetComponent<PageManager>().StoryManager.GetComponent<StoryManager>().isPanningRight  == false) {
-			isReadyToClick = false;
-			timeLeft = 0.5f;
-            //Debug.Log("TurnOff");
-            Pagemanager.GetComponent<PageManager> ().GotoNext ();
-		}
-	}
+        //     if (isReadyToClick == true && Pagemanager.GetComponent<PageManager>().StoryManager.GetComponent<StoryManager>().isPanningRight  == false) {
+        //isReadyToClick = false;
+        //timeLeft = 0.5f;
+        //Debug.Log("TurnOff");
+        //Pagemanager.GetComponent<PageManager> ().GotoNext ();
+        //}
 
-	public void GoTolast()
+        if (isReadyToClick == true ) 
+        {
+            isReadyToClick = false;
+            timeLeft = 0.5f;
+            Debug.Log("TurnOff");
+            Pagemanager.GetComponent<PageManager> ().GotoNext ();
+        }
+
+    }
+
+    public void GoTolast()
 	{
-        if (isReadyToClick == true && Pagemanager.GetComponent<PageManager>().StoryManager.GetComponent<StoryManager>().isPanningRight == false) {
-			isReadyToClick = false;
-			timeLeft = 0.5f;
-			Pagemanager.GetComponent<PageManager> ().GotoPrevious ();
-		}
-	}
+        //     if (isReadyToClick == true && Pagemanager.GetComponent<PageManager>().StoryManager.GetComponent<StoryManager>().isPanningRight == false) {
+        //isReadyToClick = false;
+        //timeLeft = 0.5f;
+        //Pagemanager.GetComponent<PageManager> ().GotoPrevious ();
+
+        if (isReadyToClick == true ) 
+        {
+            isReadyToClick = false;
+            timeLeft = 0.5f;
+            Pagemanager.GetComponent<PageManager> ().GotoPrevious ();
+        }
+}
 }

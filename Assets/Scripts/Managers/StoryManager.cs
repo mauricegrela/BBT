@@ -29,14 +29,14 @@ public class StoryManager : MonoBehaviour {
     private int Counter = 0;
 
     //Panning Variable
-    public bool isPanningLeft = false;
-    public bool isPanningRight = false;
-    private float PanningCounter;
-    private Transform panningtargetPosition;
-    private int CurrentPage;
+    //public bool isPanningLeft = false;
+    //public bool isPanningRight = false;
+    //private float PanningCounter;
+    //private Transform panningtargetPosition;
+    //private int CurrentPage;
 
-    [SerializeField]
-    private GameObject Page37Panning;
+    //[SerializeField]
+    //private GameObject Page37Panning;
 
     public AudioClip PageSong;
     public AudioClip PanningPageSong2;
@@ -116,6 +116,7 @@ public class StoryManager : MonoBehaviour {
 
     public void InitialSetUp()///Awake()
     {
+        print("InitialSetUp");
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
 
         if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
@@ -127,7 +128,7 @@ public class StoryManager : MonoBehaviour {
         //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
         if (PageManager.GetComponent<PageManager>().isLoading == true)
         {
-            InitialSetUp();
+            //InitialSetUp();
             PageManager.GetComponent<PageManager>().isLoading = false;
             PageManager.GetComponent<PageManager>().StoryManager = gameObject;
             if (NextScene != "None")
@@ -262,206 +263,206 @@ public class StoryManager : MonoBehaviour {
 
 	}
 
-    private IEnumerator WaitGoingBack(float waitTime)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(waitTime);
-            if (Counter == 0)
-            {
-                PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, pagesPerScene - 1);
-            }
-            else if (Counter == 1)
-            {
+    //private IEnumerator WaitGoingBack(float waitTime)
+    //{
+    //    while (true)
+    //    {
+    //        yield return new WaitForSeconds(waitTime);
+    //        if (Counter == 0)
+    //        {
+    //            PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, pagesPerScene - 1);
+    //        }
+    //        else if (Counter == 1)
+    //        {
                 
-            }
-            else if (Counter == 2)
-            {
-                PageManager.GetComponent<PageManager>().SetToLastPosition();
-                PageManager.GetComponent<PageManager>().GetComponent<PageManager>().GoToPage(AudioIndexPosition + pagesPerScene - 1);
-                PageManager.GetComponent<PageManager>().isGoingBack = false;
+    //        }
+    //        else if (Counter == 2)
+    //        {
+    //            PageManager.GetComponent<PageManager>().SetToLastPosition();
+    //            PageManager.GetComponent<PageManager>().GetComponent<PageManager>().GoToPage(AudioIndexPosition + pagesPerScene - 1);
+    //            PageManager.GetComponent<PageManager>().isGoingBack = false;
 
-                PageManager.GetComponent<PageManager>().isGoingBack = false;
-                PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
-                GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
-                if (AnimRef != null)
-                AnimRef.GetComponent<Animator>().enabled = true;
+    //            PageManager.GetComponent<PageManager>().isGoingBack = false;
+    //            PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
+    //            GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
+    //            if (AnimRef != null)
+    //            AnimRef.GetComponent<Animator>().enabled = true;
 
-                GameObject AnimatedObject = GameObject.FindGameObjectWithTag("AnimTurnOff");
-                if (AnimatedObject != null)
-                    AnimatedObject.GetComponent<AnimationTurnOff>().ActivateCountDown();
+    //            GameObject AnimatedObject = GameObject.FindGameObjectWithTag("AnimTurnOff");
+    //            if (AnimatedObject != null)
+    //                AnimatedObject.GetComponent<AnimationTurnOff>().ActivateCountDown();
 
-                StopCoroutine(coroutine);
-            }
-            else
-            {
+    //            StopCoroutine(coroutine);
+    //        }
+    //        else
+    //        {
 
-                print("error");
-            }
-            Counter++;
-        }
-    }
+    //            print("error");
+    //        }
+    //        Counter++;
+    //    }
+    //}
 
-    private IEnumerator WaitGoingForward(float waitTime)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(waitTime);
-            if (Counter == 0)
-            {
-                PageManager.GetComponent<PageManager> ().AssetAssigner (LevelName, AudioIndexPosition);
-                PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
-                PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
-                PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
-                GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
-                if (AnimRef != null)
-                    AnimRef.GetComponent<Animator>().enabled = true;
+    //private IEnumerator WaitGoingForward(float waitTime)
+    //{
+    //    while (true)
+    //    {
+    //        yield return new WaitForSeconds(waitTime);
+    //        if (Counter == 0)
+    //        {
+    //            PageManager.GetComponent<PageManager> ().AssetAssigner (LevelName, AudioIndexPosition);
+    //            PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
+    //            PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
+    //            PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
+    //            GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
+    //            if (AnimRef != null)
+    //                AnimRef.GetComponent<Animator>().enabled = true;
 
-                GameObject AnimatedObject = GameObject.FindGameObjectWithTag("AnimTurnOff");
-                if (AnimatedObject != null)
-                    AnimatedObject.GetComponent<AnimationTurnOff>().ActivateCountDown();
+    //            GameObject AnimatedObject = GameObject.FindGameObjectWithTag("AnimTurnOff");
+    //            if (AnimatedObject != null)
+    //                AnimatedObject.GetComponent<AnimationTurnOff>().ActivateCountDown();
 
-                StopCoroutine(coroutine);
-            }
-            else if (Counter == 1)
-            {
+    //            StopCoroutine(coroutine);
+    //        }
+    //        else if (Counter == 1)
+    //        {
                 
-            }
-            else if (Counter == 2)
-            {
+    //        }
+    //        else if (Counter == 2)
+    //        {
 
-            }
-            else
-            {
+    //        }
+    //        else
+    //        {
 
-                print("error");
-            }
-            Counter++;
-        }
-    }
+    //            print("error");
+    //        }
+    //        Counter++;
+    //    }
+    //}
 
-    public void PanRight()
-    {
+    //public void PanRight()
+    //{
 
-        isPanningRight = true;
-        CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
-        //CameraRef.transform.position = OGCameraRefPosition;
-        if (TextPositions[CurrentPage].tag == "panning")
-        {
-            //Debug.Log("This is a specific panning script.");
-            TextPositions[CurrentPage].SetActive(true);
-            foreach (Transform child in TextPositions[CurrentPage].transform)
-            {//Store the First of the Text References 
+    //    isPanningRight = true;
+    //    CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
+    //    //CameraRef.transform.position = OGCameraRefPosition;
+    //    if (TextPositions[CurrentPage].tag == "panning")
+    //    {
+    //        //Debug.Log("This is a specific panning script.");
+    //        TextPositions[CurrentPage].SetActive(true);
+    //        foreach (Transform child in TextPositions[CurrentPage].transform)
+    //        {//Store the First of the Text References 
 
-                if (child.gameObject.tag == "panning target")
-                {
-                    panningtargetPosition = child.gameObject.transform;
-                }
+    //            if (child.gameObject.tag == "panning target")
+    //            {
+    //                panningtargetPosition = child.gameObject.transform;
+    //            }
 
-            }
-        }
-            else
-            {
-                foreach (GameObject child in TextPositions)
-                {//Store the First of the Text References                 
-                    child.SetActive(false);
-                }
+    //        }
+    //    }
+    //        else
+    //        {
+    //            foreach (GameObject child in TextPositions)
+    //            {//Store the First of the Text References                 
+    //                child.SetActive(false);
+    //            }
 
-                //TextPositions[CurrentPage].SetActive(true);
+    //            //TextPositions[CurrentPage].SetActive(true);
 
-                isPanningRight = false;
-                PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
+    //            isPanningRight = false;
+    //            PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
 
            
-            }
-    }
+    //        }
+    //}
 
-    public void PanLeft()
-    {
-        isPanningLeft = true;
-        //CameraRef.transform.position = OGCameraRefPosition;
-    }
+    //public void PanLeft()
+    //{
+    //    isPanningLeft = true;
+    //    //CameraRef.transform.position = OGCameraRefPosition;
+    //}
 
 	// Update is called once per frame
-	void Update () {
+	//void Update () {
         
-        if(isPanningRight == true && isPanningLeft == false)
-        {
-            float dist = Vector3.Distance(CameraRef.transform.position, panningtargetPosition.position);
-            if (dist >= 0.1)
-            {
-                //CameraRef.transform.Translate(Vector3.right * (Time.deltaTime*2), Space.World);
-                float step = 6 * Time.deltaTime;
+ //       if(isPanningRight == true && isPanningLeft == false)
+ //       {
+ //           float dist = Vector3.Distance(CameraRef.transform.position, panningtargetPosition.position);
+ //           if (dist >= 0.1)
+ //           {
+ //               //CameraRef.transform.Translate(Vector3.right * (Time.deltaTime*2), Space.World);
+ //               float step = 6 * Time.deltaTime;
 
-                // Move our position a step closer to the target.
-                //CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
-            }
-                else
-                {
-                    foreach (GameObject child in TextPositions)
-                    {//Store the First of the Text References                 
-                        child.SetActive(false);
-                    }
+ //               // Move our position a step closer to the target.
+ //               //CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
+ //           }
+ //               else
+ //               {
+ //                   foreach (GameObject child in TextPositions)
+ //                   {//Store the First of the Text References                 
+ //                       child.SetActive(false);
+ //                   }
 
-                //TextPositions[CurrentPage].SetActive(true);
+ //               //TextPositions[CurrentPage].SetActive(true);
 
-                GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
+ //               GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 
-	                foreach (GameObject child in AnimRef)
-	                {
-	                    if (child.gameObject.GetComponent<SpriteRenderer>())
-	                    {
-	                        child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-	                    }
+	//                foreach (GameObject child in AnimRef)
+	//                {
+	//                    if (child.gameObject.GetComponent<SpriteRenderer>())
+	//                    {
+	//                        child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+	//                    }
 
-	                    if (child.gameObject.GetComponent<Animator>())
-	                    {
-	                        child.gameObject.GetComponent<Animator>().enabled = true;
-	                    }
-	                }
-                isPanningRight = false;
-                PageManager.GetComponent<PageManager>().SetUpNewTextFoward();
-                }
-        }
+	//                    if (child.gameObject.GetComponent<Animator>())
+	//                    {
+	//                        child.gameObject.GetComponent<Animator>().enabled = true;
+	//                    }
+	//                }
+ //               isPanningRight = false;
+ //               PageManager.GetComponent<PageManager>().SetUpNewTextFoward();
+ //               }
+ //       }
 
 
-        if (isPanningRight == false && isPanningLeft == true)
-        {
-            foreach (GameObject child in TextPositions)
-            {//Store the First of the Text References                 
-                child.SetActive(false);
-            }
-            CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
+ //       if (isPanningRight == false && isPanningLeft == true)
+ //       {
+ //           foreach (GameObject child in TextPositions)
+ //           {//Store the First of the Text References                 
+ //               child.SetActive(false);
+ //           }
+ //           CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
 
-            TextPositions[CurrentPage].SetActive(true);
-            GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
+ //           TextPositions[CurrentPage].SetActive(true);
+ //           GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 
-            foreach (GameObject child in AnimRef)
-            {
-                if (child.gameObject.GetComponent<SpriteRenderer>())
-                {
-                    child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                }
+ //           foreach (GameObject child in AnimRef)
+ //           {
+ //               if (child.gameObject.GetComponent<SpriteRenderer>())
+ //               {
+ //                   child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+ //               }
 
-                if (child.gameObject.GetComponent<Animator>())
-                {
-                    child.gameObject.GetComponent<Animator>().enabled = true;
-                }
-            }
-            isPanningLeft = false;
-            PageManager.GetComponent<PageManager>().SetUpNewTextBack();
+ //               if (child.gameObject.GetComponent<Animator>())
+ //               {
+ //                   child.gameObject.GetComponent<Animator>().enabled = true;
+ //               }
+ //           }
+ //           isPanningLeft = false;
+ //           PageManager.GetComponent<PageManager>().SetUpNewTextBack();
 
-        }
-	}
+ //       }
+	//}
 
-    public void SetToFinal()
-    {
-        Debug.Log("SET TO FINAL");
-        foreach (GameObject child in TextPositions)
-        {//Store the First of the Text References                 
-            child.SetActive(false);
-        }
-        int CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
-        TextPositions[CurrentPage].SetActive(true);  
-    }
+    //public void SetToFinal()
+    //{
+    //    Debug.Log("SET TO FINAL");
+    //    foreach (GameObject child in TextPositions)
+    //    {//Store the First of the Text References                 
+    //        child.SetActive(false);
+    //    }
+    //    //int CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
+    //    TextPositions[CurrentPage].SetActive(true);  
+    //}
 }
