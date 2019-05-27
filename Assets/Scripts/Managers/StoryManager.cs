@@ -126,10 +126,10 @@ public class StoryManager : MonoBehaviour {
         //    SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);   
         //}
 
-        if (PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
-        {
-            SceneManager.UnloadScene(PageManager.GetComponent<PageManager>().StringPreviousLevel);
-        }
+        //if (PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
+        //{
+        //    SceneManager.UnloadScene(PageManager.GetComponent<PageManager>().StringPreviousLevel);
+        //}
 
         //PageManager.GetComponent<PageManager>().StringPreviousLevel = SceneEnvironment;
         //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
