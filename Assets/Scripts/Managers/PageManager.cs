@@ -137,7 +137,7 @@ public class PageManager : Singleton<PageManager>
     public void LevelJugler()
     {
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
-        CurrentLevel = StoryManager.GetComponent<StoryManager>().SceneEnvironment;
+        //CurrentLevel = StoryManager.GetComponent<StoryManager>().SceneEnvironment;
         if (LevelsLoaded == false)
         {
             LevelsLoaded = true;

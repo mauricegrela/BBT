@@ -8,7 +8,7 @@ public class StoryManager : MonoBehaviour {
 
 	public int AudioIndexPosition; 
 	public string LevelName;
-    public string SceneEnvironment;
+    //public string SceneEnvironment;
 	public int pagesPerScene;
 	public string NextScene;
 	public string LastScene;
@@ -46,6 +46,7 @@ public class StoryManager : MonoBehaviour {
     private bool IsMainStoryLoaded = false;
     private bool IsEnviroLoaded = false;
     private bool IsScriptLoadingScene = false;
+
     private void Awake()
     {
         StreamingAssetsCounter = 0;
@@ -83,10 +84,10 @@ public class StoryManager : MonoBehaviour {
 
                 }
 
-            if(scene.name == SceneEnvironment)
-                {
-                IsEnviroLoaded = true;
-                }
+            //if(scene.name == SceneEnvironment)
+                //{
+                //IsEnviroLoaded = true;
+                //}
             }
        if(IsMainStoryLoaded == false)
         {
@@ -102,10 +103,10 @@ public class StoryManager : MonoBehaviour {
 
             SceneManager.LoadScene("MainStory", LoadSceneMode.Additive);
                 
-            if (IsMainStoryLoaded == false)
-            {
-            SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);
-            }
+            //if (IsMainStoryLoaded == false)
+            //{
+            //SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);
+            //}
 
             IsMainStoryLoaded = true;
             IsScriptLoadingScene = true;
@@ -119,12 +120,18 @@ public class StoryManager : MonoBehaviour {
         print("InitialSetUp");
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
 
-        if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
+        //if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
+        //{
+        //    SceneManager.UnloadScene(PageManager.GetComponent<PageManager>().StringPreviousLevel);
+        //    SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);   
+        //}
+
+        if (PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
         {
             SceneManager.UnloadScene(PageManager.GetComponent<PageManager>().StringPreviousLevel);
-            SceneManager.LoadScene(SceneEnvironment, LoadSceneMode.Additive);   
         }
-        PageManager.GetComponent<PageManager>().StringPreviousLevel = SceneEnvironment;
+
+        //PageManager.GetComponent<PageManager>().StringPreviousLevel = SceneEnvironment;
         //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
         if (PageManager.GetComponent<PageManager>().isLoading == true)
         {
@@ -186,7 +193,6 @@ public class StoryManager : MonoBehaviour {
         {
             foreach (Transform child in TextPositions[i].transform)
             {//Store the First of the Text References 
-
                 if (child.gameObject.tag == "TextPlacement")
                 {
                     PageManager.GetComponent<PageManager>().
@@ -195,8 +201,6 @@ public class StoryManager : MonoBehaviour {
 
                     PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
                 }
-
-
             }  
         }
 
