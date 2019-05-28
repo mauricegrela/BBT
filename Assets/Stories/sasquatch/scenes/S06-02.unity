@@ -148,8 +148,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: -55.3}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: 18, y: -213}
+  m_SizeDelta: {x: 922, y: 437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406971134
 MonoBehaviour:
@@ -286,12 +286,12 @@ Prefab:
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -337,7 +337,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -421.7
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -357,7 +357,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 336.8
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -393,6 +393,16 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -55.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -614,7 +624,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 17
   LevelName: S06-02
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S06-03
   LastScene: S06-01

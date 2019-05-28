@@ -139,20 +139,20 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31169334}
-  m_LocalRotation: {x: 0.050677076, y: -0.0687838, z: -0.0034985757, w: 0.99633753}
-  m_LocalPosition: {x: 4.03, y: 2.13, z: 1.41}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 5.768, y: -7.9390006, z: -0.80300003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &31169336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31169334}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37958dcd5706e4a5286811061b5514a4, type: 3}
   m_Name: 
@@ -332,8 +332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 143.27997, y: -92.5}
-  m_SizeDelta: {x: 673.0399, y: 1370.3}
+  m_AnchoredPosition: {x: 35.5, y: -191}
+  m_SizeDelta: {x: 887, y: 627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380133687
 MonoBehaviour:
@@ -476,12 +476,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -527,12 +527,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 567.8
+      value: 440
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 6.8
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 114847791220781816, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -542,7 +542,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 480
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -657,7 +662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 28
   LevelName: S08-02
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S08-03
   LastScene: S08-01

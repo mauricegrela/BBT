@@ -214,12 +214,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -260,7 +260,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -70.625
+      value: -292
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -334,12 +334,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 349.87
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 401.2
+      value: 401
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -561,7 +561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 16
   LevelName: S06-01
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S06-02
   LastScene: S05-02
@@ -612,8 +611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: 146.1}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: 58.5, y: -218}
+  m_SizeDelta: {x: 843, y: 502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927858427
 MonoBehaviour:

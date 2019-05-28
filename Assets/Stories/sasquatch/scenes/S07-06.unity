@@ -214,12 +214,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -265,7 +265,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -248.1
+      value: -316
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -285,12 +285,17 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 573.1
+      value: 479
       objectReference: {fileID: 0}
     - target: {fileID: 114847791220781816, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_ChildAlignment
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -512,7 +517,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 26
   LevelName: S07-06
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S08-01
   LastScene: S07-04
@@ -563,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: 114.08929}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: -19.5, y: -218}
+  m_SizeDelta: {x: 999, y: 538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853839717
 MonoBehaviour:

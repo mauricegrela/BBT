@@ -214,12 +214,12 @@ Prefab:
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -285,12 +285,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -389.9
+      value: -384
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 270.9
+      value: 410
       objectReference: {fileID: 0}
     - target: {fileID: 114120824215152762, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -321,6 +321,16 @@ Prefab:
         type: 2}
       propertyPath: m_EffectColor.b
       value: 0.41509432
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 93
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -364,8 +374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: -55.3}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: -36, y: -227}
+  m_SizeDelta: {x: 1030, y: 435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1487331452
 MonoBehaviour:
@@ -614,7 +624,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 19
   LevelName: S06-04
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S06-05
   LastScene: S06-03

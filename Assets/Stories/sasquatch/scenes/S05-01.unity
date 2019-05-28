@@ -148,8 +148,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -54.450027, y: 146.1}
-  m_SizeDelta: {x: 1068.5, y: 1370.3}
+  m_AnchoredPosition: {x: 86, y: -214}
+  m_SizeDelta: {x: 786, y: 502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217849411
 MonoBehaviour:
@@ -286,12 +286,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -363,12 +363,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -312
+      value: -336
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 183.9
+      value: 211
       objectReference: {fileID: 0}
     - target: {fileID: 1397223997840584, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
       propertyPath: m_IsActive
@@ -599,7 +599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 14
   LevelName: S05-01
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S05-02
   LastScene: S04-05

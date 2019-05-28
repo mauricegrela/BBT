@@ -270,12 +270,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 387.4
+      value: 421
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -389
+      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 114062417553599824, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -295,12 +295,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 396.8
+      value: 396
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 75.4
+      value: 132
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -522,7 +522,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 20
   LevelName: S06-05
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S07-01
   LastScene: S06-04
@@ -536,9 +535,6 @@ MonoBehaviour:
   TextPositions: []
   InitialTextPosition: {fileID: 0}
   DefenitionPage: {fileID: 0}
-  isPanningLeft: 0
-  isPanningRight: 0
-  Page37Panning: {fileID: 0}
   PageSong: {fileID: 8300000, guid: 2ddb22820f1f646e8b79183f5849b52f, type: 3}
   PanningPageSong2: {fileID: 0}
   Volume: 0.2
@@ -576,8 +572,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: -55.3}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: -40.5, y: -256}
+  m_SizeDelta: {x: 1039, y: 487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941106600
 MonoBehaviour:

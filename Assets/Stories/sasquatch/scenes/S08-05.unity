@@ -214,12 +214,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -270,22 +270,22 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 244.1
+      value: 353
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 389.4
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 120.15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -441
+      value: -74
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -329,8 +329,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 3.5498352, y: -150.1}
-  m_SizeDelta: {x: 952.49994, y: 1370.3}
+  m_AnchoredPosition: {x: -60, y: -221}
+  m_SizeDelta: {x: 1078, y: 553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468083096
 MonoBehaviour:
@@ -410,7 +410,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 31
   LevelName: S08-05
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S08-06
   LastScene: S08-04
