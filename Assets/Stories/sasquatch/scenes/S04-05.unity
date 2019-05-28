@@ -260,12 +260,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 370.4
+      value: 214
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -372.8
+      value: -407
       objectReference: {fileID: 0}
     - target: {fileID: 114120824215152762, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -276,6 +276,16 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_FontSize
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -547,8 +557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -93, y: -222}
-  m_SizeDelta: {x: 1152, y: 506}
+  m_AnchoredPosition: {x: -40.5, y: -151}
+  m_SizeDelta: {x: 1047, y: 597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828260401
 MonoBehaviour:
@@ -570,7 +580,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2b09f2f594ca34845b73dac06f01e86b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3f44cd95bae84fe48ee7cd865d93f24, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
