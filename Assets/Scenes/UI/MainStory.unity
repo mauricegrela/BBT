@@ -1826,17 +1826,6 @@ MonoBehaviour:
           m_StringArgument: French
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 919223766}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &522785423
@@ -6386,17 +6375,6 @@ MonoBehaviour:
           m_StringArgument: Indigenous
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 919223766}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &961474255
@@ -7052,17 +7030,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: English
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 919223766}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9133,6 +9100,7 @@ MonoBehaviour:
   - {fileID: 1097418464}
   - {fileID: 522785423}
   - {fileID: 961474255}
+  mainmenu_bg: {fileID: 919223766}
 --- !u!1 &1792208568
 GameObject:
   m_ObjectHideFlags: 0

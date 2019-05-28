@@ -9,14 +9,14 @@ public class MenuLanguageChange : MonoBehaviour {
     public Color ButtonClickedColor;
     public Color ButtonDefualtColor;
     public Image[] LanguageButtonImages;
-
+    public GameObject mainmenu_bg;
     //public Dropdown dropdownMenu;
 
-	//public GameObject[] ChapterButtonGroup;
+    //public GameObject[] ChapterButtonGroup;
 
-	//public string[] SasquatchChapters;
+    //public string[] SasquatchChapters;
 
-	//public string[] LittlePeopleChapters;
+    //public string[] LittlePeopleChapters;
 
     // Use this for initialization
     void Start() {
@@ -67,8 +67,8 @@ public class MenuLanguageChange : MonoBehaviour {
     {
         UpdateLanguageButtonsColors(Language);
 
-        PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
         //Debug.Log(GetComponentInChildren<Text>().text);
+        StartCoroutine(WaitForEndOfFrame(Language));
     }
 
     void UpdateLanguageButtonsColors(string Language)
@@ -92,7 +92,13 @@ public class MenuLanguageChange : MonoBehaviour {
         {
             LanguageButtonImages[2].color = ButtonClickedColor;
         }
+    }
 
+    IEnumerator WaitForEndOfFrame(string Language)
+    {
+        yield return (new WaitForEndOfFrame());
+        PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
+        mainmenu_bg.SetActive(false);
 
     }
 }
