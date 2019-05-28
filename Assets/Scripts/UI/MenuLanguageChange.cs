@@ -6,6 +6,10 @@ using UnityEngine;
 public class MenuLanguageChange : MonoBehaviour {
 
     public GameObject PageManagerRef;
+    public Color ButtonClickedColor;
+    public Color ButtonDefualtColor;
+    public Image[] LanguageButtonImages;
+
     //public Dropdown dropdownMenu;
 
 	//public GameObject[] ChapterButtonGroup;
@@ -61,7 +65,34 @@ public class MenuLanguageChange : MonoBehaviour {
 
 	public void LanguageUpdate(string Language)
     {
-		PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
+        UpdateLanguageButtonsColors(Language);
+
+        PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
         //Debug.Log(GetComponentInChildren<Text>().text);
+    }
+
+    void UpdateLanguageButtonsColors(string Language)
+    {
+        for(int i=0;i< LanguageButtonImages.Length;i++)
+        {
+            LanguageButtonImages[i].color = ButtonDefualtColor;
+        }
+
+        if(Language== "English")
+        {
+            LanguageButtonImages[0].color = ButtonClickedColor;
+        }
+
+        if (Language == "French")
+        {
+            LanguageButtonImages[1].color = ButtonClickedColor;
+        }
+
+        if (Language == "Indigenous")
+        {
+            LanguageButtonImages[2].color = ButtonClickedColor;
+        }
+
+
     }
 }
