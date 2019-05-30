@@ -374,12 +374,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -425,7 +425,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -470.6
+      value: -454.4
       objectReference: {fileID: 0}
     - target: {fileID: 114847791220781816, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -435,7 +435,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 325.7
+      value: 318.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
@@ -474,7 +474,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 52
   LevelName: S17-02
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S18-01
   LastScene: S17-01
