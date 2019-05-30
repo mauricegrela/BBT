@@ -252,6 +252,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224555389978735802, guid: b8964c81bd9b26945973bda6a5aaf93a,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 93.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8964c81bd9b26945973bda6a5aaf93a, type: 2}
   m_IsPrefabParent: 0
@@ -522,7 +527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 45
   LevelName: S14-01
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S14-02
   LastScene: S13-01
