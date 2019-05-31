@@ -12,7 +12,7 @@ public class WaterColorEffect : MonoBehaviour
     void Start()
     {
         spriteMask = GetComponent<SpriteMask>();
-        StartCoroutine(LerpAlphaCutOff(0, 0, EffectTimeSpan));
+        //StartCoroutine(LerpAlphaCutOff(0, 0, EffectTimeSpan));
     }
 
     //void Update()
@@ -24,8 +24,18 @@ public class WaterColorEffect : MonoBehaviour
     //    }
     //}
 
-    public void ClickedButtonToShowEffect()
+    //public void ClickedButtonToShowEffect()
+    //{
+    //    StartCoroutine(LerpAlphaCutOff(0, 0, 1));
+    //}
+
+    public void ActivateEffect()
     {
+        if(spriteMask==null)
+        {
+            spriteMask = GetComponent<SpriteMask>();
+        }
+        //called from story manager
         StartCoroutine(LerpAlphaCutOff(0, 0, 1));
     }
 

@@ -245,13 +245,12 @@ public class PageManager : Singleton<PageManager>
         {
             //StoryManagers.Add(storyManagers[i].GetComponent<StoryManager>());
             StoryManager a = storyManagers[i].GetComponent<StoryManager>();
-            print("lvlName");
-            print(a.LevelName);
+            //print("lvlName");
+            //print(a.LevelName);
 
             if (a.LevelName == LevelToLoad)
             {
                 EnvironmentTracker = LevelToLoad;
-                print("YES PLEASE");
                 //PreviousLevelTracker = EnvironmentTracker;
                 StoryManager = a.gameObject;
                 //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);

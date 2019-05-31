@@ -47,6 +47,8 @@ public class StoryManager : MonoBehaviour {
     private bool IsEnviroLoaded = false;
     private bool IsScriptLoadingScene = false;
 
+    public GameObject WaterColorEffectObject;
+     WaterColorEffect waterColorEffectScript;
     private void Awake()
     {
         StreamingAssetsCounter = 0;
@@ -119,6 +121,7 @@ public class StoryManager : MonoBehaviour {
     {
         print("InitialSetUp");
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
+
 
         //if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
         //{
@@ -265,7 +268,21 @@ public class StoryManager : MonoBehaviour {
             //StartCoroutine(coroutine);
 			}
 
-	}
+
+
+        CallWaterColorEffect();
+
+    }
+
+    void CallWaterColorEffect()
+    {
+        WaterColorEffectObject = GameObject.FindWithTag("WaterColorEffect");
+        if (WaterColorEffectObject != null)
+        {
+            waterColorEffectScript = WaterColorEffectObject.GetComponent<WaterColorEffect>();
+            waterColorEffectScript.ActivateEffect();
+        }
+    }
 
     //private IEnumerator WaitGoingBack(float waitTime)
     //{

@@ -157,7 +157,61 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 212349100889280880, guid: f6eaca64f80274794bf2817cb80cbbef,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 331504452532534386, guid: f6eaca64f80274794bf2817cb80cbbef,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7388ee2db8f744225ad1e35730c09238,
+        type: 3}
+    - target: {fileID: 212317461367470562, guid: f6eaca64f80274794bf2817cb80cbbef,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7388ee2db8f744225ad1e35730c09238,
+        type: 3}
+    - target: {fileID: 4770247916759804, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770247916759804, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770247916759804, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.5783546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770247916759804, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5943085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912393474139782, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912393474139782, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912393474139782, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.5783546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912393474139782, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5943085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106161579931784, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
+      propertyPath: m_TagString
+      value: WaterColorEffect
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 212349100889280880, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f6eaca64f80274794bf2817cb80cbbef, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &608369965
@@ -190,22 +244,22 @@ Prefab:
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.08715578
-      objectReference: {fileID: 0}
-    - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.9961947
-      objectReference: {fileID: 0}
-    - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
-        type: 2}
-      propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
+        type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
@@ -265,7 +319,7 @@ Prefab:
         type: 2}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 7388ee2db8f744225ad1e35730c09238, type: 3}
+      objectReference: {fileID: 8400000, guid: 5d5c791d44f374b21b92a2ad7746215e, type: 2}
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
       propertyPath: m_LocalScale.x
@@ -284,17 +338,22 @@ Prefab:
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -190
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224356686456478226, guid: de5f4c8bdbe5143ecb9198d42b77508b,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -360
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285997813150098, guid: de5f4c8bdbe5143ecb9198d42b77508b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de5f4c8bdbe5143ecb9198d42b77508b, type: 2}
@@ -545,7 +604,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 51.4
+      value: 40.298508
       objectReference: {fileID: 0}
     - target: {fileID: 224779462405229988, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -599,7 +658,7 @@ Prefab:
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -924,3 +983,4 @@ MonoBehaviour:
   PageSong: {fileID: 8300000, guid: 2ddb22820f1f646e8b79183f5849b52f, type: 3}
   PanningPageSong2: {fileID: 0}
   Volume: 0.2
+  WaterColorEffectObject: {fileID: 0}
