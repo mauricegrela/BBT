@@ -285,12 +285,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -336,7 +336,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -78.1
+      value: -79.8
       objectReference: {fileID: 0}
     - target: {fileID: 114847791220781816, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -346,7 +346,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 243.8
+      value: 210.1
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -390,7 +390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 40
   LevelName: S11-01
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S12-01
   LastScene: S10-04

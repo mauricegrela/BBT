@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 30.649979, y: -137}
-  m_SizeDelta: {x: 898.2999, y: 1370.3}
+  m_AnchoredPosition: {x: -21.450027, y: -137}
+  m_SizeDelta: {x: 1002.49994, y: 1370.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978786056
 MonoBehaviour:
@@ -384,12 +384,12 @@ Prefab:
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -494,7 +494,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 56
   LevelName: S18-04
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S19-01
   LastScene: S18-03
