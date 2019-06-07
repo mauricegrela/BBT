@@ -17,6 +17,7 @@ public class StoryManager : MonoBehaviour {
 	public bool isLoadingLevel;
 	public int StreamingAssetsCounter;
 	public GameObject PageManager;
+    PageManager pageManagerSctipt;
 	private GameObject Canvas;
     [SerializeField]
     public GameObject CameraRef;
@@ -121,7 +122,7 @@ public class StoryManager : MonoBehaviour {
     {
         print("InitialSetUp");
         PageManager = GameObject.FindGameObjectWithTag("PageManager");
-
+        pageManagerSctipt = PageManager.GetComponent<PageManager>();
 
         //if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
         //{
@@ -136,11 +137,12 @@ public class StoryManager : MonoBehaviour {
 
         //PageManager.GetComponent<PageManager>().StringPreviousLevel = SceneEnvironment;
         //SceneEnvironment = PageManager.GetComponent<StoryManager>().SceneEnvironment;
-        if (PageManager.GetComponent<PageManager>().isLoading == true)
+        if (pageManagerSctipt.isLoading == true)
         {
             //InitialSetUp();
-            PageManager.GetComponent<PageManager>().isLoading = false;
-            PageManager.GetComponent<PageManager>().StoryManager = gameObject;
+            pageManagerSctipt.isLoading = false;
+            pageManagerSctipt.StoryManager = gameObject;
+
             if (NextScene != "None")
             {
             SceneManager.LoadScene(NextScene, LoadSceneMode.Additive);
@@ -150,12 +152,13 @@ public class StoryManager : MonoBehaviour {
             {
             SceneManager.LoadScene(LastScene, LoadSceneMode.Additive);
             }
-            PageManager.GetComponent<PageManager>().PreviousLevelTracker = LastScene;
+
+            pageManagerSctipt.PreviousLevelTracker = LastScene;
 
         }
 
 
-        PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
+        pageManagerSctipt.LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
         CameraRef = GameObject.FindGameObjectWithTag("MainCamera");
         CameraRef.GetComponent<Camera>().enabled = true;
         //OGCameraRefPosition = CameraRef.transform.position;
@@ -166,11 +169,13 @@ public class StoryManager : MonoBehaviour {
             TextPositions[i] = transform.GetChild(i).gameObject;
             //Debug.Log(transform.GetChild(i).name);
         }
-        PageManager = GameObject.FindGameObjectWithTag("PageManager");
 
 
-        PageManager.GetComponent<PageManager>().sentenceContainerCounter = 0;
-        PageManager.GetComponent<PageManager>().sentenceContainerCurrent = 0;
+        //PageManager = GameObject.FindGameObjectWithTag("PageManager"); // marked this- why is this done again?
+
+
+        pageManagerSctipt.sentenceContainerCounter = 0;
+        pageManagerSctipt.sentenceContainerCurrent = 0;
 
         foreach (GameObject child in TextPositions)
         {//Store the First of the Text References                 
@@ -198,8 +203,8 @@ public class StoryManager : MonoBehaviour {
             {//Store the First of the Text References 
                 if (child.gameObject.tag == "TextPlacement")
                 {
-                    PageManager.GetComponent<PageManager>().
-                    sentenceContainer[PageManager.GetComponent<PageManager>().sentenceContainerCounter]
+                    pageManagerSctipt.
+                    sentenceContainer[pageManagerSctipt.sentenceContainerCounter]
                     = child.gameObject.GetComponent<SentenceRowContainer>();
 
                     PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
@@ -216,16 +221,16 @@ public class StoryManager : MonoBehaviour {
         PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<Image>().enabled = true;
         if (isLoadingLevel == true && PageManager.GetComponent<PageManager>().isIniAudioLoaded == false)
         {//If this is going to load a different streaming package, load it here. 
-            PageManager.GetComponent<PageManager>().audioIndex = 0;
-            PageManager.GetComponent<PageManager>().isIniAudioLoaded = true;
+            pageManagerSctipt.audioIndex = 0;
+            pageManagerSctipt.isIniAudioLoaded = true;
             DataManager.LoadStory(DataManager.currentStoryName, StreamingAssetsCounter.ToString());
         }
 
 
         if(IsScriptLoadingScene == true)
         {
-            PageManager.GetComponent<PageManager>().audioIndex = 0;
-            PageManager.GetComponent<PageManager>().isIniAudioLoaded = true;
+            pageManagerSctipt.audioIndex = 0;
+            pageManagerSctipt.isIniAudioLoaded = true;
             DataManager.LoadStory(DataManager.currentStoryName, StreamingAssetsCounter.ToString());
         }
 
@@ -237,12 +242,12 @@ public class StoryManager : MonoBehaviour {
 	public void CoroutineLoad()//Start () 
     {
 
-		if (PageManager.GetComponent<PageManager> ().isGoingBack == false) 
+		if (pageManagerSctipt.isGoingBack == false) 
         {
-        PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
-        PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
-        PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
-        PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
+            pageManagerSctipt.AssetAssigner(LevelName, AudioIndexPosition);
+            pageManagerSctipt.GoToPage(AudioIndexPosition);
+            pageManagerSctipt.ChapterskipSetCharacters(0);
+           pageManagerSctipt.LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
         GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
         if (AnimRef != null)
             AnimRef.GetComponent<Animator>().enabled = true;
@@ -253,10 +258,10 @@ public class StoryManager : MonoBehaviour {
 		} 
 			else 
 			{//If the player is going backwards
-            PageManager.GetComponent<PageManager>().AssetAssigner(LevelName, AudioIndexPosition);
-            PageManager.GetComponent<PageManager>().GoToPage(AudioIndexPosition);
-            PageManager.GetComponent<PageManager>().ChapterskipSetCharacters(0);
-            PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
+            pageManagerSctipt.AssetAssigner(LevelName, AudioIndexPosition);
+            pageManagerSctipt.GoToPage(AudioIndexPosition);
+            pageManagerSctipt.ChapterskipSetCharacters(0);
+            pageManagerSctipt.LoadingScreen.GetComponent<LoadingScript>().VisualToggle(false);
             GameObject AnimRef = GameObject.FindGameObjectWithTag("LoadPageAnim");
             if (AnimRef != null)
                 AnimRef.GetComponent<Animator>().enabled = true;

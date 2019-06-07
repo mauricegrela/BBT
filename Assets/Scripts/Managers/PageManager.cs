@@ -58,6 +58,7 @@ public class PageManager : Singleton<PageManager>
 
     //Narrative Manager vars
     public GameObject StoryManager;
+    StoryManager storyManagerScript;
     [SerializeField]
     private string EnvironmentTracker;
     [SerializeField]
@@ -131,19 +132,22 @@ public class PageManager : Singleton<PageManager>
     {//Initiage the story
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainStory"));
         LevelJugler();
+
         yield return null;
     }
 
     public void LevelJugler()
     {
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
         //CurrentLevel = StoryManager.GetComponent<StoryManager>().SceneEnvironment;
         if (LevelsLoaded == false)
         {
             LevelsLoaded = true;
             //SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
-            StoryManager.GetComponent<StoryManager>().InitialSetUp();
-            PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
+            storyManagerScript.InitialSetUp();
+            PreviousLevelTracker = storyManagerScript.LastScene;
         }
     }
 
@@ -173,6 +177,10 @@ public class PageManager : Singleton<PageManager>
     public void ChapterSkip(String LevelToLoad)
     {//Launches when the player skips to a chapter through clicking on the book mark
         StopAllCoroutines();
+
+        StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
         //LoadingScreen.GetComponent<LoadingScript>().VisualToggle(true);
         foreach (SentenceRowContainer Child in sentenceContainer)
         {
@@ -180,19 +188,23 @@ public class PageManager : Singleton<PageManager>
                 Child.Clear();
         }
         isLoading = true;
-        StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
 
-        StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
+        //storyManagerScript = StoryManager.GetComponent<StoryManager>();
+        storyManagerScript.CameraRef.transform.position = storyManagerScript.OGCameraRefPosition;
+
+        //StoryManager = GameObject.FindGameObjectWithTag("StoryManager");// marked this- why doing this here?
+
+
         Resources.UnloadUnusedAssets();
 
-        if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
+        if (storyManagerScript.NextScene != "None")
         {
-            SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().NextScene);
+            SceneManager.UnloadScene(storyManagerScript.NextScene);
         }
 
         if (StoryManager.GetComponent<StoryManager>().LastScene != "None")
         {
-            SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().LastScene);
+            SceneManager.UnloadScene(storyManagerScript.LastScene);
         }
 
         if (PreviousLevelTracker != EnvironmentTracker)
@@ -290,7 +302,10 @@ public class PageManager : Singleton<PageManager>
         //bool isloadingScene;
 
         string NextScene;
-        NextScene = StoryManager.GetComponent<StoryManager>().NextScene;
+        StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
+        NextScene = storyManagerScript.NextScene;
 
         //StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
         //StoryManager.GetComponent<StoryManager>().isPanningLeft = false; //old stuff- 
@@ -318,14 +333,16 @@ public class PageManager : Singleton<PageManager>
             //PreviousLevelTracker- previous scene
             //EnvironmentTracker- next scene
 
-            StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
-            if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
+            StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); //marked this, why do this again?
+            storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
+        if (storyManagerScript.NextScene != "None")
             {
-                SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
+                SceneManager.LoadScene(storyManagerScript.NextScene, LoadSceneMode.Additive);
             }
 
             SceneManager.LoadScene(EnvironmentTracker, LoadSceneMode.Additive);
-            StoryManager.GetComponent<StoryManager>().InitialSetUp();
+            storyManagerScript.InitialSetUp();
 
 
 
@@ -395,8 +412,11 @@ public class PageManager : Singleton<PageManager>
         //Debug.Log(sceneindex);
         //bool isloadingScene;
 
+        StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
+        storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
         string LastScene;
-        LastScene = StoryManager.GetComponent<StoryManager>().LastScene;
+        LastScene = storyManagerScript.LastScene;
 
         //if (sceneindex < 0)
         //{//If the player is at the last page of the scene
@@ -406,28 +426,32 @@ public class PageManager : Singleton<PageManager>
 
             audioSource.Stop();
 
-            StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
-            Resources.UnloadUnusedAssets();
+            //StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); // marked this- why do this here?
+            //storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
+        Resources.UnloadUnusedAssets();
             //Debug.Log(StoryManager.GetComponent<StoryManager>().NextScene);
-            if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
+            if (storyManagerScript.NextScene != "None")
             {
-                SceneManager.UnloadScene(StoryManager.GetComponent<StoryManager>().NextScene);
+                SceneManager.UnloadScene(storyManagerScript.NextScene);
             }
             SceneManager.UnloadScene(EnvironmentTracker);
 
 
-            StoryManager = GameObject.FindGameObjectWithTag("StoryManager");
-            StoryManager.GetComponent<StoryManager>().InitialSetUp();
+        StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); //marked this- why do this here again?
+        storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+
+        storyManagerScript.InitialSetUp();
 
             //Debug.Log(StoryManager.GetComponent<StoryManager>().NextScene);
 
-            if (StoryManager.GetComponent<StoryManager>().NextScene != "None")
+            if (storyManagerScript.NextScene != "None")
             {
-                SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().NextScene, LoadSceneMode.Additive);
+                SceneManager.LoadScene(storyManagerScript.NextScene, LoadSceneMode.Additive);
             }
-            if (StoryManager.GetComponent<StoryManager>().LastScene != "None")
+            if (storyManagerScript.LastScene != "None")
             {
-                SceneManager.LoadScene(StoryManager.GetComponent<StoryManager>().LastScene, LoadSceneMode.Additive);
+                SceneManager.LoadScene(storyManagerScript.LastScene, LoadSceneMode.Additive);
             }
             PreviousLevelTracker = StoryManager.GetComponent<StoryManager>().LastScene;
         //}
@@ -476,13 +500,13 @@ public class PageManager : Singleton<PageManager>
         //StoryManager.GetComponent<StoryManager>().
         GameObject Cam = GameObject.FindGameObjectWithTag("MainCamera");
 
-        if (StoryManager.GetComponent<StoryManager>().PageSong == Cam.GetComponent<AudioSource>().clip)
+        if (storyManagerScript.PageSong == Cam.GetComponent<AudioSource>().clip)
         {//if current track is the same as the previous  dont change it
 
         }
         else
         {
-            if (StoryManager.GetComponent<StoryManager>().PageSong != null)
+            if (storyManagerScript.PageSong != null)
             {
                 Cam.GetComponent<AudioSource>().clip = StoryManager.GetComponent<StoryManager>().PageSong;
                 Cam.GetComponent<AudioSource>().volume = StoryManager.GetComponent<StoryManager>().Volume;

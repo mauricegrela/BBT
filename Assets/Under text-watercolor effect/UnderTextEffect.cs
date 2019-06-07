@@ -10,9 +10,4 @@ public class UnderTextEffect : MonoBehaviour {
         TextContainer = GameObject.FindGameObjectWithTag("TextPlacement");
         gameObject.transform.position = TextContainer.transform.position;
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
