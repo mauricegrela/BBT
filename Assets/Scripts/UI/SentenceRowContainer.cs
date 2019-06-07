@@ -24,9 +24,6 @@ public class SentenceRowContainer : MonoBehaviour
     private PageManager PageManagerRefScript;
 
 
-
-
-
     public Color HighlightedColor = Color.white;
 
 

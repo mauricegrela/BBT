@@ -287,14 +287,6 @@ public class PageManager : Singleton<PageManager>
     //    sentenceContainerCurrent = 0;
     //    //GameObject TextPositionref;
     //    SpeechBubbleStorage();
-    //}
-
-
-    void Update()
-    {
-
-    }
-
 
     public void GotoNext()
     {

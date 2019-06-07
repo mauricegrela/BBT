@@ -41,8 +41,6 @@ public class SentenceRow : MonoBehaviour
         wordClone.text.text = word;
 
 
-
-
 		if (wordClone.text.text.Substring(0, 1) == "#") {
 			var strs = wordClone.text.text.Split("#"[0]);
 			wordClone.text.text = strs[1];
