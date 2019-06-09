@@ -10,6 +10,8 @@ public class MenuLanguageChange : MonoBehaviour {
     public Color ButtonDefualtColor;
     public Image[] LanguageButtonImages;
     public GameObject mainmenu_bg;
+
+    bool defulteLanguageColorWasSet;
     //public Dropdown dropdownMenu;
 
     //public GameObject[] ChapterButtonGroup;
@@ -60,6 +62,12 @@ public class MenuLanguageChange : MonoBehaviour {
             //dropdownMenu.options.Add(new Dropdown.OptionData(dropdownMenu.options[languageCount].text));
         }
 		*/
+
+        if(!defulteLanguageColorWasSet)
+        {
+            LanguageButtonImages[0].color = ButtonClickedColor;
+            defulteLanguageColorWasSet = true;
+        }
     }
 
 
