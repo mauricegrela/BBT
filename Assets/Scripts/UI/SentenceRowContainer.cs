@@ -21,7 +21,7 @@ public class SentenceRowContainer : MonoBehaviour
 
 	public float ReadAlongOn =1;
 
-    private PageManager PageManagerRefScript;
+    //private PageManager PageManagerRefScript;
 
 
     public Color HighlightedColor = Color.white;
@@ -31,22 +31,30 @@ public class SentenceRowContainer : MonoBehaviour
 
 	public Color NormalColor = Color.white;
 
+    [HideInInspector]
+    public string currentLvl;
 
+    StoryManager storyManager;
     void Awake()
     {
+        storyManager = GetComponentInParent<StoryManager>();
+        currentLvl = storyManager.LevelName; //ussed for text positioning prefabs
+
+        //storyManager.camera=
+
         /*if(HighlightedColor == Color.white)
         {
             ColorUtility.TryParseHtmlString("#d8314d", out HighlightedColor);    
         }*/
 
-		//ColorUtility.TryParseHtmlString("#ffffff", out NormalColor);
+        //ColorUtility.TryParseHtmlString("#ffffff", out NormalColor);
         rt = GetComponent<RectTransform>();
         layoutGroup = GetComponent<VerticalLayoutGroup>();
         sentenceRowPrefab.gameObject.SetActive(false);
-        GameObject PageManagerRef;
+        //GameObject PageManagerRef;
 
-        PageManagerRef = GameObject.FindGameObjectWithTag("PageManager");
-        PageManagerRefScript = PageManagerRef.GetComponent<PageManager>();
+        //PageManagerRef = GameObject.FindGameObjectWithTag("PageManager");
+        //PageManagerRefScript = PageManagerRef.GetComponent<PageManager>();
     }
 
     public void Clear()
@@ -62,9 +70,12 @@ public class SentenceRowContainer : MonoBehaviour
         CreateRow();
     }
 
+    
     public void AddText(WordGroupObject wordGroup)
     {
         //Debug.Log(wordGroup.text);
+
+        GetComponentInParent<StoryManager>().positionTextAccordingLanguage();
 
         string[] words = wordGroup.text.Split(' ');
 		narrator = words [0];

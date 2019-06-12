@@ -49,7 +49,13 @@ public class StoryManager : MonoBehaviour {
     private bool IsScriptLoadingScene = false;
 
     public GameObject WaterColorEffectObject;
-     WaterColorEffect waterColorEffectScript;
+    WaterColorEffect waterColorEffectScript;
+
+    //GameObject englishTexPositionGameobject;
+    //GameObject frenchTexPositionGameobject;
+    //GameObject indigenousTexPositionGameobject;
+    //GameObject textContainer;
+     
     private void Awake()
     {
         StreamingAssetsCounter = 0;
@@ -114,7 +120,8 @@ public class StoryManager : MonoBehaviour {
             IsMainStoryLoaded = true;
             IsScriptLoadingScene = true;
         }
-    DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
+
+        DefenitionPage = GameObject.FindGameObjectWithTag("Definition");//Find the story manager found in every level
 
     }
 
@@ -274,9 +281,8 @@ public class StoryManager : MonoBehaviour {
 			}
 
 
-
+        positionTextAccordingLanguage();
         CallWaterColorEffect();
-
     }
 
     void CallWaterColorEffect()
@@ -286,6 +292,66 @@ public class StoryManager : MonoBehaviour {
         {
             waterColorEffectScript = WaterColorEffectObject.GetComponent<WaterColorEffect>();
             waterColorEffectScript.ActivateEffect();
+        }
+    }
+
+    TextPositionEditMode[] textPositionEditModeAll;
+    SentenceRowContainer sentenceRowContainer;
+
+
+    public void positionTextAccordingLanguage()
+    {
+        print("positionTextAccordingLanguage");
+        //is called from child sentenceRowContainer from AddText() and from this script's CoroutineLoad().
+        sentenceRowContainer = GetComponentInChildren<SentenceRowContainer>();
+
+        textPositionEditModeAll = GetComponentsInChildren<TextPositionEditMode>();
+
+        print(DataManager.currentLanguage + "Current language");
+
+        for (int i=0;i< textPositionEditModeAll.Length;i++)
+        {
+            if(textPositionEditModeAll[i].gameObject.tag== "EnglishTextPosition")
+            {
+                if(DataManager.currentLanguage== "english")
+                {
+                    sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
+
+                    if(Application.isEditor)
+                    {
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                    }
+                }
+            }
+
+            if(textPositionEditModeAll[i].gameObject.tag == "FrenchTextPosition")
+            {
+                if (DataManager.currentLanguage == "French")
+                {
+                    sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
+
+                    if (Application.isEditor)
+                    {
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                    }
+                }
+            }
+
+            if (textPositionEditModeAll[i].gameObject.tag == "IndigenousTextPosition")
+            {
+                //print("IndigenousTextPosition TAG");
+
+                if (DataManager.currentLanguage == "Indigenous")
+                {
+                    sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
+
+                    if (Application.isEditor)
+                    {
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                    }
+                }
+            }
+
         }
     }
 
@@ -300,7 +366,7 @@ public class StoryManager : MonoBehaviour {
     //        }
     //        else if (Counter == 1)
     //        {
-                
+
     //        }
     //        else if (Counter == 2)
     //        {
@@ -352,7 +418,7 @@ public class StoryManager : MonoBehaviour {
     //        }
     //        else if (Counter == 1)
     //        {
-                
+
     //        }
     //        else if (Counter == 2)
     //        {
@@ -399,7 +465,7 @@ public class StoryManager : MonoBehaviour {
     //            isPanningRight = false;
     //            PageManager.GetComponent<PageManager>().SetUpNewTextFoward(); 
 
-           
+
     //        }
     //}
 
@@ -409,77 +475,77 @@ public class StoryManager : MonoBehaviour {
     //    //CameraRef.transform.position = OGCameraRefPosition;
     //}
 
-	// Update is called once per frame
-	//void Update () {
-        
- //       if(isPanningRight == true && isPanningLeft == false)
- //       {
- //           float dist = Vector3.Distance(CameraRef.transform.position, panningtargetPosition.position);
- //           if (dist >= 0.1)
- //           {
- //               //CameraRef.transform.Translate(Vector3.right * (Time.deltaTime*2), Space.World);
- //               float step = 6 * Time.deltaTime;
+    // Update is called once per frame
+    //void Update () {
 
- //               // Move our position a step closer to the target.
- //               //CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
- //           }
- //               else
- //               {
- //                   foreach (GameObject child in TextPositions)
- //                   {//Store the First of the Text References                 
- //                       child.SetActive(false);
- //                   }
+    //       if(isPanningRight == true && isPanningLeft == false)
+    //       {
+    //           float dist = Vector3.Distance(CameraRef.transform.position, panningtargetPosition.position);
+    //           if (dist >= 0.1)
+    //           {
+    //               //CameraRef.transform.Translate(Vector3.right * (Time.deltaTime*2), Space.World);
+    //               float step = 6 * Time.deltaTime;
 
- //               //TextPositions[CurrentPage].SetActive(true);
+    //               // Move our position a step closer to the target.
+    //               //CameraRef.transform.position = Vector3.MoveTowards(CameraRef.transform.position, panningtargetPosition.position, step);
+    //           }
+    //               else
+    //               {
+    //                   foreach (GameObject child in TextPositions)
+    //                   {//Store the First of the Text References                 
+    //                       child.SetActive(false);
+    //                   }
 
- //               GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
+    //               //TextPositions[CurrentPage].SetActive(true);
 
-	//                foreach (GameObject child in AnimRef)
-	//                {
-	//                    if (child.gameObject.GetComponent<SpriteRenderer>())
-	//                    {
-	//                        child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-	//                    }
+    //               GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 
-	//                    if (child.gameObject.GetComponent<Animator>())
-	//                    {
-	//                        child.gameObject.GetComponent<Animator>().enabled = true;
-	//                    }
-	//                }
- //               isPanningRight = false;
- //               PageManager.GetComponent<PageManager>().SetUpNewTextFoward();
- //               }
- //       }
+    //                foreach (GameObject child in AnimRef)
+    //                {
+    //                    if (child.gameObject.GetComponent<SpriteRenderer>())
+    //                    {
+    //                        child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+    //                    }
+
+    //                    if (child.gameObject.GetComponent<Animator>())
+    //                    {
+    //                        child.gameObject.GetComponent<Animator>().enabled = true;
+    //                    }
+    //                }
+    //               isPanningRight = false;
+    //               PageManager.GetComponent<PageManager>().SetUpNewTextFoward();
+    //               }
+    //       }
 
 
- //       if (isPanningRight == false && isPanningLeft == true)
- //       {
- //           foreach (GameObject child in TextPositions)
- //           {//Store the First of the Text References                 
- //               child.SetActive(false);
- //           }
- //           CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
+    //       if (isPanningRight == false && isPanningLeft == true)
+    //       {
+    //           foreach (GameObject child in TextPositions)
+    //           {//Store the First of the Text References                 
+    //               child.SetActive(false);
+    //           }
+    //           CurrentPage = PageManager.GetComponent<PageManager>().sceneindex;
 
- //           TextPositions[CurrentPage].SetActive(true);
- //           GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
+    //           TextPositions[CurrentPage].SetActive(true);
+    //           GameObject[] AnimRef = GameObject.FindGameObjectsWithTag("LoadPageAnim");
 
- //           foreach (GameObject child in AnimRef)
- //           {
- //               if (child.gameObject.GetComponent<SpriteRenderer>())
- //               {
- //                   child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
- //               }
+    //           foreach (GameObject child in AnimRef)
+    //           {
+    //               if (child.gameObject.GetComponent<SpriteRenderer>())
+    //               {
+    //                   child.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+    //               }
 
- //               if (child.gameObject.GetComponent<Animator>())
- //               {
- //                   child.gameObject.GetComponent<Animator>().enabled = true;
- //               }
- //           }
- //           isPanningLeft = false;
- //           PageManager.GetComponent<PageManager>().SetUpNewTextBack();
+    //               if (child.gameObject.GetComponent<Animator>())
+    //               {
+    //                   child.gameObject.GetComponent<Animator>().enabled = true;
+    //               }
+    //           }
+    //           isPanningLeft = false;
+    //           PageManager.GetComponent<PageManager>().SetUpNewTextBack();
 
- //       }
-	//}
+    //       }
+    //}
 
     //public void SetToFinal()
     //{

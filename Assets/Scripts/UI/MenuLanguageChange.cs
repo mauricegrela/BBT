@@ -107,6 +107,5 @@ public class MenuLanguageChange : MonoBehaviour {
         yield return (new WaitForEndOfFrame());
         PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
         mainmenu_bg.SetActive(false);
-
     }
 }
