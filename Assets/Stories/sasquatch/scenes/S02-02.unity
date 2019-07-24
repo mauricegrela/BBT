@@ -214,12 +214,12 @@ Prefab:
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114956745245298228, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -268,7 +268,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224779462405229988, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -313,12 +313,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 416.1
+      value: 446.6
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -116.28
+      value: -91.1
       objectReference: {fileID: 0}
     - target: {fileID: 114844847875134894, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -383,8 +383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.9499817, y: -174.2}
-  m_SizeDelta: {x: 957.69995, y: 1370.3}
+  m_AnchoredPosition: {x: 18.550026, y: -122.1}
+  m_SizeDelta: {x: 607.9, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497769736
 MonoBehaviour:
@@ -633,7 +633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioIndexPosition: 2
   LevelName: S02-02
-  SceneEnvironment: Exterior
   pagesPerScene: 1
   NextScene: S02-03
   LastScene: S02-01
@@ -650,3 +649,4 @@ MonoBehaviour:
   PageSong: {fileID: 8300000, guid: 2ddb22820f1f646e8b79183f5849b52f, type: 3}
   PanningPageSong2: {fileID: 0}
   Volume: 0.2
+  WaterColorEffectObject: {fileID: 0}
