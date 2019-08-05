@@ -265,12 +265,12 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 267.4
+      value: 236.7
       objectReference: {fileID: 0}
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -400.5
+      value: -437
       objectReference: {fileID: 0}
     - target: {fileID: 114120824215152762, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -339,7 +339,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224781589373346434, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -549,7 +549,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1708962605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 411}
+  m_LocalPosition: {x: 0, y: 0, z: 470}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 898509548}
@@ -557,8 +557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 99, y: 27}
-  m_SizeDelta: {x: 1140, y: 1199}
+  m_AnchoredPosition: {x: -49.84999, y: 45.6}
+  m_SizeDelta: {x: 1437.7, y: 1333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708962607
 MonoBehaviour:
@@ -654,3 +654,4 @@ MonoBehaviour:
   PageSong: {fileID: 8300000, guid: 2ddb22820f1f646e8b79183f5849b52f, type: 3}
   PanningPageSong2: {fileID: 0}
   Volume: 0.2
+  WaterColorEffectObject: {fileID: 0}
