@@ -75,7 +75,6 @@ public class SentenceRowContainer : MonoBehaviour
     {
         //Debug.Log(wordGroup.text);
 
-        GetComponentInParent<StoryManager>().positionTextAccordingLanguage();
 
         string[] words = wordGroup.text.Split(' ');
 		narrator = words [0];
@@ -113,7 +112,10 @@ public class SentenceRowContainer : MonoBehaviour
 					texts.Add (newText);
 				}
 		}
-        
+
+        GetComponentInParent<StoryManager>().positionTextAccordingLanguage(); //used to be
+
+
     }
 
     void CreateRow()

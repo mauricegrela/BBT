@@ -578,6 +578,9 @@ public class PageManager : Singleton<PageManager>
         //Debug.Log(newLanguage);
 
         DataManager.currentLanguage = newLanguage;
+        print("data manager language change" + newLanguage);
+        //languageChangeWasUpdate();
+
         DataManager.LoadStory(DataManager.currentStoryName, DataManager.CurrentAssetPackage);
         //PreviousSentence (true);
         AudioObject currentAudio = currentPage.audioObjects[audioIndex];
@@ -589,7 +592,7 @@ public class PageManager : Singleton<PageManager>
         //Scenetext.GetComponent<Text> ().text =currentAudio.name;
     }
 
-
+    //public delegate void LanguageChangeWasUpdate ();     //public static event LanguageChangeWasUpdate OnLanguageChangeWasUpdate;      //void languageChangeWasUpdate()     //{     //    if (OnLanguageChangeWasUpdate != null)     //    {     //        OnLanguageChangeWasUpdate();     //    }     //} 
     public void KillCurrentCoroutines()
     {
         //isMenuDeployed = true;

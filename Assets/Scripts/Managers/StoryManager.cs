@@ -16,7 +16,7 @@ public class StoryManager : MonoBehaviour {
 	public bool isFirstscene;
 	public bool isLoadingLevel;
 	public int StreamingAssetsCounter;
-	public GameObject PageManager;
+	public GameObject PageManagerObj;
     PageManager pageManagerSctipt;
 	private GameObject Canvas;
     [SerializeField]
@@ -58,6 +58,8 @@ public class StoryManager : MonoBehaviour {
      
     private void Awake()
     {
+        //shoulFollow = false;
+
         StreamingAssetsCounter = 0;
         //SceneEnvironment = "Exterior";
         Scene currentScene = SceneManager.GetActiveScene();
@@ -128,8 +130,8 @@ public class StoryManager : MonoBehaviour {
     public void InitialSetUp()///Awake()
     {
         print("InitialSetUp");
-        PageManager = GameObject.FindGameObjectWithTag("PageManager");
-        pageManagerSctipt = PageManager.GetComponent<PageManager>();
+        PageManagerObj = GameObject.FindGameObjectWithTag("PageManager");
+        pageManagerSctipt = PageManagerObj.GetComponent<PageManager>();
 
         //if(PageManager.GetComponent<PageManager>().StringPreviousLevel != SceneEnvironment &&PageManager.GetComponent<PageManager>().StringPreviousLevel != "empty")
         //{
@@ -214,7 +216,7 @@ public class StoryManager : MonoBehaviour {
                     sentenceContainer[pageManagerSctipt.sentenceContainerCounter]
                     = child.gameObject.GetComponent<SentenceRowContainer>();
 
-                    PageManager.GetComponent<PageManager>().sentenceContainerCounter++;
+                    PageManagerObj.GetComponent<PageManager>().sentenceContainerCounter++;
                 }
             }  
         }
@@ -225,8 +227,8 @@ public class StoryManager : MonoBehaviour {
         //PageManager.GetComponent<PageManager>().sentenceContainer[0] = InitialTextPosition.GetComponent<SentenceRowContainer>();
 
         Canvas = GameObject.FindGameObjectWithTag("Canvas");
-        PageManager.GetComponent<PageManager>().LoadingScreen.GetComponent<Image>().enabled = true;
-        if (isLoadingLevel == true && PageManager.GetComponent<PageManager>().isIniAudioLoaded == false)
+        PageManagerObj.GetComponent<PageManager>().LoadingScreen.GetComponent<Image>().enabled = true;
+        if (isLoadingLevel == true && PageManagerObj.GetComponent<PageManager>().isIniAudioLoaded == false)
         {//If this is going to load a different streaming package, load it here. 
             pageManagerSctipt.audioIndex = 0;
             pageManagerSctipt.isIniAudioLoaded = true;
@@ -298,33 +300,87 @@ public class StoryManager : MonoBehaviour {
     TextPositionEditMode[] textPositionEditModeAll;
     SentenceRowContainer sentenceRowContainer;
 
+    //bool shoulFollow = false;
 
+
+    TextPositionEditMode EngTextPositionScript;
+    TextPositionEditMode FraTextPositionScript;
+    TextPositionEditMode IndTextPositionScript;
+
+    //private void OnEnable()
+    //{
+    //    PageManager.OnLanguageChangeWasUpdate += positionTextAccordingLanguage;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    PageManager.OnLanguageChangeWasUpdate += positionTextAccordingLanguage;
+    //}
     public void positionTextAccordingLanguage()
     {
-        print("positionTextAccordingLanguage");
+        //print("positionTextAccordingLanguage");
         //is called from child sentenceRowContainer from AddText() and from this script's CoroutineLoad().
         sentenceRowContainer = GetComponentInChildren<SentenceRowContainer>();
 
         textPositionEditModeAll = GetComponentsInChildren<TextPositionEditMode>();
 
+
+        //for (int i = 0; i < textPositionEditModeAll.Length; i++)
+        //{
+        //    if (textPositionEditModeAll[i].tag == "EnglishTextPosition")
+        //    {
+        //        EngTextPositionScript = textPositionEditModeAll[i];
+        //        //EngTextPositionObj = textPositionEditModeAll[i].gameObject;
+        //    }
+        //    else if(textPositionEditModeAll[i].tag == "FrenchTextPosition")
+        //    {
+        //        FraTextPositionScript = textPositionEditModeAll[i];
+        //        //FraTextPositionObj = textPositionEditModeAll[i].gameObject;
+        //    }
+        //    else if(textPositionEditModeAll[i].tag == "IndigenousTextPosition")
+        //    {
+        //        IndTextPositionScript = textPositionEditModeAll[i];
+        //        //IndTextPositionObj = textPositionEditModeAll[i].gameObject;
+        //    }
+        //}
+
+        //if (DataManager.currentLanguage == "english")
+        //{
+        //    sentenceRowContainer.gameObject.transform.position = EngTextPositionScript.gameObject.transform.position;
+        //}
+        //else if(DataManager.currentLanguage == "French")
+        //{
+        //    sentenceRowContainer.gameObject.transform.position = FraTextPositionScript.gameObject.transform.position;
+
+        //}
+        //else if (DataManager.currentLanguage == "Indigenous")
+        //{
+        //    sentenceRowContainer.gameObject.transform.position = IndTextPositionScript.gameObject.transform.position;
+        //}
+
+
+
         print(DataManager.currentLanguage + "Current language");
 
         for (int i=0;i< textPositionEditModeAll.Length;i++)
         {
-            if(textPositionEditModeAll[i].gameObject.tag== "EnglishTextPosition")
+            //textPositionEditModeAll[i].enabled = false;
+
+            if (textPositionEditModeAll[i].gameObject.tag== "EnglishTextPosition")
             {
-                if(DataManager.currentLanguage== "english")
+                if(DataManager.currentLanguage== "English" || DataManager.currentLanguage=="english")
                 {
                     sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
 
                     if(Application.isEditor)
                     {
-                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                        //textPositionEditModeAll[i].enabled = true;
+
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer, "english");
                     }
                 }
             }
-
-            if(textPositionEditModeAll[i].gameObject.tag == "FrenchTextPosition")
+            else if(textPositionEditModeAll[i].gameObject.tag == "FrenchTextPosition")
             {
                 if (DataManager.currentLanguage == "French")
                 {
@@ -332,22 +388,26 @@ public class StoryManager : MonoBehaviour {
 
                     if (Application.isEditor)
                     {
-                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                        //textPositionEditModeAll[i].enabled = true;
+
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer, "French");
                     }
                 }
             }
-
-            if (textPositionEditModeAll[i].gameObject.tag == "IndigenousTextPosition")
+            else if (textPositionEditModeAll[i].gameObject.tag == "IndigenousTextPosition")
             {
                 //print("IndigenousTextPosition TAG");
 
                 if (DataManager.currentLanguage == "Indigenous")
                 {
+                    print("place at Indigenous position " + textPositionEditModeAll[i].gameObject.name);
                     sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
 
                     if (Application.isEditor)
                     {
-                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer);
+                        //textPositionEditModeAll[i].enabled = true;
+
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer, "Indigenous");
                     }
                 }
             }
