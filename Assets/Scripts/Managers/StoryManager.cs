@@ -411,6 +411,23 @@ public class StoryManager : MonoBehaviour {
                     }
                 }
             }
+            else if (textPositionEditModeAll[i].gameObject.tag == "SpanishTextPosition")
+            {
+                //print("IndigenousTextPosition TAG");
+
+                if (DataManager.currentLanguage == "Spanish")
+                {
+                    print("place at Indigenous position " + textPositionEditModeAll[i].gameObject.name);
+                    sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
+
+                    if (Application.isEditor)
+                    {
+                        //textPositionEditModeAll[i].enabled = true;
+
+                        textPositionEditModeAll[i].SetTextToFollowThisObject(sentenceRowContainer, "Spanish");
+                    }
+                }
+            }
 
         }
     }

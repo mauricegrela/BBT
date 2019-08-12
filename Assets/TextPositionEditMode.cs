@@ -51,6 +51,13 @@ public class TextPositionEditMode : MonoBehaviour {
                 print("follow ind");
 
             }
+            
+            if (gameObject.tag == "SpanishTextPosition" && language == "Spanish")
+            {
+                sentenceRowContainer.gameObject.transform.position = transform.position;
+                print("follow spanish");
+
+            }
 
         }
     }
