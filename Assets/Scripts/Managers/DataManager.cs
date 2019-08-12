@@ -25,8 +25,8 @@ public class DataManager
     {
         UnloadAssetBundle();
 
-		//Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
-
+        //Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
+        Debug.Log("packageToLoad "+ packageToLoad);
 
         myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
      

@@ -100,6 +100,12 @@ public class MenuLanguageChange : MonoBehaviour {
         {
             LanguageButtonImages[2].color = ButtonClickedColor;
         }
+
+        if(Language == "Spanish")
+        {
+            LanguageButtonImages[3].color = ButtonClickedColor;
+
+        }
     }
 
     IEnumerator WaitForEndOfFrame(string Language)
