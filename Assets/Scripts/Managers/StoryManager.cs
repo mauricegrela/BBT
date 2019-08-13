@@ -417,7 +417,7 @@ public class StoryManager : MonoBehaviour {
 
                 if (DataManager.currentLanguage == "Spanish")
                 {
-                    print("place at Indigenous position " + textPositionEditModeAll[i].gameObject.name);
+                    print("place at spanish position " + textPositionEditModeAll[i].gameObject.name);
                     sentenceRowContainer.gameObject.transform.position = textPositionEditModeAll[i].gameObject.transform.position;
 
                     if (Application.isEditor)
