@@ -89,8 +89,6 @@ public class DataManager
 
     private static void AddFileToStory(StoryObject story, string file)
     {
-		
-
         int pathDepth = 2;
         string[] splitPath = file.Split('/');
 
@@ -163,7 +161,10 @@ public class DataManager
     {
         SentenceObject so = new SentenceObject();
         string[] lines = Regex.Split(dataString, "\\n");
-		//Debug.Log ("words.Length"+lines.Length);
+
+        //Debug.Log("dataString"+ dataString);
+		//Debug.Log ("lines.Length" + lines.Length);
+
         foreach (string line in lines)
         {
             if (string.IsNullOrEmpty(line))
@@ -172,6 +173,7 @@ public class DataManager
             string[] words = Regex.Split(line, "\\t");
             WordGroupObject obj = new WordGroupObject();
             float.TryParse(words[0], out obj.time);
+
             //This is index 1 or 2 (dependend if the time is defined twice or not)
             obj.text = words[words.Length - 1];
             so.wordGroups.Add(obj);

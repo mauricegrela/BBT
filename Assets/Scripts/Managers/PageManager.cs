@@ -909,32 +909,41 @@ public class PageManager : Singleton<PageManager>
     public void WordGroupParser()
     {
 
+        print("Number of words" + currentPage.audioObjects[audioIndex].sentence.wordGroups.Count);
         //Debug.Log(currentPage.audioObjects[audioIndex].sentence.wordGroups.ToString());
 
         foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
         {
 
-
             //Debug.Log(wordGroup.text);
+
             if (wordGroup.text.Contains("speaker"))
             {//Get The Narrator
+            print("1");
+
                 Speaker = wordGroup.text;
                 Speaker = Speaker.Remove(0, 10);
                 Debug.Log(Speaker);
+
+                //sentenceContainer[sentenceContainerCurrent].AddText(wordGroup); //added 
             }
             else if (wordGroup.text.Contains("///"))
             {//Get The Narrator
-                
+                            print("2");
+
                 sentenceContainerCurrent += 1;
                 /*
                 if (sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>())
                 {
                     sentenceContainer[sentenceContainerCurrent].GetComponentInParent<SpeechBubbleDelay>().Acvivate_SpeechBuggle(PreviousWordTime);
-                }*/
+                //}*/
             }
             else
             {
+            print("3");
+
                 // PreviousWordTime = wordGroup.time;
+                //print("Number of words" + currentPage.audioObjects[audioIndex].sentence.wordGroups.Count);
                 sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
             }
         }
