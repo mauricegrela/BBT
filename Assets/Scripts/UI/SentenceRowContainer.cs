@@ -73,12 +73,12 @@ public class SentenceRowContainer : MonoBehaviour
     
     public void AddText(WordGroupObject wordGroup)
     {
-        //Debug.Log(wordGroup.text);
+        Debug.Log(wordGroup.text);
 
         //print("???????????");
         string[] words = wordGroup.text.Split(' ');
-        //print("words " + words.Length);
-        //print(words[0]);
+        print("words " + words.Length);
+        print(words[0]);
         narrator = words [0];
         //for (int i = 0; i < words.Length; i++) //used to be
         for (int i = 0; i < 1; i++)
