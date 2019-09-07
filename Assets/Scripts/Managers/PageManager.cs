@@ -60,7 +60,7 @@ public class PageManager : Singleton<PageManager>
     public GameObject StoryManager;
     StoryManager storyManagerScript;
     [SerializeField]
-    private string EnvironmentTracker;
+    private string EnvironmentTracker;// scene name
     [SerializeField]
     public string PreviousLevelTracker;
     public GameObject TextBody;
@@ -429,6 +429,7 @@ public class PageManager : Singleton<PageManager>
             }
             SceneManager.UnloadScene(EnvironmentTracker);
 
+        //print("EnvironmentTracker"+EnvironmentTracker);
 
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); //marked this- why do this here again?
         storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
