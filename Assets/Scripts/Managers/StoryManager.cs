@@ -191,7 +191,7 @@ public class StoryManager : MonoBehaviour {
             child.SetActive(true);
         }
 
-        int position;
+        //int position;
 
         /*if(PageManager.GetComponent<PageManager>().isGoingBack == true)
         {
