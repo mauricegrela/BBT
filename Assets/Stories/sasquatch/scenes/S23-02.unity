@@ -163,12 +163,12 @@ Prefab:
     - target: {fileID: 224496844979277078, guid: cd89f6c22f98040adaf0fb6b758f8225,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 368.2
+      value: 138.6
       objectReference: {fileID: 0}
     - target: {fileID: 224496844979277078, guid: cd89f6c22f98040adaf0fb6b758f8225,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -380
+      value: -210.4
       objectReference: {fileID: 0}
     - target: {fileID: 224496844979277078, guid: cd89f6c22f98040adaf0fb6b758f8225,
         type: 2}
@@ -263,12 +263,12 @@ Prefab:
     - target: {fileID: 224637003704383158, guid: 08d916e6cd6a94caaaf84606ed71d985,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 368.2
+      value: 138.6
       objectReference: {fileID: 0}
     - target: {fileID: 224637003704383158, guid: 08d916e6cd6a94caaaf84606ed71d985,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -380
+      value: -210.4
       objectReference: {fileID: 0}
     - target: {fileID: 224637003704383158, guid: 08d916e6cd6a94caaaf84606ed71d985,
         type: 2}
@@ -339,7 +339,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519949327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -180.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.100138, y: 1.1001381, z: 1.1001381}
   m_Children: []
   m_Father: {fileID: 1964861506}
@@ -347,8 +347,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.7000427, y: -214.2}
-  m_SizeDelta: {x: 963, y: 1370.3}
+  m_AnchoredPosition: {x: -116.999985, y: -266.5}
+  m_SizeDelta: {x: 1193.6, y: 698.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519949329
 MonoBehaviour:
@@ -370,7 +370,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9da3284af9e8b4abe9077691038a5e95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4fe93ca55d0c9478c99cfde8da96b199, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -435,12 +435,12 @@ Prefab:
     - target: {fileID: 224540178247540886, guid: ac5ea327c720449598bc65125ecc3a75,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 368.2
+      value: 138.6
       objectReference: {fileID: 0}
     - target: {fileID: 224540178247540886, guid: ac5ea327c720449598bc65125ecc3a75,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -380
+      value: -210.4
       objectReference: {fileID: 0}
     - target: {fileID: 224540178247540886, guid: ac5ea327c720449598bc65125ecc3a75,
         type: 2}
@@ -535,12 +535,12 @@ Prefab:
     - target: {fileID: 224169256003343968, guid: 6345a0b9df9e54988afcbcbf00d1aa93,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 368.19998
+      value: 138.6
       objectReference: {fileID: 0}
     - target: {fileID: 224169256003343968, guid: 6345a0b9df9e54988afcbcbf00d1aa93,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -380
+      value: -210.4
       objectReference: {fileID: 0}
     - target: {fileID: 224169256003343968, guid: 6345a0b9df9e54988afcbcbf00d1aa93,
         type: 2}
@@ -920,7 +920,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 368.2
+      value: 269.8
       objectReference: {fileID: 0}
     - target: {fileID: 224319010941649964, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -980,7 +980,7 @@ Prefab:
     - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40.298508
+      value: 40.3
       objectReference: {fileID: 0}
     - target: {fileID: 224779462405229988, guid: 272a31ec11ed44a8f95828483d721a34,
         type: 2}
@@ -1072,6 +1072,11 @@ Prefab:
         type: 2}
       propertyPath: NormalColor.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224207409630750794, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 371.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
