@@ -37,7 +37,7 @@ public class TextPositionEditMode : MonoBehaviour {
             if (gameObject.tag == "EnglishTextPosition" && language == "english")
             {
                 sentenceRowContainer.gameObject.transform.position = transform.position;
-                print("follow eng");
+                //print("follow eng");
             }
 
             if (gameObject.tag == "FrenchTextPosition" && language == "French")
@@ -48,14 +48,14 @@ public class TextPositionEditMode : MonoBehaviour {
             if (gameObject.tag == "IndigenousTextPosition" && language == "Indigenous")
             {
                 sentenceRowContainer.gameObject.transform.position = transform.position;
-                print("follow ind");
+                //print("follow ind");
 
             }
             
             if (gameObject.tag == "SpanishTextPosition" && language == "Spanish")
             {
                 sentenceRowContainer.gameObject.transform.position = transform.position;
-                print("follow spanish");
+                //print("follow spanish");
 
             }
 
