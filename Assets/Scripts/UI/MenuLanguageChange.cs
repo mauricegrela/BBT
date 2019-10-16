@@ -10,8 +10,11 @@ public class MenuLanguageChange : MonoBehaviour {
     public Color ButtonDefualtColor;
     public Image[] LanguageButtonImages;
     public GameObject mainmenu_bg;
+    public GameObject loadingObject;
 
     bool defulteLanguageColorWasSet;
+
+    //bool clickedLanguageUpdate;
     //public Dropdown dropdownMenu;
 
     //public GameObject[] ChapterButtonGroup;
@@ -22,7 +25,7 @@ public class MenuLanguageChange : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-		/*
+        /*
 		SasquatchChapters = new string[5];
 		SasquatchChapters [0] = "1_11_sas_ext_cabin";
 		SasquatchChapters [1] = "12_21_sas_ext_forest";
@@ -63,20 +66,42 @@ public class MenuLanguageChange : MonoBehaviour {
         }
 		*/
 
-        if(!defulteLanguageColorWasSet)
+        print("is loading  here? "+loadingObject.gameObject.activeSelf);
+        if (!defulteLanguageColorWasSet)
         {
             LanguageButtonImages[0].color = ButtonClickedColor;
             defulteLanguageColorWasSet = true;
         }
     }
 
-
-	public void LanguageUpdate(string Language)
+    public void ShowHideLoading(bool _shouldShow)
     {
-        UpdateLanguageButtonsColors(Language);
+        //set fals from bookmark icon button
 
+        if(_shouldShow)
+            loadingObject.SetActive(true);
+        else
+            loadingObject.SetActive(false);
+    }
+
+
+
+    public void LanguageUpdate(string Language)
+    {
+        //clickedLanguageUpdate = false;
+        //StartCoroutine(ChangeLanguge(Language));
+        print("before loading");
+        ShowHideLoading(true);
+
+        UpdateLanguageButtonsColors(Language);
         //Debug.Log(GetComponentInChildren<Text>().text);
+        //if(loadingObject)
+        //{
+        //    return;
+        //}
+
         StartCoroutine(WaitForEndOfFrame(Language));
+        //WaitForEndOfFrame(Language);
     }
 
     void UpdateLanguageButtonsColors(string Language)
@@ -89,30 +114,64 @@ public class MenuLanguageChange : MonoBehaviour {
         if(Language== "English")
         {
             LanguageButtonImages[0].color = ButtonClickedColor;
+            //clickedLanguageUpdate = true;
+
         }
 
         if (Language == "French")
         {
             LanguageButtonImages[1].color = ButtonClickedColor;
+            //clickedLanguageUpdate = true;
+
         }
 
         if (Language == "Indigenous")
         {
             LanguageButtonImages[2].color = ButtonClickedColor;
+            //clickedLanguageUpdate = true;
+
         }
 
-        if(Language == "Spanish")
+        if (Language == "Spanish")
         {
+
             LanguageButtonImages[3].color = ButtonClickedColor;
+            //clickedLanguageUpdate = true;
 
         }
+
     }
 
     IEnumerator WaitForEndOfFrame(string Language)
     {
-        yield return (new WaitForEndOfFrame());
+        //yield return (new WaitForEndOfFrame());
+        yield return (new WaitForFixedUpdate());
+
+        //while (!loadingObject.activeSelf)
+        //{
+        //    yield return null;
+        //}
+
         print(Language + "Language");
         PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
         mainmenu_bg.SetActive(false);
     }
+
+    //void WaitForEndOfFrame(string Language)
+    //{
+    //    print(Language + "Language");
+    //    PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
+    //    mainmenu_bg.SetActive(false);
+    //}
+
+    //IEnumerator ChangeLanguge(string Language)
+    //{
+    //    print("before loading");
+    //    UpdateLanguageButtonsColors(Language);
+
+    //    while (!clickedLanguageUpdate)
+    //    {
+    //        yield return null;
+    //    }
+
 }

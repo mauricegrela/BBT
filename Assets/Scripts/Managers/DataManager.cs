@@ -21,25 +21,26 @@ public class DataManager
 	private static AssetBundle myLoadedAssetBundle;
 
 
-	public static StoryObject LoadStory(string storyName, string packageToLoad)
+    public static StoryObject LoadStory(string storyName, string packageToLoad)
     {
         UnloadAssetBundle();
 
         //Debug.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
         Debug.Log("packageToLoad "+ packageToLoad);
 
-        myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
-     
-       /*#if UNITY_IPHONE
-        myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
-         #endif
-         #if UNITY_ANDROID
-        myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
-         #endif*/
+        //myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
+        myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
 
- 		
+        /*#if UNITY_IPHONE
+         myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
+          #endif
+          #if UNITY_ANDROID
+         myLoadedAssetBundle = AssetBundle.LoadFromFile(CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString())); 
+          #endif*/
 
-		CurrentAssetPackage = packageToLoad.ToString ();
+
+
+        CurrentAssetPackage = packageToLoad.ToString ();
 
 		//AssetStreamingCounter++;
         //.Log (CombinePaths(Application.streamingAssetsPath, storyName, currentLanguage.ToLower() + "_" + packageToLoad.ToString()));
@@ -133,7 +134,10 @@ public class DataManager
                 }
 
                 Object fileObj = myLoadedAssetBundle.LoadAsset(file);
+                //AssetBundleRequest assetBundleRequest = myLoadedAssetBundle.LoadAssetAsync(file);
+
                 AudioClip clip = fileObj as AudioClip;
+                //AudioClip clip = assetBundleRequest.asset as AudioClip;
                 if (clip != null)
                 {
                     audioObj.clip = clip;
@@ -141,6 +145,7 @@ public class DataManager
                 }
 
                 TextAsset txt = fileObj as TextAsset;
+                //TextAsset txt = assetBundleRequest.asset as TextAsset;
 
                 if (txt != null)
                 {
@@ -149,6 +154,7 @@ public class DataManager
                 }
 
                 Debug.LogErrorFormat("File of type {0} detected inside the AssetBundle. It only supports AudioClips and TextAssets!", fileObj.GetType());
+                //Debug.LogErrorFormat("File of type {0} detected inside the AssetBundle. It only supports AudioClips and TextAssets!", assetBundleRequest.asset.GetType());
 
                 return;
             }

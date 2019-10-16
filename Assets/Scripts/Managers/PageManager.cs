@@ -565,6 +565,7 @@ public class PageManager : Singleton<PageManager>
 
     public void ChangeLanguage(string newLanguage)
     {
+        //print("Before Load");
         StopAllCoroutines();
         audioSource.Stop();
         Resources.UnloadUnusedAssets();
