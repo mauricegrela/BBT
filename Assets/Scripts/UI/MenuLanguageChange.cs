@@ -10,7 +10,9 @@ public class MenuLanguageChange : MonoBehaviour {
     public Color ButtonDefualtColor;
     public Image[] LanguageButtonImages;
     public GameObject mainmenu_bg;
+
     public GameObject loadingObject;
+    public GameObject loadingFrameObject;
 
     bool defulteLanguageColorWasSet;
 
@@ -155,6 +157,7 @@ public class MenuLanguageChange : MonoBehaviour {
         print(Language + "Language");
         PageManagerRef.GetComponent<PageManager>().ChangeLanguage(Language);
         mainmenu_bg.SetActive(false);
+        ShowHideLoading(false);
     }
 
     //void WaitForEndOfFrame(string Language)

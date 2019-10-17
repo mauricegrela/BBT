@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MenuChapterManager : MonoBehaviour {
 
-    
+
 	public string[] ButtonDescription;
     public Text[] ButtonDescriptionText;
 
@@ -22,15 +22,7 @@ public class MenuChapterManager : MonoBehaviour {
     }
     
     public GameObject ButtonTemplate;
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 
     public void ReturnToMainMenu()
     {
@@ -57,4 +49,5 @@ public class MenuChapterManager : MonoBehaviour {
 
                 
     }
+
 }

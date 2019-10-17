@@ -25,6 +25,8 @@ public class MenuUI : MonoBehaviour
 	public Vector3 English_Button_Pos;
 	public Vector3 French_Button_Pos;
 
+        public GameObject LoadingScreenObject;
+
     void Awake()
     {
 		English_Button_Pos = English_Button.transform.position;
@@ -66,6 +68,8 @@ public class MenuUI : MonoBehaviour
 
     public void StartGame(string LeveltoLoad)
     {
+        LoadingScreenObject.SetActive(true);
+
         Debug.Log(LeveltoLoad);
         AssetsINIRef[1].gameObject.SetActive(true);
         DataManager.currentStoryName = LeveltoLoad;
