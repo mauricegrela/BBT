@@ -51,6 +51,7 @@ public class StoryManager : MonoBehaviour {
     public GameObject WaterColorEffectObject;
     WaterColorEffect waterColorEffectScript;
 
+    public GameObject EndScreen;
     //GameObject englishTexPositionGameobject;
     //GameObject frenchTexPositionGameobject;
     //GameObject indigenousTexPositionGameobject;
@@ -430,6 +431,14 @@ public class StoryManager : MonoBehaviour {
             }
 
         }
+    }
+
+    public void ShowEndScreen()
+    {
+        //called from pageManager script GotoNext() when is LastScene
+
+        //EndScreen.gameObject.SetActive(true);
+        EndScreen.gameObject.GetComponent<EndScreen>().ShowEndScreen();
     }
 
     //private IEnumerator WaitGoingBack(float waitTime)

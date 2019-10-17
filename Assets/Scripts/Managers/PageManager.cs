@@ -117,7 +117,7 @@ public class PageManager : Singleton<PageManager>
 
     private float isAutoChapterSkip = 0.0f;
 
-
+    //public bool NextSceneIsEndScreen;
 
     protected override void Awake()
     {
@@ -292,12 +292,36 @@ public class PageManager : Singleton<PageManager>
     {
         //sceneindex++;
         //bool isloadingScene;
+        //if(NextSceneIsEndScreen)
+        //{
+        //    SceneManager.UnloadScene(EnvironmentTracker);
+        //    SceneManager.UnloadScene("MainStory");
+        //    return;
+        //}
 
         string NextScene;
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
         storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
 
         NextScene = storyManagerScript.NextScene;
+
+        if(storyManagerScript.isLastscene)
+        {
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MainStory"));
+
+            storyManagerScript.ShowEndScreen();
+            audioSource.Stop();
+
+            Resources.UnloadUnusedAssets();
+            return;
+            //GameObject EndScreenObject;
+            ////EndScreen endScreenScript;
+
+            //EndScreenObject = GameObject.FindGameObjectWithTag("EndScreen");
+            ////endScreenScript = EndScreenObject.GetComponent<EndScreen>();
+            //EndScreenObject.gameObject.SetActive(true);
+            //return;
+        }
 
         //StoryManager.GetComponent<StoryManager>().CameraRef.transform.position = StoryManager.GetComponent<StoryManager>().OGCameraRefPosition;
         //StoryManager.GetComponent<StoryManager>().isPanningLeft = false; //old stuff- 
@@ -322,11 +346,14 @@ public class PageManager : Singleton<PageManager>
 
 
             PreviousLevelTracker = EnvironmentTracker;
-            //PreviousLevelTracker- previous scene
-            //EnvironmentTracker- next scene
+        //PreviousLevelTracker- previous scene
+        //EnvironmentTracker- next scene
 
-            StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); //marked this, why do this again?
-            storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+            if (GameObject.FindGameObjectWithTag("StoryManager") != null)
+            { 
+                StoryManager = GameObject.FindGameObjectWithTag("StoryManager"); //marked this, why do this again?
+                storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
+            }
 
         if (storyManagerScript.NextScene != "None")
             {
