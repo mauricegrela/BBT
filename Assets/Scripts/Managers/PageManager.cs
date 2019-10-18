@@ -90,7 +90,7 @@ public class PageManager : Singleton<PageManager>
     //UI Assets
     public GameObject UIDots;
     public GameObject ScentenceContainer;
-    public Image LoadingScreen;
+    //public Image LoadingScreen;
     [SerializeField]
     private GameObject BackButton;
     [SerializeField]
@@ -434,8 +434,8 @@ public class PageManager : Singleton<PageManager>
         StoryManager = GameObject.FindGameObjectWithTag("StoryManager");//Find the story manager found in every level
         storyManagerScript = StoryManager.GetComponent<StoryManager>(); //added this
 
-        string LastScene;
-        LastScene = storyManagerScript.LastScene;
+        //string LastScene;
+        //LastScene = storyManagerScript.LastScene;
 
         //if (sceneindex < 0)
         //{//If the player is at the last page of the scene
@@ -450,7 +450,7 @@ public class PageManager : Singleton<PageManager>
 
         Resources.UnloadUnusedAssets();
             //Debug.Log(StoryManager.GetComponent<StoryManager>().NextScene);
-            if (storyManagerScript.NextScene != "None")
+            if (!storyManagerScript.isLastscene)
             {
                 SceneManager.UnloadScene(storyManagerScript.NextScene);
             }
@@ -465,7 +465,7 @@ public class PageManager : Singleton<PageManager>
 
             //Debug.Log(StoryManager.GetComponent<StoryManager>().NextScene);
 
-            if (storyManagerScript.NextScene != "None")
+            if (!storyManagerScript.isLastscene)
             {
                 SceneManager.LoadScene(storyManagerScript.NextScene, LoadSceneMode.Additive);
             }

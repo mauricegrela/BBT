@@ -12,10 +12,9 @@ public class MenuLanguageChange : MonoBehaviour {
     public GameObject mainmenu_bg;
 
     public GameObject loadingObject;
-    public GameObject loadingFrameObject;
 
     bool defulteLanguageColorWasSet;
-
+    public GameObject Xbutton;
     //bool clickedLanguageUpdate;
     //public Dropdown dropdownMenu;
 
@@ -80,10 +79,15 @@ public class MenuLanguageChange : MonoBehaviour {
     {
         //set fals from bookmark icon button
 
-        if(_shouldShow)
+        if (_shouldShow)
+        {
             loadingObject.SetActive(true);
+            Xbutton.SetActive(false);
+        }
         else
+        {
             loadingObject.SetActive(false);
+        }
     }
 
 
