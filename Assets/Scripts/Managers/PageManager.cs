@@ -806,10 +806,10 @@ public class PageManager : Singleton<PageManager>
 
             }
 
-            if (audioIndex == 37 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 1)
-            {
-                waitTime = 4.0f;
-            }
+            //if (audioIndex == 37 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 1)
+            //{
+            //    waitTime = 4.0f;
+            //}
             i++;
             yield return new WaitForSeconds(waitTime);
             if (audioIndex == 36 && StoryManager.GetComponent<StoryManager>().pagesPerScene == 2)
@@ -944,7 +944,7 @@ public class PageManager : Singleton<PageManager>
         foreach (WordGroupObject wordGroup in currentPage.audioObjects[audioIndex].sentence.wordGroups)
         {
 
-            //Debug.Log(wordGroup.text);
+            Debug.Log(wordGroup.text);
 
             if (wordGroup.text.Contains("speaker"))
             {//Get The Narrator
@@ -973,6 +973,11 @@ public class PageManager : Singleton<PageManager>
 
                 // PreviousWordTime = wordGroup.time;
                 //print("Number of words" + currentPage.audioObjects[audioIndex].sentence.wordGroups.Count);
+
+                //Speaker = wordGroup.text;
+                //Speaker = Speaker.Remove(0, 10);
+
+
                 sentenceContainer[sentenceContainerCurrent].AddText(wordGroup);
             }
         }
