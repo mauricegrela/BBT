@@ -980,7 +980,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: efce2f4f18c07da4895cbbe6273b2401, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2064,13 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99b461d983a64ca385d7aa63b5be797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingscreens:
-  - {fileID: 21300000, guid: 6aa61fd9aa7ae421eb8605c8dbe43a2b, type: 3}
-  - {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
-  - {fileID: 21300000, guid: 038876db5283848ea83d3f7fc1397614, type: 3}
-  - {fileID: 21300000, guid: 4bc07a2a6fb7b4cda97aefc785e0be10, type: 3}
-  - {fileID: 21300000, guid: b972012cfc3ba4ca9a284196d837906e, type: 3}
-  - {fileID: 21300000, guid: c2403d4d1093b4c2f8c66313e0f7cd7d, type: 3}
+  loadingscreens: []
   loadingscreens_FR:
   - {fileID: 21300000, guid: 6aa61fd9aa7ae421eb8605c8dbe43a2b, type: 3}
   - {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
@@ -2103,7 +2097,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5c7d4a8a9c8ea4e59a881d55cbbc1222, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5117,7 +5111,6 @@ GameObject:
   - component: {fileID: 1003590395}
   - component: {fileID: 1003590394}
   - component: {fileID: 1003590393}
-  - component: {fileID: 1003590392}
   m_Layer: 0
   m_Name: Loading screen frame canvas (1)
   m_TagString: Untagged
@@ -5125,22 +5118,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1003590392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1003590391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1003590393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6109,7 +6086,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203188336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -21.93}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 975073189}
@@ -6199,7 +6176,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845271212}
+      - m_Target: {fileID: 8631367838362112286}
         m_MethodName: StartGame
         m_Mode: 5
         m_Arguments:
@@ -6210,7 +6187,7 @@ MonoBehaviour:
           m_StringArgument: sasquatch
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 389069181}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -6232,18 +6209,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1843536089}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 21457256}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -6265,7 +6231,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 973955932}
+      - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -6276,7 +6242,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1464304612}
+      - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -7152,7 +7118,7 @@ GameObject:
   - component: {fileID: 1481193665}
   - component: {fileID: 1481193664}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: old start menu Canvas (1) -not in use
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8362,7 +8328,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: efce2f4f18c07da4895cbbe6273b2401, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8838,7 +8804,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: efce2f4f18c07da4895cbbe6273b2401, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10247,7 +10213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 116.83002, y: -117}
+  m_AnchoredPosition: {x: 116.83002, y: -94}
   m_SizeDelta: {x: 125, y: 754}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2049750569
@@ -12539,6 +12505,7 @@ GameObject:
   - component: {fileID: 8631367838362112282}
   - component: {fileID: 8631367838362112281}
   - component: {fileID: 8631367838362112285}
+  - component: {fileID: 8631367838362112286}
   m_Layer: 5
   m_Name: Canvas Story Menu
   m_TagString: Untagged
@@ -12665,6 +12632,18 @@ MonoBehaviour:
   MenuStoryObjects_Sasquatch: {fileID: 69562042}
   MenuStoryObjects_LittlePepole: {fileID: 906136894}
   MenuStoryObjects_kalkalilh: {fileID: 1295248259}
+--- !u!114 &8631367838362112286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8631367838362112280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c843f33ca6cf467599aa0b2a4a8d8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadingScreenObject: {fileID: 1003590391}
 --- !u!224 &8631367838474243112
 RectTransform:
   m_ObjectHideFlags: 0

@@ -75,17 +75,17 @@ public class MenuUI : MonoBehaviour
         DataManager.currentStoryName = LeveltoLoad;
         if(LeveltoLoad== "sasquatch")
         {
-        SceneManager.LoadScene("S01-01");    
+        SceneManager.LoadSceneAsync("S01-01");    
         }
 
         if (LeveltoLoad == "littlepeople")
         {
-            SceneManager.LoadScene("lp01-01");
+            SceneManager.LoadSceneAsync("lp01-01");
         }
 
         if (LeveltoLoad == "kalkalilh")
         {
-            SceneManager.LoadScene("kk01-01");
+            SceneManager.LoadSceneAsync("kk01-01");
         }
 
     }
@@ -93,7 +93,7 @@ public class MenuUI : MonoBehaviour
     public void LoadNewLanguage(string LeveltoLoad)
     {
         DataManager.currentLanguage = LeveltoLoad;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadSceneAsync("Menu");
 
     }
 
@@ -101,13 +101,13 @@ public class MenuUI : MonoBehaviour
     public void SkyboxTest()
     {
         //Debug.Log("Working");
-        SceneManager.LoadScene("Accelerometer_Test");
+        SceneManager.LoadSceneAsync("Accelerometer_Test");
     }
   
     public void GoToMenu()
     {
         //Debug.Log("Working");
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadSceneAsync("Menu");
     }
   
 
