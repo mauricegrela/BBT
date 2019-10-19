@@ -431,6 +431,7 @@ MonoBehaviour:
   PanningPageSong2: {fileID: 0}
   Volume: 0.2
   WaterColorEffectObject: {fileID: 0}
+  EndScreen: {fileID: 0}
 --- !u!4 &1786498410
 Transform:
   m_ObjectHideFlags: 0
@@ -1077,6 +1078,21 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.x
       value: 371.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114062417553599824, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114062417553599824, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: HighlightedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114062417553599824, guid: 272a31ec11ed44a8f95828483d721a34,
+        type: 2}
+      propertyPath: HighlightedColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 272a31ec11ed44a8f95828483d721a34, type: 2}
