@@ -287,7 +287,7 @@ public class PageManager : Singleton<PageManager>
     //    sentenceContainerCurrent = 0;
     //    //GameObject TextPositionref;
     //    SpeechBubbleStorage();
-
+    public GameObject[] MainStoryObjectsExceptFrame;
     public void GotoNext()
     {
         //sceneindex++;
@@ -307,9 +307,15 @@ public class PageManager : Singleton<PageManager>
 
         if(storyManagerScript.isLastscene)
         {
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MainStory"));
 
             storyManagerScript.ShowEndScreen();
+
+            for(int i=0;i< MainStoryObjectsExceptFrame.Length;i++)
+            {
+                MainStoryObjectsExceptFrame[i].SetActive(false);
+            }
+
+            //SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("MainStory"));
             audioSource.Stop();
 
             Resources.UnloadUnusedAssets();

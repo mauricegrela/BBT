@@ -10029,6 +10029,10 @@ MonoBehaviour:
   PageDone: {fileID: 8300000, guid: 464b3b240aa1c74458bf2e3abffa362a, type: 3}
   Scenetext: {fileID: 2139804641}
   ScenetextContainer: {fileID: 919223766}
+  MainStoryObjectsExceptFrame:
+  - {fileID: 23125222}
+  - {fileID: 1362191583}
+  - {fileID: 592651031}
 --- !u!4 &2054599092
 Transform:
   m_ObjectHideFlags: 0
@@ -10338,7 +10342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2139804642
 RectTransform:
   m_ObjectHideFlags: 0
